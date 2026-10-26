@@ -22,6 +22,7 @@ biblio-style: apalike
 link-citations: true
 description: "Relazione finale"
 site: bookdown::bookdown_site
+## bookdown::render_book("index.Rmd")
 ---
 
 # Premessa
@@ -30,5 +31,5 @@ site: bookdown::bookdown_site
 
 ## Sintesi non tecnica
 
-==[da redigere alla fine]
+==[da redigere alla fine]i
 

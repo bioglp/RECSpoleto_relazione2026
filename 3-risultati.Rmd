@@ -351,7 +351,7 @@ Ne deriva un sistema caratterizzato da una buona coerenza interna dei singoli so
 
 Disaggregando le informazioni sulla base della ripartizione dell’unità funzionale Urbana in frazioni e località emergono chiare differenze nella dotazione locale delle infrastrutture verdi e blu.
 Le maggiori coperture si osservano a San Nicolò (21,4%) e Spoleto (20,4%), mentre Crociferro, San Sabino e Collerisana presentano dotazioni di verde sensibilmente inferiori (\<2.5%).
-Indici di copertura intermedi compresi tra il 10-15% si osservano a Cortaccione, Madonna di Lugo e Santo Chiodo (Fig. ).
+Indici di copertura intermedi compresi tra il 10-15% si osservano a Cortaccione, Madonna di Lugo e Santo Chiodo.
 Differenziando l’analisi per componente pubblica-privata, emerge che in molte zone il verde è quasi esclusivamente privato.
 A Santo Chiodo il verde pubblico è circa il 4.7% della superficie, contro un 10.7% di quello privato.
 Analoga situazione si osserva a San Nicolò (5.9% contro 15.3%).
@@ -360,6 +360,7 @@ I livelli di AI (--) e COHESION (--) evidenziano anche il mantenimento di un cer
 Inoltre è in questa unità che possiamo ritrovare le patch più grandi (LPI=2.53%), a cui si affiancano le località di Cortaccione (3.68%), San Nicolò (2.63%) e Santo Chiodo (2.25%).
 
 ==[Tabelle e figure]==
+==[Nota sul Laghetto dei Longobardi]
 
 ### Verifica regola 3–30–300
 

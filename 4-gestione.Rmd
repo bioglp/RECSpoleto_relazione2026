@@ -113,6 +113,9 @@ Parallelamente al monitoraggio entomologico, un gruppo di lavoro botanico sta co
 knitr::include_graphics('./figs/prato_studenti2026.jpeg')
 ```
 
+==[Nota sull'esperienza di Villa Redenta]==
+
+
 ## Schemi d'impianto
 
 ==[da completare]==
