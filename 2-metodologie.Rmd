@@ -142,6 +142,6 @@ Elenco delle variabili landscapemetrics esaminate:
 
 ==[prima bozza in fase di completamento]==
 
-## Citizen science e sondaggio
+## Attività di divulgazione e CS
 
 ==[da redigere: impianto metodologico della campagna di citizen science e del sondaggio]==

@@ -31,5 +31,5 @@ site: bookdown::bookdown_site
 
 ## Sintesi non tecnica
 
-==[da redigere alla fine]i
+==[da redigere alla fine]
 

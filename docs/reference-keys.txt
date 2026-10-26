@@ -40,7 +40,7 @@ approccio-metodologico-e-basi-dati
 analisi-della-struttura-e-della-connettività-del-paesaggio-mspa-ed-effective-mesh-size
 analisi-del-sistema-verde-e-blu-urbano
 approccio-allanalisi-del-territorio-con-marxan
-citizen-science-e-sondaggio
+attività-di-divulgazione-e-cs
 risultati
 quadro-conoscitivo-di-base
 schede-descrittive-delle-unità-funzionali
@@ -72,7 +72,7 @@ considerazioni-conclusive
 prati-urbani
 prato-a-sfalcio-ridotto-presso-la-spoletosfera
 risultati-preliminari
-schemi-dimpianto
+linee-guida
 linee-guida-per-la-gestione-del-reticolo-secondario-abaco-interventi
 divulgazione-scientifica
 eventi-di-disseminazione-e-campagna-di-citizen-science

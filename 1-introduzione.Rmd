@@ -10,6 +10,8 @@ editor_options:
 
 ==[breve nota con alcuni elementi da riprendere dalla relazione precedente e con un aggiornamento alla situazione attuale]==
 
+==[definizione ambiti prioritari]
+
 ## Il verde urbano
 
 È noto che le aree urbane concentrano la maggior parte della popolazione mondiale e sono tra i contesti più esposti agli effetti dei cambiamenti climatici.

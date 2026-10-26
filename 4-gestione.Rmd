@@ -116,10 +116,10 @@ knitr::include_graphics('./figs/prato_studenti2026.jpeg')
 ==[Nota sull'esperienza di Villa Redenta]==
 
 
-## Schemi d'impianto
+## Linee guida
 
-==[da completare]==
+==[da inserire bozza sul comparto terrestre]==
 
-## Linee guida per la gestione del reticolo secondario (Abaco interventi)
+### Linee guida per la gestione del reticolo secondario (Abaco interventi)
 
-==[da collegare con il doc lifeIMAGINE]==
+==[da collegare al doc lifeIMAGINE]==

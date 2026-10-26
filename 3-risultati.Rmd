@@ -217,7 +217,7 @@ SPOLETO
 
 ![Carta 6 - Caratterizzazione percentuale delle principali categorie geobotaniche presenti nelle diverse UF.](unitaFunzionali04.jpeg)
 
-### Connettività per Unità Funzionali (MSPA)
+## Connettività per Unità Funzionali (MSPA)
 
 La valutazione della struttura e della connettività del paesaggio, ottenuta combinando la metodologia MSPA e gli indici di frammentazione [@jaeger2000a], è presentata di seguito con specifico riferimento alle Unità Funzionali. L'approccio disaggregato rende possibile un confronto puntuale tra le condizioni ecologiche dei diversi contesti, ponendosi come base conoscitiva per orientare gli interventi finalizzati all'incremento della permeabilità territoriale e di salvaguardia della biodiversità (Fig. \@ref(fig:mspaUnitaFunzionali)).
 
@@ -225,7 +225,7 @@ La valutazione della struttura e della connettività del paesaggio, ottenuta com
 knitr::include_graphics('./figs/mspa_unitaFunzionali.png')
 ```
 
-#### Aree Montane e Dorsali Appenniniche (UF Alto collinare montana dell'Appennino e Alto collinare montana dei Monti Martani)
+### Aree Montane e Dorsali Appenniniche (UF Alto collinare montana dell'Appennino e Alto collinare montana dei Monti Martani)
 
 In queste unità come era atteso sono presenti i valori di gran lunga più elevati di Area Totale e Effective Mesh Size per la classe *Core* (Fig. \@ref(fig:mspaUnitaFunzionaliMontana))(Tab x).
 Questo evidenzia un paesaggio a matrice prevalentemente naturale, dove l'habitat è continuo e poco frammentato.
@@ -239,7 +239,7 @@ Riguardo le Componenti di Margine e i Corridoi, i valori di *Bridge* ed *Edge* m
 knitr::include_graphics('./figs/mspa_unitaFunzionali_montana.png')
 ```
 
-#### Fasce di Transizione Pedemontane e Collinari (UF Collinare fascia olivata, Collinare dei Monti Martani, Collinare di Meggiano)
+### Fasce di Transizione Pedemontane e Collinari (UF Collinare fascia olivata, Collinare dei Monti Martani, Collinare di Meggiano)
 
 In queste aree l'area *Core* si riduce notevolmente a favore di una maggiore presenza proporzionale di *Edge*, *Branch*, *Loop* e *Bridge* (Figg. \@ref(fig:mspaUnitaFunzionaliOlivata); \@ref(fig:mspaUnitaFunzionaliCollinare); Tab x).
 Infatti, la presenza diffusa di *Bridge* e *Branch* testimonia una rete di siepi, formazioni ripariali e lembi boschivi interconnessi con la matrice agricola/olivicola.
@@ -254,7 +254,7 @@ knitr::include_graphics('./figs/mspa_unitaFunzionali_olivata.png')
 knitr::include_graphics('./figs/mspa_unitaFunzionali_collinare.png')
 ```
 
-#### Area di pianura e di valle (UF di pianura e di Valle del T. Marroggia)
+### Area di pianura e di valle (UF di pianura e di Valle del T. Marroggia)
 
 In quest'area si osserva una presenza marcata della classe *Islet* (piccole patches isolate) unitamente a significativi valori di *Bridge* rappresentati dai corridoi fluviali e dal reticolo idrografico minore (Fig. \@ref(fig:mspaUnitaFunzionaliValle); Tab.
 x).
@@ -265,7 +265,7 @@ Ciò dimostra che la connettività ecologica in fondo valle è affidata a corrid
 knitr::include_graphics('./figs/mspa_unitaFunzionali_valle.png')
 ```
 
-#### Ambito Urbano / Antropizzato (UF Urbana)
+### Ambito Urbano / Antropizzato (UF Urbana)
 
 Come atteso, l’area *Core* in questa UF è poco rappresentata.
 Prevalgono elementi isolati (*Islet*) e i corridoi a fondo cieco (*Branch*) (Fig. \@ref(fig:mspaUnitaFunzionaliUrbana); Tab x).
@@ -275,7 +275,7 @@ L'Effective Mesh Size assume i valori più bassi dell'intero territorio comunale
 knitr::include_graphics('./figs/mspa_unitaFunzionali_urbana.png')
 ```
 
-#### Sintesi del confronto tra le Unità Funzionali
+### Sintesi del confronto tra le Unità Funzionali
 
 In sostanza, il confronto tra le Unità Funzionali evidenzia una qualche forma di polarizzazione del territorio:
 
