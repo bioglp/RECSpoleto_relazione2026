@@ -356,8 +356,10 @@ Differenziando l’analisi per componente pubblica-privata, emerge che in molte 
 A Santo Chiodo il verde pubblico è circa il 4.7% della superficie, contro un 10.7% di quello privato.
 Analoga situazione si osserva a San Nicolò (5.9% contro 15.3%).
 Il nucleo di Spoleto si distingue invece per l'elevato numero di patch e per il ruolo rilevante del verde pubblico, configurandosi come il sistema più articolato e diversificato.
-I livelli di AI () e COHESION () evidenziano anche il mantenimento di un certo livello di continuità funzionale all’interno di questa unità, tra i più alti osservati.
+I livelli di AI (--) e COHESION (--) evidenziano anche il mantenimento di un certo livello di continuità funzionale all’interno di questa unità, tra i più alti osservati.
 Inoltre è in questa unità che possiamo ritrovare le patch più grandi (LPI=2.53%), a cui si affiancano le località di Cortaccione (3.68%), San Nicolò (2.63%) e Santo Chiodo (2.25%).
+
+==[Tabelle e figure]==
 
 ### Verifica regola 3–30–300
 
@@ -365,13 +367,15 @@ Interpretando questi dati analitici in chiave regola 3-30-300 appare chiaro che 
 Nodali in tal senso sono le aree verdi di: a) complesso areale di Piazza d’Armi e del campo di Atletica leggera, b) Villa Redenta e c) dell’area del Parco di Chico Mendez e della Spoleto Sfera.
 A queste tre macro aree si aggiunge una porzione a sviluppo lineare adiacente il tracciato ferroviario in prossimità delle vie Primo Maggio e Tre Settembre e il corridoio blu del torrente Tessino.
 In nessuna delle altre unità urbane sono presenti superfici di verde pubblico di dimensione vicina all’ettaro, se non a Santo Chiodo in un’area a sviluppo lineare prossimale alla strada statale 685 delle Tre Valli Umbre.
-Riportando un buffer di 300 m intorno a queste aree si comprende la centralità e la grande grande rilevanza assunta dal corridoio fluviale del T.
-Tessino (Fig x), che non solo aumenta considerevolmente la superficie territoriale disponibile per ...
-raddoppiandola (da 210 a 400 ha fino a coprire circa l’85% dell’intera unità), ma che rappresenta anche la naturale connessione per il raggiungimento dell’importante area della Greenway Valle Spoletana.
+Riportando un buffer di 300 m intorno a queste aree si comprende la centralità e la grande grande rilevanza assunta dal corridoio fluviale del Torrente Tessino (Figg. \@ref(fig:rulebuf300); \@ref(fig:rulebuf300NT)). Tale elemento incrementa notevolmente la quota di territorio destinata alla connettività e alla funzionalità ambientale (l'estensione passa da 210 a 400 ha, interessando circa l’85% dell’unità urbana) e si configura come il naturale corridoio di collegamento verso la Greenway Valle Spoletana.
 
-rule_buf300_1ha.png
+```{r rulebuf300, fig.cap="In rosso buffer di 300 m intorno alle aree verdi urbane di natura pubblica.", out.width='\\linewidth', fig.align='center', echo=FALSE}
+knitr::include_graphics('./figs/rule_buf300_1ha.png')
+```
 
-rule_buf300_1ha_noTess.png
+```{r rulebuf300NT, fig.cap="In rosso buffer di 300 m intorno alle aree verdi urbane di natura pubblica senza l'inclusione del corridoio fluviale del torrente Tessino.", out.width='\\linewidth', fig.align='center', echo=FALSE}
+knitr::include_graphics('./figs/rule_buf300_1ha_noTess.png')
+```
 
 ### Priorità di conservazione e connessione (Marxan)
 
