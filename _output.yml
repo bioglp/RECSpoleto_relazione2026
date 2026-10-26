@@ -1,0 +1,20 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./">Rete Ecologica Comunale Spoleto</a></li>
+      after: |
+        <li><a href="bioglp.github.io/RECSpoleto/" target="blank">Relazione 2026</a></li>
+    download: ["pdf", "epub"]
+bookdown::pdf_book:
+  pandoc_args: [
+   "-V", "papersize=a4"
+  ]
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  lang: it
+  citation_package: natbib
+  keep_tex: yes
+bookdown::epub_book: default

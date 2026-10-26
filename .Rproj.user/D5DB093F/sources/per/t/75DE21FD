@@ -1,0 +1,32 @@
+{
+    "id": "75DE21FD",
+    "path": "~/Documents/10.projects/110.RECSpoleto/2.docs/2026/relazione2026/3-risultati.Rmd",
+    "project_path": "3-risultati.Rmd",
+    "type": "r_markdown",
+    "hash": "1218306407",
+    "contents": "",
+    "dirty": false,
+    "created": 1792931216247.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "chunk_output_type": "console",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "331,0",
+        "scrollLine": "0",
+        "rmdVisualMode": "false",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "1",
+        "rmdVisualModeLocation": "6600:6395",
+        "rmdVisualCollapsedChunks": ""
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1792971983,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1792971983,
+    "read_only": false,
+    "read_only_alternatives": []
+}

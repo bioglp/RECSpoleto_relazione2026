@@ -1,0 +1,17 @@
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Capitolo "
+rmd_files:
+  - index.Rmd
+  - 1-introduzione.Rmd
+  - 2-metodologie.Rmd
+  - 3-risultati.Rmd
+  - 4-gestione.Rmd
+  - 5-disseminazione.Rmd
+  - 6-conclusioni.Rmd
+  - 7-piano2027.Rmd
+  - 8-AllegatoI.Rmd
+  - 9-references.Rmd
+
+output_dir: "docs"

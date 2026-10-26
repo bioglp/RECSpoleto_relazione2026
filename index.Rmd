@@ -1,0 +1,34 @@
+---
+title: Studio della Rete Ecologica applicato al potenziamento della Connettività del Territorio Spoletino attraverso esperienze pilota di gestione e interventi Infrastrutturali
+author: "Gianandrea La Porta, Viola Gai, Manuela Rebora"
+date: "10-10-2026"
+output:
+  bookdown::word_document2:
+    toc: true
+    toc_depth: 4
+  bookdown::pdf_document2:
+    toc: true
+    fig_caption: true
+    number_sections: true
+    highlight: kate
+    toc_depth: 4
+    latex_engine: pdflatex
+    keep_tex: true
+    lang: it
+documentclass: book
+documentclassoptions: a4paper
+bibliography: [references.bib]
+biblio-style: apalike
+link-citations: true
+description: "Relazione finale"
+site: bookdown::bookdown_site
+---
+
+# Premessa
+
+==[da redigere / riprendere dalla relazione precedente]==
+
+## Sintesi non tecnica
+
+==[da redigere alla fine]
+

@@ -1,0 +1,1902 @@
+{
+    "sources": [
+        {
+            "ISBN": "88-900297-6-5",
+            "author": [
+                {
+                    "family": "Battisti",
+                    "given": "Corrado"
+                }
+            ],
+            "edition": "Provincia di Roma",
+            "id": "battistiFrammentazioneAmbientaleConnettivita2004",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004
+                    ]
+                ]
+            },
+            "publisher": "Stilgrafica srl",
+            "title": "Frammentazione ambientale connettività reti ecologiche",
+            "type": "book"
+        },
+        {
+            "ISBN": "978-85-7811-079-6",
+            "author": [
+                {
+                    "family": "Magurran",
+                    "given": "Anne E."
+                }
+            ],
+            "id": "magurranMeasuringBiologicalDiversity2004",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004
+                    ]
+                ]
+            },
+            "publisher": "Blackwell Publishing",
+            "title": "Measuring biological diversity",
+            "type": "book",
+            "volume": "1"
+        },
+        {
+            "ISBN": "978-0-19-958067-5",
+            "author": [
+                {
+                    "family": "Magurran",
+                    "given": "Anne E."
+                }
+            ],
+            "container-title": "Biological diversity - frontiers in measurement and assessment",
+            "id": "magurranMeasuringSpeciesDiversity2011",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "page": "85-93",
+            "title": "Measuring species diversity in time (and space)",
+            "type": "chapter"
+        },
+        {
+            "ISBN": "978-88-448-0381-0",
+            "author": [
+                {
+                    "family": "Angelini",
+                    "given": "P"
+                },
+                {
+                    "family": "Augello",
+                    "given": "R"
+                },
+                {
+                    "family": "Bagnaia",
+                    "given": "R"
+                },
+                {
+                    "family": "Pietro",
+                    "given": "Bianco"
+                },
+                {
+                    "family": "Barbara",
+                    "given": "Serra"
+                }
+            ],
+            "id": "angeliniProgettoCartaNatura2009",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009
+                    ]
+                ]
+            },
+            "publisher": "ISPRA",
+            "title": "Il progetto carta della natura: Linee guida per la cartografia e la valutazione degli habitat alla scala 1:50.000",
+            "title-short": "Il progetto carta della natura",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1002/ejoc.201200111",
+            "ISBN": "978-0-13-247866-3",
+            "URL": "https://www.faa.gov/data_research/aviation/aerospace_forecasts/media/FY2017-37_FAA_Aerospace_Forecast.pdf",
+            "author": [
+                {
+                    "family": "McGarigal",
+                    "given": "Kevin"
+                }
+            ],
+            "id": "mcgarigalFragstatHelp2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "title": "Fragstat help",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1038/s41598-017-18927-1",
+            "ISSN": "2045-2322",
+            "URL": "http://www.nature.com/articles/s41598-017-18927-1",
+            "author": [
+                {
+                    "family": "Gomes",
+                    "given": "Vitor H. F."
+                },
+                {
+                    "family": "IJff",
+                    "given": "Stéphanie D."
+                },
+                {
+                    "family": "Raes",
+                    "given": "Niels"
+                },
+                {
+                    "family": "Amaral",
+                    "given": "Iêda Leão"
+                },
+                {
+                    "family": "Salomão",
+                    "given": "Rafael P."
+                },
+                {
+                    "dropping-particle": "de",
+                    "family": "Souza Coelho",
+                    "given": "Luiz"
+                },
+                {
+                    "dropping-particle": "de",
+                    "family": "Almeida Matos",
+                    "given": "Francisca Dionízia"
+                },
+                {
+                    "family": "Castilho",
+                    "given": "Carolina V."
+                },
+                {
+                    "dropping-particle": "de",
+                    "family": "Andrade Lima Filho",
+                    "given": "Diogenes"
+                },
+                {
+                    "family": "López",
+                    "given": "Dairon Cárdenas"
+                },
+                {
+                    "dropping-particle": "et",
+                    "family": "al."
+                }
+            ],
+            "container-title": "Scientific Reports",
+            "id": "gomesSpeciesDistributionModelling2018",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        12
+                    ]
+                ]
+            },
+            "page": "1003",
+            "title": "Species distribution modelling: Contrasting presence-only models with plot abundance data",
+            "title-short": "Species distribution modelling",
+            "type": "article-journal",
+            "volume": "8"
+        },
+        {
+            "DOI": "10.2307/3544927",
+            "ISSN": "00301299",
+            "URL": "https://www.jstor.org/stable/3544927?origin=crossref",
+            "author": [
+                {
+                    "family": "Taylor",
+                    "given": "Philip D."
+                },
+                {
+                    "family": "Fahrig",
+                    "given": "Lenore"
+                },
+                {
+                    "family": "Henein",
+                    "given": "Kringen"
+                },
+                {
+                    "family": "Merriam",
+                    "given": "Gray"
+                }
+            ],
+            "container-title": "Oikos",
+            "id": "taylorConnectivityVitalElement1993",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1993,
+                        12
+                    ]
+                ]
+            },
+            "page": "571",
+            "title": "Connectivity is a vital element of landscape structure",
+            "type": "article-journal",
+            "volume": "68"
+        },
+        {
+            "DOI": "10.1016/j.biocon.2019.108368",
+            "ISSN": "00063207",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0006320719307402",
+            "author": [
+                {
+                    "family": "Püttker",
+                    "given": "Thomas"
+                },
+                {
+                    "family": "Crouzeilles",
+                    "given": "Renato"
+                },
+                {
+                    "family": "Almeida-Gomes",
+                    "given": "Mauricio"
+                },
+                {
+                    "family": "Schmoeller",
+                    "given": "Marina"
+                },
+                {
+                    "family": "Maurenza",
+                    "given": "Daniel"
+                },
+                {
+                    "family": "Alves-Pinto",
+                    "given": "Helena"
+                },
+                {
+                    "family": "Pardini",
+                    "given": "Renata"
+                },
+                {
+                    "family": "Vieira",
+                    "given": "Marcus V."
+                },
+                {
+                    "family": "Banks-Leite",
+                    "given": "Cristina"
+                },
+                {
+                    "family": "Fonseca",
+                    "given": "Carlos R."
+                },
+                {
+                    "dropping-particle": "et",
+                    "family": "al."
+                }
+            ],
+            "container-title": "Biological Conservation",
+            "id": "puttkerIndirectEffectsHabitat2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        1
+                    ]
+                ]
+            },
+            "page": "108368",
+            "title": "Indirect effects of habitat loss via habitat fragmentation: A cross-taxa analysis of forest-dependent species",
+            "title-short": "Indirect effects of habitat loss via habitat fragmentation",
+            "type": "article-journal",
+            "volume": "241"
+        },
+        {
+            "DOI": "10.1371/journal.pone.0258615",
+            "ISSN": "1932-6203",
+            "URL": "https://dx.plos.org/10.1371/journal.pone.0258615",
+            "author": [
+                {
+                    "family": "Lawrence",
+                    "given": "Alexandra"
+                },
+                {
+                    "family": "Friedrich",
+                    "given": "Fabian"
+                },
+                {
+                    "family": "Beierkuhnlein",
+                    "given": "Carl"
+                }
+            ],
+            "container-title": "PLOS ONE",
+            "editor": [
+                {
+                    "family": "Hipólito",
+                    "given": "Juliana"
+                }
+            ],
+            "id": "lawrenceLandscapeFragmentationNatura2021",
+            "issue": "10",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        10
+                    ]
+                ]
+            },
+            "page": "e0258615",
+            "title": "Landscape fragmentation of the natura 2000 network and its surrounding areas",
+            "type": "article-journal",
+            "volume": "16"
+        },
+        {
+            "DOI": "10.1007/s10531-016-1168-9",
+            "ISSN": "0960-3115",
+            "URL": "http://link.springer.com/10.1007/s10531-016-1168-9",
+            "author": [
+                {
+                    "family": "Simaika",
+                    "given": "John P."
+                },
+                {
+                    "family": "Samways",
+                    "given": "Michael J."
+                },
+                {
+                    "family": "Frenzel",
+                    "given": "Philip P."
+                }
+            ],
+            "container-title": "Biodiversity and Conservation",
+            "id": "simaikaArtificialPondsIncrease2016",
+            "issue": "10",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        9
+                    ]
+                ]
+            },
+            "page": "1921-1935",
+            "title": "Artificial ponds increase local dragonfly diversity in a global biodiversity hotspot",
+            "type": "article-journal",
+            "volume": "25"
+        },
+        {
+            "DOI": "10.1023/A:1008129329289",
+            "ISSN": "09212973",
+            "URL": "http://link.springer.com/10.1023/A:1008129329289",
+            "author": [
+                {
+                    "family": "Jaeger",
+                    "given": "Jochen A. G."
+                }
+            ],
+            "container-title": "Landscape Ecology",
+            "id": "jaegerLandscapeDivisionSplitting2000",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2000
+                    ]
+                ]
+            },
+            "page": "115-130",
+            "title": "Landscape division, splitting index, and effective mesh size: New measures of landscape fragmentation",
+            "title-short": "Landscape division, splitting index, and effective mesh size",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "DOI": "10.1007/s10980-006-9023-0",
+            "ISSN": "1572-9761",
+            "URL": "https://doi.org/10.1007/s10980-006-9023-0",
+            "author": [
+                {
+                    "family": "Moser",
+                    "given": "Brigitte"
+                },
+                {
+                    "family": "Jaeger",
+                    "given": "Jochen A. G."
+                },
+                {
+                    "family": "Tappeiner",
+                    "given": "Ulrike"
+                },
+                {
+                    "family": "Tasser",
+                    "given": "Erich"
+                },
+                {
+                    "family": "Eiselt",
+                    "given": "Beatrice"
+                }
+            ],
+            "container-title": "Landscape Ecology",
+            "id": "moserModificationEffectiveMesh2007",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007,
+                        3
+                    ]
+                ]
+            },
+            "page": "447-459",
+            "title": "Modification of the effective mesh size for measuring landscape fragmentation to solve the boundary problem",
+            "type": "article-journal",
+            "volume": "22"
+        },
+        {
+            "DOI": "10.1080/22797254.2017.1330650",
+            "ISSN": "null",
+            "author": [
+                {
+                    "family": "Vogt",
+                    "given": "Peter"
+                },
+                {
+                    "dropping-particle": "and",
+                    "family": "Riitters",
+                    "given": "Kurt"
+                }
+            ],
+            "container-title": "European Journal of Remote Sensing",
+            "id": "vogtGuidosToolboxUniversalDigital2017",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        1
+                    ]
+                ]
+            },
+            "note": "GuidosToolbox is a set of customized, thematically grouped raster image analysis methodologies provided in a graphical user interface and for all popular operating systems that provide a generic framework for image analysis at any scale and for any kind of digital raster data.",
+            "page": "352-361",
+            "publisher": "Taylor",
+            "title": "GuidosToolbox: Universal digital image object analysis",
+            "title-short": "GuidosToolbox",
+            "type": "article-journal",
+            "volume": "50"
+        },
+        {
+            "author": [
+                {
+                    "family": "Vogt",
+                    "given": "Guenter"
+                }
+            ],
+            "container-title": "Biological Reviews",
+            "id": "vogtAbbreviationLarvalDevelopment2013",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "page": "81-116",
+            "title": "Abbreviation of larval development and extension of brood care as key features of the evolution of freshwater decapoda",
+            "type": "article-journal",
+            "volume": "88"
+        },
+        {
+            "author": [
+                {
+                    "family": "Vogt",
+                    "given": "Peter"
+                }
+            ],
+            "id": "vogtMeasuringForestSpatial2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "publisher": "European Commission",
+            "title": "Measuring forest spatial pattern with mathematical morphology",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Ardron",
+                    "given": "J"
+                },
+                {
+                    "family": "Possingham",
+                    "given": "Hugh P."
+                },
+                {
+                    "family": "Klein",
+                    "given": "C"
+                }
+            ],
+            "id": "ardronMarxanGoodPractices2010",
+            "issued": {
+                "date-parts": [
+                    [
+                        2010
+                    ]
+                ]
+            },
+            "page": "165",
+            "publisher": "Pacific Marine Analysis; Research Association",
+            "title": "Marxan good practices handbook, version 2",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Ritchie",
+                    "given": "Hannah"
+                },
+                {
+                    "family": "Rodés-Guirao",
+                    "given": "Lucas"
+                },
+                {
+                    "family": "Mathieu",
+                    "given": "Edouard"
+                },
+                {
+                    "family": "Gerber",
+                    "given": "Marcel"
+                },
+                {
+                    "family": "Ortiz-Ospina",
+                    "given": "Esteban"
+                },
+                {
+                    "family": "Hasell",
+                    "given": "Joe"
+                },
+                {
+                    "family": "Roser",
+                    "given": "Max"
+                }
+            ],
+            "container-title": "Our World in Data",
+            "id": "owid-population-growth",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "note": "Citation Key: owid-population-growth",
+            "title": "Population growth",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1016/j.ecolind.2016.10.006",
+            "ISSN": "1470160X",
+            "URL": "http://linkinghub.elsevier.com/retrieve/pii/S1470160X16305921",
+            "author": [
+                {
+                    "family": "Heino",
+                    "given": "Jani"
+                },
+                {
+                    "family": "Bini",
+                    "given": "Luis Mauricio"
+                },
+                {
+                    "family": "Andersson",
+                    "given": "Johan"
+                },
+                {
+                    "family": "Bergsten",
+                    "given": "Johannes"
+                },
+                {
+                    "family": "Bjelke",
+                    "given": "Ulf"
+                },
+                {
+                    "family": "Johansson",
+                    "given": "Frank"
+                }
+            ],
+            "container-title": "Ecological Indicators",
+            "id": "heinoUnravellingCorrelatesSpecies2017",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "page": "422-431",
+            "title": "Unravelling the correlates of species richness and ecological uniqueness in a metacommunity of urban pond insects",
+            "type": "article-journal",
+            "volume": "73"
+        },
+        {
+            "DOI": "10.1080/01426397.2024.2383482",
+            "ISSN": "0142-6397, 1469-9710",
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/01426397.2024.2383482",
+            "author": [
+                {
+                    "family": "Weisser",
+                    "given": "Wolfgang W."
+                },
+                {
+                    "family": "Hauck",
+                    "given": "Thomas E."
+                }
+            ],
+            "container-title": "Landscape Research",
+            "id": "weisserAnimalaidedDesignPlanning2025",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025,
+                        1
+                    ]
+                ]
+            },
+            "page": "146-167",
+            "title": "Animal-aided design – planning for biodiversity in the built environment by embedding a species’ life-cycle into landscape architectural and urban design processes",
+            "type": "article-journal",
+            "volume": "50"
+        },
+        {
+            "DOI": "10.1038/s44284-024-00126-5",
+            "ISSN": "2731-9997",
+            "URL": "https://www.nature.com/articles/s44284-024-00126-5",
+            "author": [
+                {
+                    "family": "Fairbairn",
+                    "given": "Andrew J."
+                },
+                {
+                    "family": "Meyer",
+                    "given": "Sebastian T."
+                },
+                {
+                    "family": "Mühlbauer",
+                    "given": "Maximilian"
+                },
+                {
+                    "family": "Jung",
+                    "given": "Kirsten"
+                },
+                {
+                    "family": "Apfelbeck",
+                    "given": "Beate"
+                },
+                {
+                    "family": "Berthon",
+                    "given": "Katherine"
+                },
+                {
+                    "family": "Frank",
+                    "given": "Andrea"
+                },
+                {
+                    "family": "Guthmann",
+                    "given": "Lea"
+                },
+                {
+                    "family": "Jokisch",
+                    "given": "Jana"
+                },
+                {
+                    "family": "Kerler",
+                    "given": "Kristel"
+                },
+                {
+                    "dropping-particle": "et",
+                    "family": "al."
+                }
+            ],
+            "container-title": "Nature Cities",
+            "id": "fairbairnUrbanBiodiversityAffected2024",
+            "issue": "10",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        9
+                    ]
+                ]
+            },
+            "page": "706-715",
+            "title": "Urban biodiversity is affected by human-designed features of public squares",
+            "type": "article-journal",
+            "volume": "1"
+        },
+        {
+            "DOI": "10.1111/cobi.14328",
+            "ISSN": "0888-8892, 1523-1739",
+            "URL": "https://conbio.onlinelibrary.wiley.com/doi/10.1111/cobi.14328",
+            "author": [
+                {
+                    "family": "Visintin",
+                    "given": "Casey"
+                },
+                {
+                    "family": "Garrard",
+                    "given": "Georgia E."
+                },
+                {
+                    "family": "Weisser",
+                    "given": "Wolfgang W."
+                },
+                {
+                    "family": "Baracco",
+                    "given": "Mauro"
+                },
+                {
+                    "family": "Hobbs",
+                    "given": "Richard J."
+                },
+                {
+                    "family": "Bekessy",
+                    "given": "Sarah A."
+                }
+            ],
+            "container-title": "Conservation Biology",
+            "id": "visintinDesigningCitiesEveryday2025",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025,
+                        2
+                    ]
+                ]
+            },
+            "page": "e14328",
+            "title": "Designing cities for everyday nature",
+            "type": "article-journal",
+            "volume": "39"
+        },
+        {
+            "DOI": "10.1016/j.scitotenv.2023.167560",
+            "ISSN": "00489697",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0048969723061879",
+            "author": [
+                {
+                    "family": "Méndez",
+                    "given": "Anxo"
+                },
+                {
+                    "family": "Prieto",
+                    "given": "Beatriz"
+                },
+                {
+                    "family": "Aguirre I Font",
+                    "given": "Josep M."
+                },
+                {
+                    "family": "Sanmartín",
+                    "given": "Patricia"
+                }
+            ],
+            "container-title": "Science of The Total Environment",
+            "id": "mendezBetterNotMore2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        1
+                    ]
+                ]
+            },
+            "page": "167560",
+            "title": "Better, not more, lighting: Policies in urban areas towards environmentally-sound illumination of historical stone buildings that also halts biological colonization",
+            "title-short": "Better, not more, lighting",
+            "type": "article-journal",
+            "volume": "906"
+        },
+        {
+            "DOI": "10.1007/s10531-016-1168-9",
+            "URL": "http://link.springer.com/10.1007/s10531-016-1168-9",
+            "author": [
+                {
+                    "family": "Simaika",
+                    "given": "John P."
+                },
+                {
+                    "family": "Samways",
+                    "given": "Michael J."
+                },
+                {
+                    "family": "Frenzel",
+                    "given": "Philip P."
+                }
+            ],
+            "container-title": "Biodiversity and Conservation",
+            "id": "simaika2016",
+            "issue": "10",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        9
+                    ]
+                ]
+            },
+            "note": "TLDR: Although ponds attracted no rare or threatened dragonfly species, they increased the area of occupancy and population sizes of many generalist species, so providing refuges which otherwise would not be there, suggesting that artificial ponds are to some extent a novel ecosystem.",
+            "page": "19211935",
+            "title": "Artificial ponds increase local dragonfly diversity in a global biodiversity hotspot",
+            "type": "article-journal",
+            "volume": "25"
+        },
+        {
+            "DOI": "10.1016/j.ufug.2022.127714",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S1618866722002576",
+            "author": [
+                {
+                    "family": "Proske",
+                    "given": "Anja"
+                },
+                {
+                    "family": "Lokatis",
+                    "given": "Sophie"
+                },
+                {
+                    "family": "Rolff",
+                    "given": "Jens"
+                }
+            ],
+            "container-title": "Urban Forestry and Urban Greening",
+            "id": "proske2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        10,
+                        1
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "127714",
+            "title": "Impact of mowing frequency on arthropod abundance and diversity in urban habitats: A meta-analysis",
+            "title-short": "Impact of mowing frequency on arthropod abundance and diversity in urban habitats",
+            "type": "article-journal",
+            "volume": "76"
+        },
+        {
+            "DOI": "10.1016/j.ecolind.2021.108294",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1470160X21009596",
+            "author": [
+                {
+                    "family": "Nie",
+                    "given": "Wenbin"
+                },
+                {
+                    "family": "Shi",
+                    "given": "Yan"
+                },
+                {
+                    "family": "Siaw",
+                    "given": "Martin John"
+                },
+                {
+                    "family": "Yang",
+                    "given": "Fan"
+                },
+                {
+                    "family": "Wu",
+                    "given": "Renwu"
+                },
+                {
+                    "family": "Wu",
+                    "given": "Xu"
+                },
+                {
+                    "family": "Zheng",
+                    "given": "Xueyan"
+                },
+                {
+                    "family": "Bao",
+                    "given": "Zhiyi"
+                }
+            ],
+            "container-title": "Ecological Indicators",
+            "id": "nie2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        12
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "108294",
+            "title": "Constructing and optimizing ecological network at county and town scale: The case of anji county, china",
+            "title-short": "Constructing and optimizing ecological network at county and town scale",
+            "type": "article-journal",
+            "volume": "132"
+        },
+        {
+            "DOI": "10.1111/rec.13035",
+            "URL": "https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13035",
+            "author": [
+                {
+                    "family": "Gann",
+                    "given": "George D."
+                },
+                {
+                    "family": "McDonald",
+                    "given": "Tein"
+                },
+                {
+                    "family": "Walder",
+                    "given": "Bethanie"
+                },
+                {
+                    "family": "Aronson",
+                    "given": "James"
+                },
+                {
+                    "family": "Nelson",
+                    "given": "Cara R."
+                },
+                {
+                    "family": "Jonson",
+                    "given": "Justin"
+                },
+                {
+                    "family": "Hallett",
+                    "given": "James G."
+                },
+                {
+                    "family": "Eisenberg",
+                    "given": "Cristina"
+                },
+                {
+                    "family": "Guariguata",
+                    "given": "Manuel R."
+                },
+                {
+                    "family": "Liu",
+                    "given": "Junguo"
+                },
+                {
+                    "family": "Hua",
+                    "given": "Fangyuan"
+                },
+                {
+                    "family": "Echeverría",
+                    "given": "Cristian"
+                },
+                {
+                    "family": "Gonzales",
+                    "given": "Emily"
+                },
+                {
+                    "family": "Shaw",
+                    "given": "Nancy"
+                },
+                {
+                    "family": "Decleer",
+                    "given": "Kris"
+                },
+                {
+                    "family": "Dixon",
+                    "given": "Kingsley W."
+                }
+            ],
+            "container-title": "Restoration Ecology",
+            "id": "gann2019",
+            "issue": "S1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "S1-S46",
+            "title": "International principles and standards for the practice of ecological restoration. Second edition",
+            "type": "article-journal",
+            "volume": "27"
+        },
+        {
+            "DOI": "10.1093/bmb/ldy021",
+            "URL": "https://doi.org/10.1093/bmb/ldy021",
+            "author": [
+                {
+                    "family": "Aerts",
+                    "given": "Raf"
+                },
+                {
+                    "family": "Honnay",
+                    "given": "Olivier"
+                },
+                {
+                    "family": "Van Nieuwenhuyse",
+                    "given": "An"
+                }
+            ],
+            "container-title": "British Medical Bulletin",
+            "id": "aerts2018",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        9,
+                        1
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "5-22",
+            "title": "Biodiversity and human health: Mechanisms and evidence of the positive health effects of diversity in nature and green spaces",
+            "title-short": "Biodiversity and human health",
+            "type": "article-journal",
+            "volume": "127"
+        },
+        {
+            "author": [
+                {
+                    "family": "Wilson",
+                    "given": "Robin J."
+                }
+            ],
+            "edition": "Fifth edition",
+            "id": "wilson2010",
+            "issued": {
+                "date-parts": [
+                    [
+                        2010
+                    ]
+                ]
+            },
+            "language": "en",
+            "publisher": "Prentice Hall, Pearson",
+            "publisher-place": "Harlow, England London New York",
+            "title": "Introduction to graph theory",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1007/s10980-016-0387-5",
+            "author": [
+                {
+                    "family": "Keeley",
+                    "given": "Annika T. H."
+                },
+                {
+                    "family": "Beier",
+                    "given": "Paul"
+                },
+                {
+                    "family": "Gagnon",
+                    "given": "Jeffrey W."
+                }
+            ],
+            "container-title": "Landscape Ecology",
+            "id": "keeley2016",
+            "issue": "9",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "page": "21512162",
+            "title": "Estimating landscape resistance from habitat suitability: Effects of data source and nonlinearities",
+            "title-short": "Estimating landscape resistance from habitat suitability",
+            "type": "article-journal",
+            "volume": "31"
+        },
+        {
+            "DOI": "10.1023/A:1008129329289",
+            "URL": "http://link.springer.com/10.1023/A:1008129329289",
+            "author": [
+                {
+                    "family": "Jaeger",
+                    "given": "Jochen A. G."
+                }
+            ],
+            "container-title": "Landscape Ecology",
+            "id": "jaeger2000",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2000
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "note": "TLDR: Three new measures of fragmentation are introduced: degree of landscape division, splitting index (S), and effective mesh size (m), which prove to be well suited for comparing the fragmentation of regions with differing total size.",
+            "page": "115-130",
+            "title": "Landscape division, splitting index, and effective mesh size: New measures of landscape fragmentation",
+            "title-short": "Landscape division, splitting index, and effective mesh size",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "author": [
+                {
+                    "family": "Aronson",
+                    "given": "Myla F J"
+                },
+                {
+                    "family": "La Sorte",
+                    "given": "Frank A"
+                },
+                {
+                    "family": "Nilon",
+                    "given": "Charles H"
+                },
+                {
+                    "family": "Katti",
+                    "given": "Madhusudan"
+                },
+                {
+                    "family": "Goddard",
+                    "given": "Mark A"
+                },
+                {
+                    "family": "Lepczyk",
+                    "given": "Christopher A"
+                },
+                {
+                    "family": "Warren",
+                    "given": "Philip S"
+                },
+                {
+                    "family": "Williams",
+                    "given": "Nils S G"
+                },
+                {
+                    "family": "Cilliers",
+                    "given": "Stefan"
+                },
+                {
+                    "family": "Clarkson",
+                    "given": "Brent"
+                },
+                {
+                    "family": "Others"
+                }
+            ],
+            "container-title": "Frontiers in Ecology and the Environment",
+            "id": "aronson2017biodiversity",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "Citation Key: aronson2017biodiversity Publisher: Wiley Online Library",
+            "page": "189196",
+            "title": "Biodiversity in the city: Key challenges for urban green space management",
+            "title-short": "Biodiversity in the city",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "author": [
+                {
+                    "family": "Beninde",
+                    "given": "Jana"
+                },
+                {
+                    "family": "Veith",
+                    "given": "Michael"
+                },
+                {
+                    "family": "Hochkirch",
+                    "given": "Axel"
+                }
+            ],
+            "container-title": "Ecology Letters",
+            "id": "beninde2015biodiversity",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "Citation Key: beninde2015biodiversity Publisher: Wiley Online Library",
+            "page": "581592",
+            "title": "Biodiversity in cities needs space: A meta-analysis of factors determining intra-urban biodiversity variation",
+            "title-short": "Biodiversity in cities needs space",
+            "type": "article-journal",
+            "volume": "18"
+        },
+        {
+            "author": [
+                {
+                    "family": "Gill",
+                    "given": "Sarah E"
+                },
+                {
+                    "family": "Handley",
+                    "given": "John F"
+                },
+                {
+                    "family": "Ennos",
+                    "given": "Antony R"
+                },
+                {
+                    "family": "Pauleit",
+                    "given": "Stephan"
+                }
+            ],
+            "container-title": "Built Environment",
+            "id": "gill2007adapting",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "Citation Key: gill2007adapting Publisher: The Chartered Institution of Building Services Engineers",
+            "page": "115133",
+            "title": "Adapting cities for climate change: The role of the green infrastructure",
+            "title-short": "Adapting cities for climate change",
+            "type": "article-journal",
+            "volume": "33"
+        },
+        {
+            "author": [
+                {
+                    "family": "Tzoulas",
+                    "given": "Konstantinos"
+                },
+                {
+                    "family": "Korpela",
+                    "given": "Kalevi"
+                },
+                {
+                    "family": "Venn",
+                    "given": "Simon"
+                },
+                {
+                    "family": "Yli-Pelkonen",
+                    "given": "Vesa"
+                },
+                {
+                    "family": "Kazmierczak",
+                    "given": "Anna"
+                },
+                {
+                    "family": "Niemela",
+                    "given": "Jari"
+                },
+                {
+                    "family": "James",
+                    "given": "Philip"
+                }
+            ],
+            "container-title": "Landscape and Urban Planning",
+            "id": "tzoulas2007promoting",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "Citation Key: tzoulas2007promoting Publisher: Elsevier",
+            "page": "167178",
+            "title": "Promoting ecosystem and human health in urban areas using green infrastructure: A literature review",
+            "title-short": "Promoting ecosystem and human health in urban areas using green infrastructure",
+            "type": "article-journal",
+            "volume": "81"
+        },
+        {
+            "DOI": "10.1002/fee.1480",
+            "URL": "https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.1480",
+            "author": [
+                {
+                    "family": "Aronson",
+                    "given": "Myla Fj"
+                },
+                {
+                    "family": "Lepczyk",
+                    "given": "Christopher A"
+                },
+                {
+                    "family": "Evans",
+                    "given": "Karl L"
+                },
+                {
+                    "family": "Goddard",
+                    "given": "Mark A"
+                },
+                {
+                    "family": "Lerman",
+                    "given": "Susannah B"
+                },
+                {
+                    "family": "MacIvor",
+                    "given": "J Scott"
+                },
+                {
+                    "family": "Nilon",
+                    "given": "Charles H"
+                },
+                {
+                    "family": "Vargo",
+                    "given": "Timothy"
+                }
+            ],
+            "container-title": "Frontiers in Ecology and the Environment",
+            "id": "aronson2017",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        5
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "189-196",
+            "title": "Biodiversity in the city: Key challenges for urban green space management",
+            "title-short": "Biodiversity in the city",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "DOI": "10.1038/s41591-025-03954-7",
+            "author": [
+                {
+                    "family": "Janoš",
+                    "given": "Tomáš"
+                },
+                {
+                    "family": "Quijal-Zamorano",
+                    "given": "Marcos"
+                },
+                {
+                    "family": "Shartova",
+                    "given": "Natalia"
+                },
+                {
+                    "family": "Gallo",
+                    "given": "Elisa"
+                },
+                {
+                    "family": "Méndez Turrubiates",
+                    "given": "Raúl Fernando"
+                },
+                {
+                    "family": "Denisse Beltrán Barrón",
+                    "given": "Nadia"
+                },
+                {
+                    "family": "Peyrusse",
+                    "given": "Fabien"
+                },
+                {
+                    "family": "Ballester",
+                    "given": "Joan"
+                }
+            ],
+            "container-title": "Nature Medicine",
+            "id": "janos2025",
+            "issue": "12",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025,
+                        12
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "TLDR: It is demonstrated that health emergencies can be forecast with high confidence at least 1 week in advance, even for highly vulnerable regions and population subgroups, and adopted a real-time early warning model that predicts heat-related health emergencies at least 1 week in advance. ReadingFlow: \"v\":2,\"p\":\"26055\":0.2962962962962963,\"pageCount\":\"26055\":27,\"c\":null,\"s\":null,\"ts\":1792149057894,\"lastAttachmentId\":\"26055\",\"lastPage\":8,\"lastReadAt\":1792149057894,\"history\":\"startedAt\":1792148727948,\"completedAt\":null,\"activeDaysTotal\":1,\"days\":\"2026-10-16\":\"activity\":true,\"lastReadAt\":1792149057894,\"progress\":\"26055\":0.2962962962962963,\"status\":\"reading\",\"reset\":false,\"completed\":false",
+            "page": "4065-4074",
+            "title": "Heat-related mortality in europe during 2024 and health emergency forecasting to reduce preventable deaths",
+            "type": "article-journal",
+            "volume": "31"
+        },
+        {
+            "DOI": "10.1007/s11676-022-01523-z",
+            "URL": "https://link.springer.com/10.1007/s11676-022-01523-z",
+            "author": [
+                {
+                    "family": "Konijnendijk",
+                    "given": "Cecil C."
+                }
+            ],
+            "container-title": "Journal of Forestry Research",
+            "id": "konijnendijk2023",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        6
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "TLDR: New, comprehensive guideline, known as the ‘330300 rule’ for urban forestry, aims to provide equitable access to trees and green spaces and their benefits by setting the thresholds of having at least 3 well-established trees in view from every home, school, and place of work. ReadingFlow: \"v\":2,\"p\":\"22953\":0.7,\"pageCount\":\"22953\":10,\"c\":null,\"s\":null,\"ts\":1792220912084,\"lastAttachmentId\":\"22953\",\"lastPage\":2,\"lastReadAt\":1792220912084,\"history\":\"startedAt\":1792141471268,\"completedAt\":null,\"activeDaysTotal\":2,\"days\":\"2026-10-16\":\"activity\":true,\"lastReadAt\":1792145376128,\"progress\":\"22953\":0.7,\"status\":\"reading\",\"reset\":false,\"completed\":false,\"2026-10-17\":\"activity\":true,\"lastReadAt\":1792220912084,\"progress\":\"22953\":0.7,\"status\":\"reading\",\"reset\":false,\"completed\":false",
+            "page": "821-830",
+            "title": "Evidence-based guidelines for greener, healthier, more resilient neighbourhoods: Introducing the 330300 rule",
+            "title-short": "Evidence-based guidelines for greener, healthier, more resilient neighbourhoods",
+            "type": "article-journal",
+            "volume": "34"
+        },
+        {
+            "DOI": "10.1016/j.amepre.2017.06.035",
+            "author": [
+                {
+                    "family": "Feng",
+                    "given": "Xiaoqi"
+                },
+                {
+                    "family": "Astell-Burt",
+                    "given": "Thomas"
+                }
+            ],
+            "container-title": "American Journal of Preventive Medicine",
+            "id": "feng2017",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        11
+                    ]
+                ]
+            },
+            "language": "en",
+            "note": "TLDR: Benefits for well-being appeared to top out at 21",
+            "page": "616-624",
+            "title": "Residential green space quantity and quality and child well-being: A longitudinal study",
+            "title-short": "Residential green space quantity and quality and child well-being",
+            "type": "article-journal",
+            "volume": "53"
+        },
+        {
+            "DOI": "10.3390/insects15030207",
+            "URL": "https://www.mdpi.com/2075-4450/15/3/207",
+            "author": [
+                {
+                    "family": "Vilenica",
+                    "given": "Marina"
+                },
+                {
+                    "family": "Brigić",
+                    "given": "Andreja"
+                },
+                {
+                    "family": "Štih Koren",
+                    "given": "Ana"
+                },
+                {
+                    "family": "Koren",
+                    "given": "Toni"
+                },
+                {
+                    "family": "Sertić Perić",
+                    "given": "Mirela"
+                },
+                {
+                    "family": "Schmidt",
+                    "given": "Bruno"
+                },
+                {
+                    "family": "Bužan",
+                    "given": "Tomislava"
+                },
+                {
+                    "family": "Gottstein",
+                    "given": "Sanja"
+                }
+            ],
+            "container-title": "Insects",
+            "id": "vilenica2024",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        3
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "207",
+            "title": "Odonata assemblages in urban semi-natural wetlands",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "DOI": "10.1007/s11252-019-00868-4",
+            "URL": "https://doi.org/10.1007/s11252-019-00868-4",
+            "author": [
+                {
+                    "family": "Ferrari",
+                    "given": "Barbara"
+                },
+                {
+                    "family": "Quatrini",
+                    "given": "Valerio"
+                },
+                {
+                    "family": "Barbati",
+                    "given": "Anna"
+                },
+                {
+                    "family": "Corona",
+                    "given": "Piermaria"
+                },
+                {
+                    "family": "Masini",
+                    "given": "Emanuela"
+                },
+                {
+                    "family": "Russo",
+                    "given": "Dalila"
+                }
+            ],
+            "container-title": "Urban Ecosystems",
+            "id": "ferrari2019",
+            "issue": "5",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        10,
+                        1
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "865-878",
+            "title": "Conservation and enhancement of the green infrastructure as a nature-based solution for rome’s sustainable development",
+            "type": "article-journal",
+            "volume": "22"
+        },
+        {
+            "DOI": "10.2148/benv.33.1.115",
+            "author": [
+                {
+                    "family": "Gill",
+                    "given": "Sarah E"
+                },
+                {
+                    "family": "Handley",
+                    "given": "John F"
+                },
+                {
+                    "family": "Ennos",
+                    "given": "Antony R"
+                },
+                {
+                    "family": "Pauleit",
+                    "given": "Stephan"
+                }
+            ],
+            "container-title": "Built Environment",
+            "id": "gill2007",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "115133",
+            "title": "Adapting cities for climate change: The role of the green infrastructure",
+            "title-short": "Adapting cities for climate change",
+            "type": "article-journal",
+            "volume": "33"
+        },
+        {
+            "DOI": "10.1016/j.ecolind.2022.109532",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1470160X22010056",
+            "author": [
+                {
+                    "family": "Pukowiec-Kurda",
+                    "given": "Katarzyna"
+                }
+            ],
+            "container-title": "Ecological Indicators",
+            "id": "pukowiec-kurda2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        11
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "109532",
+            "title": "The urban ecosystem services index as a new indicator for sustainable urban planning and human well-being in cities",
+            "type": "article-journal",
+            "volume": "144"
+        },
+        {
+            "DOI": "10.1016/j.ufug.2012.06.004",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1618866712000672",
+            "author": [
+                {
+                    "family": "Islam",
+                    "given": "Md Nazrul"
+                },
+                {
+                    "family": "Rahman",
+                    "given": "Khandkar-Siddikur"
+                },
+                {
+                    "family": "Bahar",
+                    "given": "Md Mezbaul"
+                },
+                {
+                    "family": "Habib",
+                    "given": "Md Ahsan"
+                },
+                {
+                    "family": "Ando",
+                    "given": "Keisuke"
+                },
+                {
+                    "family": "Hattori",
+                    "given": "Nobuaki"
+                }
+            ],
+            "container-title": "Urban Forestry & Urban Greening",
+            "id": "islam2012",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        1
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "461-464",
+            "title": "Pollution attenuation by roadside greenbelt in and around urban areas",
+            "type": "article-journal",
+            "volume": "11"
+        },
+        {
+            "DOI": "10.1016/j.landurbplan.2016.05.017",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0169204616300846",
+            "author": [
+                {
+                    "family": "Rigolon",
+                    "given": "Alessandro"
+                }
+            ],
+            "container-title": "Landscape and Urban Planning",
+            "id": "rigolon2016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        9,
+                        1
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "160-169",
+            "title": "A complex landscape of inequity in access to urban parks: A literature review",
+            "title-short": "A complex landscape of inequity in access to urban parks",
+            "type": "article-journal",
+            "volume": "153"
+        },
+        {
+            "author": [
+                {
+                    "family": "McDonald",
+                    "given": "Robert I."
+                },
+                {
+                    "family": "Biswas",
+                    "given": "Tishanya"
+                },
+                {
+                    "family": "Zhou",
+                    "given": "Chandler"
+                },
+                {
+                    "family": "Kroeger",
+                    "given": "Timm"
+                },
+                {
+                    "family": "Fargione",
+                    "given": "Joseph"
+                },
+                {
+                    "family": "Balk",
+                    "given": "Deborah"
+                },
+                {
+                    "family": "Andrus",
+                    "given": "Robert"
+                }
+            ],
+            "container-title": "Frontiers in Ecology and the Environment",
+            "id": "mcdonald2021",
+            "issue": "7",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "387394",
+            "title": "The green divide: Urban light, green space, and the impacts of socioeconomic status on urban tree canopy in the united states",
+            "title-short": "The green divide",
+            "type": "article-journal",
+            "volume": "19"
+        },
+        {
+            "author": [
+                {
+                    "family": "World Health Organization"
+                }
+            ],
+            "id": "worldhealthorganization2017",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "language": "en",
+            "publisher-place": "Copenhagen",
+            "title": "Environmental inequities in urban green spaces: Analysis of indicators and characteristics in european cities",
+            "title-short": "Environmental inequities in urban green spaces",
+            "type": "report"
+        },
+        {
+            "author": [
+                {
+                    "family": "Battisti",
+                    "given": "Corrado"
+                }
+            ],
+            "edition": "Provincia",
+            "id": "battisti2004",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "publisher": "STILGRAFICA srl",
+            "publisher-place": "Roma",
+            "title": "Frammentazione ambientale connettività reti ecologiche",
+            "type": "book"
+        },
+        {
+            "DOI": "10.4081/jlimnol.2020.1968",
+            "URL": "https://jlimnol.it/index.php/jlimnol/article/view/jlimnol.2020.1968",
+            "author": [
+                {
+                    "family": "Vilenica",
+                    "given": "Marina"
+                },
+                {
+                    "family": "Kerovec",
+                    "given": "Mladen"
+                },
+                {
+                    "family": "Pozojević",
+                    "given": "Ivana"
+                },
+                {
+                    "family": "Mihaljević",
+                    "given": "Zlatko"
+                }
+            ],
+            "container-title": "Journal of Limnology",
+            "id": "vilenica2020",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        11,
+                        3
+                    ]
+                ]
+            },
+            "note": "TLDR: It was showed that degraded lowland rivers can provide habitat for a relatively low number of species with broad ecological tolerance, while rare and specialist species are generally not able to reproduce there.",
+            "title": "Odonata assemblages in anthropogenically impacted lotic habitats",
+            "type": "article-journal",
+            "volume": "80"
+        },
+        {
+            "author": [
+                {
+                    "family": "Vogt",
+                    "given": "Peter"
+                }
+            ],
+            "id": "vogt2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "8",
+            "title": "Measuring forest spatial pattern with mathematical morphology",
+            "type": "report"
+        },
+        {
+            "DOI": "10.1023/A:1008129329289",
+            "URL": "http://link.springer.com/10.1023/A:1008129329289",
+            "author": [
+                {
+                    "family": "Jaeger",
+                    "given": "Jochen A. G."
+                }
+            ],
+            "container-title": "Landscape Ecology",
+            "id": "jaeger2000a",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2000
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "note": "TLDR: Three new measures of fragmentation are introduced: degree of landscape division, splitting index (S), and effective mesh size (m), which prove to be well suited for comparing the fragmentation of regions with differing total size.",
+            "page": "115-130",
+            "title": "Landscape division, splitting index, and effective mesh size: New measures of landscape fragmentation",
+            "title-short": "Landscape division, splitting index, and effective mesh size",
+            "type": "article-journal",
+            "volume": "15"
+        }
+    ],
+    "project_biblios": [
+        "references.bib"
+    ]
+}
