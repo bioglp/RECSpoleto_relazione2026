@@ -396,41 +396,80 @@ In aggiunta, la superficie pubblica si presenta organizzata in modo molto divers
 knitr::include_graphics('./figs/boxplot_area_patch_strati.png')
 ```
 
-Nonostante questo assetto lasci prefigurare un elevato livello di frammentazione con una densità di patch di circa 120 ogni 100 ha (PD=119.5), le metriche di contiguità (AI = 95.4), aggregazione (CONTAG = 75.2) e coesione (COHESION = 99.9) mostrano valori elevati, indicando che le diverse componenti mantengono un livello significativo di continuità spaziale (tab paesaggio strati.csv).
+Nonostante questo assetto lasci prefigurare un elevato livello di frammentazione con una densità di patch di circa 76 ogni 100 ha (PD=75.85), le metriche di contiguità (AI = 97), aggregazione (CONTAG = 82) e coesione (COHESION = 99.9) mostrano valori elevati, indicando che le diverse componenti mantengono un livello significativo di continuità spaziale (Tab. \@ref(tab:paesaggio)).
+
+|metric   |   value|
+|:--------|-------:|
+|AI       |   96.86|
+|area_mn  |    1.32|
+|COHESION |   99.90|
+|CONTAG   |   82.15|
+|ed       |  120.50|
+|iji      |   48.57|
+|lpi      |   91.79|
+|np       | 1756.00|
+|PD       |   75.85|
+|shdi     |    0.35|
+|shei     |    0.25|
+|sidi     |    0.15|
+|ta       | 2315.15|
+
+: (#tab:paesaggio) Metriche della struttura del paesaggio complessivo.
+
 Ciò a testimoniare una distribuzione delle classi organizzata in nuclei spazialmente riconoscibili piuttosto che in elementi completamente dispersi.
 Questo suggerisce che il sistema del verde urbano, pur articolato in molteplici elementi, conserva una discreta capacità di funzionare come rete ecologica diffusa.
 Purtroppo, le infrastrutture blu risultano quantitativamente marginali rispetto alle superfici verdi, ma contribuiscono comunque alla diversificazione del mosaico generale fornendo un importante supporto per la connettività complessiva del sistema.
 È inoltre da notare che nel processo di rasterizzazione su maglia 5x5 m gli elementi di natura blu vengono suddivisi in numerosi nuclei distinti.
 Conseguentemente, il numero di patch raster non rappresenta il numero di elementi realmente cartografati, ma il numero di porzioni che possono essere considerate funzionalmente connesse all'interno del mosaico paesaggistico.
 
-Come anticipato il verde privato rappresenta la componente più estesa e diffusa, caratterizzata da un elevato numero di patch di dimensioni medio-piccole, con la presenza di alcuni nuclei di superficie rilevante che contribuiscono in modo significativo alla dotazione complessiva di copertura vegetale (Tab patch_strati.csv).
+Come anticipato il verde privato rappresenta la componente più estesa e diffusa (CA), caratterizzata da un elevato numero di patch di dimensioni medio-piccole, con la presenza di alcuni nuclei di superficie rilevante che contribuiscono in modo significativo alla dotazione complessiva di copertura vegetale (Tab. \@ref(tab:strati).
+
+|strato           |    AI|     CA| CLUMPY| COHESION| ENN   | MESH| CPLAND|
+|:----------------|-----:|------:|------:|--------:|------:|----:|------:|
+|verde_privato    | 80.17| 117.76|   0.79|    90.92|  21.41| 0.04|   0.49|
+|verde_pubblico   | 83.72|  57.21|   0.83|    92.95|  18.15| 0.07|   0.63|
+|blu_pubblico     | 84.77|  14.54|   0.85|    96.82|  21.20| 0.04|   0.06|
+|verde_totale     | 81.47| 174.18|   0.80|    92.12|  17.56| 0.11|   1.14|
+|verde_blu_totale | 82.04| 187.75|   0.80|    93.65|  17.05| 0.19|   1.22|
+
+: (#tab:strati) Metriche della struttura del paesaggio per strati.
 
 Al contrario, il verde pubblico mostra una configurazione differente: presenta anch'esso numerose piccole patch isolate derivanti da superfici lineari o marginali, ma sono presenti anche aree di grandi dimensioni che svolgono un ruolo centrale nella struttura complessiva del sistema.
 In generale l’analisi delle metriche a livello di patch conferma che la maggior parte delle unità presenta valori di core area prossimi a zero, indicando che le dimensioni sono spesso insufficienti a contenere una porzione interna non influenzata dall'effetto margine.
-Infatti, solo le patch di dimensioni maggiori conservano aree centrali significative e possono quindi svolgere funzioni ecologiche più stabili e strutturate (tab patch_strati.csv).
+Infatti, solo le patch di dimensioni maggiori conservano aree centrali significative e possono quindi svolgere funzioni ecologiche più stabili e strutturate.
 
-Le distanze tra patch (ENN) risultano generalmente contenute e inferiori ai 25 m per gran parte degli elementi (21.5 m nel verde privato; 18.2 m nel verde pubblico), suggerendo una buona prossimità spaziale tra le aree appartenenti alla stessa classe.
-Tuttavia alcune patch mostrano valori sensibilmente più elevati, evidenziando situazioni di isolamento locale che possono ridurre la connettività funzionale del sistema (tab confronto strati).
+Le distanze tra patch (ENN) risultano generalmente contenute e inferiori ai 25 m per gran parte degli elementi (21.4 m nel verde privato; 18.2 m nel verde pubblico), suggerendo una buona prossimità spaziale tra le aree appartenenti alla stessa classe.
+Tuttavia alcune patch mostrano valori sensibilmente più elevati, evidenziando situazioni di isolamento locale che possono ridurre la connettività funzionale del sistema.
 Esaminando nel dettaglio anche gli indici AI, CLUMPY e COHESION emerge un quadro per cui il territorio appare contemporaneamente molto frammentato dal punto di vista numerico, ma relativamente connesso dal punto di vista spaziale.
-Resta invece limitata la disponibilità di aree centrali effettivamente schermate dagli effetti di margine, che rappresentano meno del 2% della superficie territoriale nel caso del sistema verde-blu complessivo.
+Resta invece limitata la disponibilità di aree centrali effettivamente schermate dagli effetti di margine, che rappresentano meno del 2% della superficie territoriale nel caso del sistema verde-blu complessivo (CPLand).
 
-Sebbene le metriche di aggregazione e coesione evidenzino una buona continuità all'interno delle singole componenti, l'analisi dei contatti () mostra che le diverse tipologie di infrastruttura verde e blu interagiscono poco tra loro (tab contatti).
+Sebbene le metriche di aggregazione e coesione evidenzino una buona continuità all'interno delle singole componenti, l'analisi dei contatti mostra che le diverse tipologie di infrastruttura verde e blu interagiscono poco tra loro (Tab. \@ref(tab:contatti)).
+
+|strato da/a    | matrice| blu_pubblico| verde_privato| verde_pubblico|
+|:--------------|-------:|------------:|-------------:|--------------:|
+|matrice        |   98.39|         0.09|          1.09|           0.43|
+|blu_pubblico   |   13.55|        83.66|          2.25|           0.55|
+|verde_privato  |   19.86|         0.28|         79.65|           0.20|
+|verde_pubblico |   16.11|         0.14|          0.41|          83.34|
+
+: (#tab:contatti) Matrice dei contatti tra strati.
+
 Le patch tendono infatti a confinare prevalentemente con elementi della stessa classe e, in misura secondaria, con la matrice territoriale circostante.
-In particolare, le adiacenze tra verde privato e verde pubblico rappresentano una quota trascurabile dei contatti complessivi (\< 0,5%), mentre una parte consistente dei bordi delle patch è in contatto con la matrice territoriale (20,0% per il verde privato, 15,9% per il verde pubblico e 13,8% per il blu pubblico).
+In particolare, le adiacenze tra verde privato e verde pubblico rappresentano una quota trascurabile dei contatti complessivi (\< 0.5%), mentre una parte consistente dei bordi delle patch è in contatto con la matrice territoriale (20,0% per il verde privato, 16% per il verde pubblico e quasi il 14% per il blu pubblico).
 Tale configurazione evidenzia una limitata integrazione tra i diversi sottosistemi ecologici e una forte esposizione agli ambienti circostanti.
 Ne deriva un sistema caratterizzato da una buona coerenza interna dei singoli sottosistemi, ma da una limitata integrazione spaziale tra verde pubblico, verde privato e componenti blu.
 
 #### Dotazione per frazione e località
 
-Disaggregando le informazioni sulla base della ripartizione dell’unità funzionale Urbana in frazioni e località emergono chiare differenze nella dotazione locale delle infrastrutture verdi e blu (Tab. \@ref(tab:verdeFraz).
+Disaggregando le informazioni sulla base della ripartizione dell’unità funzionale Urbana in frazioni e località emergono chiare differenze nella dotazione locale delle infrastrutture verdi e blu (Tab. \@ref(tab:verdeFraz)).
 Le maggiori coperture si osservano a San Nicolò (18.3%) e Spoleto (15.6%), mentre Crociferro, San Sabino e Collerisana presentano dotazioni di verde sensibilmente inferiori (\<3%).
-Indici di copertura intermedi compresi tra il 8-13% si osservano a Cortaccione, Madonna di Lugo e Santo Chiodo.
+Indici di copertura intermedi compresi tra l’8 e il 13% si osservano a Santo Chiodo, Cortaccione, Colle San Tommaso e Madonna di Lugo.
 Differenziando l’analisi per componente pubblica-privata, emerge che in molte zone il verde è quasi esclusivamente privato.
-A Santo Chiodo il verde pubblico è circa il 3.5% della superficie, contro un 9% di quello privato.
-Analoga situazione si osserva a San Nicolò (4.8% contro 13.1%).
-Il nucleo di Spoleto si distingue invece per l'elevato numero di patch e per il ruolo rilevante del verde pubblico, configurandosi come il sistema più articolato e diversificato.
-I livelli di AI (--) e COHESION (--) evidenziano anche il mantenimento di un certo livello di continuità funzionale all’interno di questa unità, tra i più alti osservati.
-Inoltre è in questa unità che possiamo ritrovare le patch più grandi (LPI=2.53%), a cui si affiancano le località di Cortaccione (3.68%), San Nicolò (2.63%) e Santo Chiodo (2.25%).
+A Santo Chiodo il verde pubblico è circa il 3.4% della superficie, contro un 9.1% di quello privato.
+Analoga situazione si osserva a San Nicolò (4.9% contro 13.1%).
+Il nucleo di Spoleto si distingue invece per l'elevato numero di patch (NP=878) e per il ruolo rilevante del verde pubblico, configurandosi come il sistema più articolato e diversificato (Tab. \@ref(tab:metricheFraz)).
+I livelli di AI (80.6%) e COHESION (91.3) risultano tra i più bassi osservati (solo San Nicolò presenta un AI inferiore), coerentemente con l’elevata frammentazione, pur indicando il mantenimento di un buon livello di continuità funzionale all’interno di questa unità (COHESION > 90).
+Le patch più grandi si ritrovano invece a Cortaccione (LPI=2.72%) e San Nicolò (2.31%), seguite da Colle San Tommaso (1.92%), Santo Chiodo (1.83%) e Spoleto (1.60%).
 
 | NOME                        |  Blue | Privato | Pubblico |   TOT |  Sup% |
 |:----------------------------|------:|--------:|---------:|------:|------:|
@@ -446,7 +485,7 @@ Inoltre è in questa unità che possiamo ritrovare le patch più grandi (LPI=2.5
 
 : (#tab:verdeFraz) Superfici di verde pubblico e privato (ha) e relativa frazione percentuale.
 
-|plot_id           | PLAND|    CA|  NP| AREA_MN| ENN_MN| COHESION|    AI|  LPI|
+|plot_id           | PLAND|    CA|  NP| AREA_MN| ENN   | COHESION|    AI|  LPI|
 |:-----------------|-----:|-----:|---:|-------:|------:|--------:|-----:|----:|
 |SAN NICOLO'       | 17.79| 14.18|  97|    0.15|  14.49|    93.51| 79.39| 2.31|
 |SPOLETO           | 14.00| 85.91| 878|    0.10|  15.45|    91.33| 80.60| 1.60|
@@ -491,10 +530,6 @@ knitr::include_graphics('./figs/rule_buf300_1ha.png')
 ```{r rulebuf300NT, fig.cap="In rosso buffer di 300 m intorno alle aree verdi urbane di natura pubblica senza l'inclusione del corridoio fluviale del torrente Tessino.", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/rule_buf300_1ha_noTess.png')
 ```
-
-### Priorità di conservazione e connessione (Marxan)
-
-==\[da completare primo step\]==
 
 ## Risultati del sondaggio del Walkshop alla Greenway
 

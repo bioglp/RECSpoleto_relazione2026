@@ -23,6 +23,9 @@ tab:verdeBase
 fig:rasterVerde
 tab:verdePatches
 fig:boxplotVerde
+tab:paesaggio
+tab:strati
+tab:contatti
 tab:verdeFraz
 tab:metricheFraz
 fig:verdePubblicoSpoleto
@@ -81,7 +84,6 @@ estensione-e-composizione
 configurazione-spaziale-e-connettività
 dotazione-per-frazione-e-località
 verifica-regola-330300
-priorità-di-conservazione-e-connessione-marxan
 risultati-del-sondaggio-del-walkshop-alla-greenway
 indirizzi-per-la-gestione-e-la-progettazione
 analisi-dei-pattern-morfologici-spaziali-dellarea-di-piazza-darmi-e-delle-zone-limitrofe
@@ -92,6 +94,7 @@ prato-a-sfalcio-ridotto-presso-la-spoletosfera
 risultati-preliminari
 linee-guida
 linee-guida-per-la-gestione-del-reticolo-secondario-abaco-interventi
+marxan
 divulgazione-scientifica
 eventi-di-disseminazione-e-campagna-di-citizen-science
 considerazioni-conclusive-1

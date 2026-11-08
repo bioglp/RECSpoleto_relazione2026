@@ -156,3 +156,7 @@ knitr::include_graphics('./figs/prato_studenti2026.jpeg')
 ### Linee guida per la gestione del reticolo secondario (Abaco interventi)
 
 ==\[da collegare al doc lifeIMAGINE\]==
+
+## Marxan
+
+==testo Viola==

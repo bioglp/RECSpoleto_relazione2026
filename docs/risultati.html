@@ -139,7 +139,6 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="4.3.1" data-path="risultati.html"><a href="risultati.html#estensione-e-composizione"><i class="fa fa-check"></i><b>4.3.1</b> Estensione e composizione</a></li>
 <li class="chapter" data-level="4.3.2" data-path="risultati.html"><a href="risultati.html#verifica-regola-330300"><i class="fa fa-check"></i><b>4.3.2</b> Verifica regola 3–30–300</a></li>
-<li class="chapter" data-level="4.3.3" data-path="risultati.html"><a href="risultati.html#priorit%C3%A0-di-conservazione-e-connessione-marxan"><i class="fa fa-check"></i><b>4.3.3</b> Priorità di conservazione e connessione (Marxan)</a></li>
 </ul></li>
 <li class="chapter" data-level="4.4" data-path="risultati.html"><a href="risultati.html#risultati-del-sondaggio-del-walkshop-alla-greenway"><i class="fa fa-check"></i><b>4.4</b> Risultati del sondaggio del Walkshop alla Greenway</a></li>
 </ul></li>
@@ -159,6 +158,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="5.3.1" data-path="indirizzi-per-la-gestione-e-la-progettazione.html"><a href="indirizzi-per-la-gestione-e-la-progettazione.html#linee-guida-per-la-gestione-del-reticolo-secondario-abaco-interventi"><i class="fa fa-check"></i><b>5.3.1</b> Linee guida per la gestione del reticolo secondario (Abaco interventi)</a></li>
 </ul></li>
+<li class="chapter" data-level="5.4" data-path="indirizzi-per-la-gestione-e-la-progettazione.html"><a href="indirizzi-per-la-gestione-e-la-progettazione.html#marxan"><i class="fa fa-check"></i><b>5.4</b> Marxan</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="divulgazione-scientifica.html"><a href="divulgazione-scientifica.html"><i class="fa fa-check"></i><b>6</b> Divulgazione scientifica</a>
 <ul>
@@ -866,39 +866,221 @@ In aggiunta, la superficie pubblica si presenta organizzata in modo molto divers
 Figure 4.17: Boxplot della dimensione delle patch rasterizzate scomposte in verde pubblico, privato e componente blu.
 </p>
 </div>
-<p>Nonostante questo assetto lasci prefigurare un elevato livello di frammentazione con una densità di patch di circa 120 ogni 100 ha (PD=119.5), le metriche di contiguità (AI = 95.4), aggregazione (CONTAG = 75.2) e coesione (COHESION = 99.9) mostrano valori elevati, indicando che le diverse componenti mantengono un livello significativo di continuità spaziale (tab paesaggio strati.csv).
-Ciò a testimoniare una distribuzione delle classi organizzata in nuclei spazialmente riconoscibili piuttosto che in elementi completamente dispersi.
+<p>Nonostante questo assetto lasci prefigurare un elevato livello di frammentazione con una densità di patch di circa 76 ogni 100 ha (PD=75.85), le metriche di contiguità (AI = 97), aggregazione (CONTAG = 82) e coesione (COHESION = 99.9) mostrano valori elevati, indicando che le diverse componenti mantengono un livello significativo di continuità spaziale (Tab. <a href="risultati.html#tab:paesaggio">4.7</a>).</p>
+<table>
+<caption><span id="tab:paesaggio">Table 4.7: </span> Metriche della struttura del paesaggio complessivo.</caption>
+<thead>
+<tr class="header">
+<th align="left">metric</th>
+<th align="right">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">AI</td>
+<td align="right">96.86</td>
+</tr>
+<tr class="even">
+<td align="left">area_mn</td>
+<td align="right">1.32</td>
+</tr>
+<tr class="odd">
+<td align="left">COHESION</td>
+<td align="right">99.90</td>
+</tr>
+<tr class="even">
+<td align="left">CONTAG</td>
+<td align="right">82.15</td>
+</tr>
+<tr class="odd">
+<td align="left">ed</td>
+<td align="right">120.50</td>
+</tr>
+<tr class="even">
+<td align="left">iji</td>
+<td align="right">48.57</td>
+</tr>
+<tr class="odd">
+<td align="left">lpi</td>
+<td align="right">91.79</td>
+</tr>
+<tr class="even">
+<td align="left">np</td>
+<td align="right">1756.00</td>
+</tr>
+<tr class="odd">
+<td align="left">PD</td>
+<td align="right">75.85</td>
+</tr>
+<tr class="even">
+<td align="left">shdi</td>
+<td align="right">0.35</td>
+</tr>
+<tr class="odd">
+<td align="left">shei</td>
+<td align="right">0.25</td>
+</tr>
+<tr class="even">
+<td align="left">sidi</td>
+<td align="right">0.15</td>
+</tr>
+<tr class="odd">
+<td align="left">ta</td>
+<td align="right">2315.15</td>
+</tr>
+</tbody>
+</table>
+<p>Ciò a testimoniare una distribuzione delle classi organizzata in nuclei spazialmente riconoscibili piuttosto che in elementi completamente dispersi.
 Questo suggerisce che il sistema del verde urbano, pur articolato in molteplici elementi, conserva una discreta capacità di funzionare come rete ecologica diffusa.
 Purtroppo, le infrastrutture blu risultano quantitativamente marginali rispetto alle superfici verdi, ma contribuiscono comunque alla diversificazione del mosaico generale fornendo un importante supporto per la connettività complessiva del sistema.
 È inoltre da notare che nel processo di rasterizzazione su maglia 5x5 m gli elementi di natura blu vengono suddivisi in numerosi nuclei distinti.
 Conseguentemente, il numero di patch raster non rappresenta il numero di elementi realmente cartografati, ma il numero di porzioni che possono essere considerate funzionalmente connesse all’interno del mosaico paesaggistico.</p>
-<p>Come anticipato il verde privato rappresenta la componente più estesa e diffusa, caratterizzata da un elevato numero di patch di dimensioni medio-piccole, con la presenza di alcuni nuclei di superficie rilevante che contribuiscono in modo significativo alla dotazione complessiva di copertura vegetale (Tab patch_strati.csv).</p>
+<p>Come anticipato il verde privato rappresenta la componente più estesa e diffusa (CA), caratterizzata da un elevato numero di patch di dimensioni medio-piccole, con la presenza di alcuni nuclei di superficie rilevante che contribuiscono in modo significativo alla dotazione complessiva di copertura vegetale (Tab. <a href="risultati.html#tab:strati">4.8</a>.</p>
+<table>
+<caption><span id="tab:strati">Table 4.8: </span> Metriche della struttura del paesaggio per strati.</caption>
+<colgroup>
+<col width="26%" />
+<col width="9%" />
+<col width="10%" />
+<col width="10%" />
+<col width="13%" />
+<col width="10%" />
+<col width="7%" />
+<col width="10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">strato</th>
+<th align="right">AI</th>
+<th align="right">CA</th>
+<th align="right">CLUMPY</th>
+<th align="right">COHESION</th>
+<th align="right">ENN</th>
+<th align="right">MESH</th>
+<th align="right">CPLAND</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">verde_privato</td>
+<td align="right">80.17</td>
+<td align="right">117.76</td>
+<td align="right">0.79</td>
+<td align="right">90.92</td>
+<td align="right">21.41</td>
+<td align="right">0.04</td>
+<td align="right">0.49</td>
+</tr>
+<tr class="even">
+<td align="left">verde_pubblico</td>
+<td align="right">83.72</td>
+<td align="right">57.21</td>
+<td align="right">0.83</td>
+<td align="right">92.95</td>
+<td align="right">18.15</td>
+<td align="right">0.07</td>
+<td align="right">0.63</td>
+</tr>
+<tr class="odd">
+<td align="left">blu_pubblico</td>
+<td align="right">84.77</td>
+<td align="right">14.54</td>
+<td align="right">0.85</td>
+<td align="right">96.82</td>
+<td align="right">21.20</td>
+<td align="right">0.04</td>
+<td align="right">0.06</td>
+</tr>
+<tr class="even">
+<td align="left">verde_totale</td>
+<td align="right">81.47</td>
+<td align="right">174.18</td>
+<td align="right">0.80</td>
+<td align="right">92.12</td>
+<td align="right">17.56</td>
+<td align="right">0.11</td>
+<td align="right">1.14</td>
+</tr>
+<tr class="odd">
+<td align="left">verde_blu_totale</td>
+<td align="right">82.04</td>
+<td align="right">187.75</td>
+<td align="right">0.80</td>
+<td align="right">93.65</td>
+<td align="right">17.05</td>
+<td align="right">0.19</td>
+<td align="right">1.22</td>
+</tr>
+</tbody>
+</table>
 <p>Al contrario, il verde pubblico mostra una configurazione differente: presenta anch’esso numerose piccole patch isolate derivanti da superfici lineari o marginali, ma sono presenti anche aree di grandi dimensioni che svolgono un ruolo centrale nella struttura complessiva del sistema.
 In generale l’analisi delle metriche a livello di patch conferma che la maggior parte delle unità presenta valori di core area prossimi a zero, indicando che le dimensioni sono spesso insufficienti a contenere una porzione interna non influenzata dall’effetto margine.
-Infatti, solo le patch di dimensioni maggiori conservano aree centrali significative e possono quindi svolgere funzioni ecologiche più stabili e strutturate (tab patch_strati.csv).</p>
-<p>Le distanze tra patch (ENN) risultano generalmente contenute e inferiori ai 25 m per gran parte degli elementi (21.5 m nel verde privato; 18.2 m nel verde pubblico), suggerendo una buona prossimità spaziale tra le aree appartenenti alla stessa classe.
-Tuttavia alcune patch mostrano valori sensibilmente più elevati, evidenziando situazioni di isolamento locale che possono ridurre la connettività funzionale del sistema (tab confronto strati).
+Infatti, solo le patch di dimensioni maggiori conservano aree centrali significative e possono quindi svolgere funzioni ecologiche più stabili e strutturate.</p>
+<p>Le distanze tra patch (ENN) risultano generalmente contenute e inferiori ai 25 m per gran parte degli elementi (21.4 m nel verde privato; 18.2 m nel verde pubblico), suggerendo una buona prossimità spaziale tra le aree appartenenti alla stessa classe.
+Tuttavia alcune patch mostrano valori sensibilmente più elevati, evidenziando situazioni di isolamento locale che possono ridurre la connettività funzionale del sistema.
 Esaminando nel dettaglio anche gli indici AI, CLUMPY e COHESION emerge un quadro per cui il territorio appare contemporaneamente molto frammentato dal punto di vista numerico, ma relativamente connesso dal punto di vista spaziale.
-Resta invece limitata la disponibilità di aree centrali effettivamente schermate dagli effetti di margine, che rappresentano meno del 2% della superficie territoriale nel caso del sistema verde-blu complessivo.</p>
-<p>Sebbene le metriche di aggregazione e coesione evidenzino una buona continuità all’interno delle singole componenti, l’analisi dei contatti () mostra che le diverse tipologie di infrastruttura verde e blu interagiscono poco tra loro (tab contatti).
-Le patch tendono infatti a confinare prevalentemente con elementi della stessa classe e, in misura secondaria, con la matrice territoriale circostante.
-In particolare, le adiacenze tra verde privato e verde pubblico rappresentano una quota trascurabile dei contatti complessivi (&lt; 0,5%), mentre una parte consistente dei bordi delle patch è in contatto con la matrice territoriale (20,0% per il verde privato, 15,9% per il verde pubblico e 13,8% per il blu pubblico).
+Resta invece limitata la disponibilità di aree centrali effettivamente schermate dagli effetti di margine, che rappresentano meno del 2% della superficie territoriale nel caso del sistema verde-blu complessivo (CPLand).</p>
+<p>Sebbene le metriche di aggregazione e coesione evidenzino una buona continuità all’interno delle singole componenti, l’analisi dei contatti mostra che le diverse tipologie di infrastruttura verde e blu interagiscono poco tra loro (Tab. <a href="risultati.html#tab:contatti">4.9</a>).</p>
+<table>
+<caption><span id="tab:contatti">Table 4.9: </span> Matrice dei contatti tra strati.</caption>
+<thead>
+<tr class="header">
+<th align="left">strato da/a</th>
+<th align="right">matrice</th>
+<th align="right">blu_pubblico</th>
+<th align="right">verde_privato</th>
+<th align="right">verde_pubblico</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">matrice</td>
+<td align="right">98.39</td>
+<td align="right">0.09</td>
+<td align="right">1.09</td>
+<td align="right">0.43</td>
+</tr>
+<tr class="even">
+<td align="left">blu_pubblico</td>
+<td align="right">13.55</td>
+<td align="right">83.66</td>
+<td align="right">2.25</td>
+<td align="right">0.55</td>
+</tr>
+<tr class="odd">
+<td align="left">verde_privato</td>
+<td align="right">19.86</td>
+<td align="right">0.28</td>
+<td align="right">79.65</td>
+<td align="right">0.20</td>
+</tr>
+<tr class="even">
+<td align="left">verde_pubblico</td>
+<td align="right">16.11</td>
+<td align="right">0.14</td>
+<td align="right">0.41</td>
+<td align="right">83.34</td>
+</tr>
+</tbody>
+</table>
+<p>Le patch tendono infatti a confinare prevalentemente con elementi della stessa classe e, in misura secondaria, con la matrice territoriale circostante.
+In particolare, le adiacenze tra verde privato e verde pubblico rappresentano una quota trascurabile dei contatti complessivi (&lt; 0.5%), mentre una parte consistente dei bordi delle patch è in contatto con la matrice territoriale (20,0% per il verde privato, 16% per il verde pubblico e quasi il 14% per il blu pubblico).
 Tale configurazione evidenzia una limitata integrazione tra i diversi sottosistemi ecologici e una forte esposizione agli ambienti circostanti.
 Ne deriva un sistema caratterizzato da una buona coerenza interna dei singoli sottosistemi, ma da una limitata integrazione spaziale tra verde pubblico, verde privato e componenti blu.</p>
 </div>
 <div id="dotazione-per-frazione-e-località" class="section level4 hasAnchor" number="4.3.1.2">
 <h4><span class="header-section-number">4.3.1.2</span> Dotazione per frazione e località<a href="risultati.html#dotazione-per-frazione-e-localit%C3%A0" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Disaggregando le informazioni sulla base della ripartizione dell’unità funzionale Urbana in frazioni e località emergono chiare differenze nella dotazione locale delle infrastrutture verdi e blu (Tab. <a href="risultati.html#tab:verdeFraz">4.7</a>.
+<p>Disaggregando le informazioni sulla base della ripartizione dell’unità funzionale Urbana in frazioni e località emergono chiare differenze nella dotazione locale delle infrastrutture verdi e blu (Tab. <a href="risultati.html#tab:verdeFraz">4.10</a>).
 Le maggiori coperture si osservano a San Nicolò (18.3%) e Spoleto (15.6%), mentre Crociferro, San Sabino e Collerisana presentano dotazioni di verde sensibilmente inferiori (&lt;3%).
-Indici di copertura intermedi compresi tra il 8-13% si osservano a Cortaccione, Madonna di Lugo e Santo Chiodo.
+Indici di copertura intermedi compresi tra l’8 e il 13% si osservano a Santo Chiodo, Cortaccione, Colle San Tommaso e Madonna di Lugo.
 Differenziando l’analisi per componente pubblica-privata, emerge che in molte zone il verde è quasi esclusivamente privato.
-A Santo Chiodo il verde pubblico è circa il 3.5% della superficie, contro un 9% di quello privato.
-Analoga situazione si osserva a San Nicolò (4.8% contro 13.1%).
-Il nucleo di Spoleto si distingue invece per l’elevato numero di patch e per il ruolo rilevante del verde pubblico, configurandosi come il sistema più articolato e diversificato.
-I livelli di AI (–) e COHESION (–) evidenziano anche il mantenimento di un certo livello di continuità funzionale all’interno di questa unità, tra i più alti osservati.
-Inoltre è in questa unità che possiamo ritrovare le patch più grandi (LPI=2.53%), a cui si affiancano le località di Cortaccione (3.68%), San Nicolò (2.63%) e Santo Chiodo (2.25%).</p>
+A Santo Chiodo il verde pubblico è circa il 3.4% della superficie, contro un 9.1% di quello privato.
+Analoga situazione si osserva a San Nicolò (4.9% contro 13.1%).
+Il nucleo di Spoleto si distingue invece per l’elevato numero di patch (NP=878) e per il ruolo rilevante del verde pubblico, configurandosi come il sistema più articolato e diversificato (Tab. <a href="risultati.html#tab:metricheFraz">4.11</a>).
+I livelli di AI (80.6%) e COHESION (91.3) risultano tra i più bassi osservati (solo San Nicolò presenta un AI inferiore), coerentemente con l’elevata frammentazione, pur indicando il mantenimento di un buon livello di continuità funzionale all’interno di questa unità (COHESION &gt; 90).
+Le patch più grandi si ritrovano invece a Cortaccione (LPI=2.72%) e San Nicolò (2.31%), seguite da Colle San Tommaso (1.92%), Santo Chiodo (1.83%) e Spoleto (1.60%).</p>
 <table>
-<caption><span id="tab:verdeFraz">Table 4.7: </span> Superfici di verde pubblico e privato (ha) e relativa frazione percentuale.</caption>
+<caption><span id="tab:verdeFraz">Table 4.10: </span> Superfici di verde pubblico e privato (ha) e relativa frazione percentuale.</caption>
 <colgroup>
 <col width="42%" />
 <col width="10%" />
@@ -993,7 +1175,7 @@ Inoltre è in questa unità che possiamo ritrovare le patch più grandi (LPI=2.5
 </tbody>
 </table>
 <table style="width:99%;">
-<caption><span id="tab:metricheFraz">Table 4.8: </span> Indicatori di struttura per frazioni e località.</caption>
+<caption><span id="tab:metricheFraz">Table 4.11: </span> Indicatori di struttura per frazioni e località.</caption>
 <colgroup>
 <col width="26%" />
 <col width="8%" />
@@ -1012,7 +1194,7 @@ Inoltre è in questa unità che possiamo ritrovare le patch più grandi (LPI=2.5
 <th align="right">CA</th>
 <th align="right">NP</th>
 <th align="right">AREA_MN</th>
-<th align="right">ENN_MN</th>
+<th align="right">ENN</th>
 <th align="right">COHESION</th>
 <th align="right">AI</th>
 <th align="right">LPI</th>
@@ -1156,10 +1338,6 @@ Figure 4.20: In rosso buffer di 300 m intorno alle aree verdi urbane di natura p
 </p>
 </div>
 </div>
-<div id="priorità-di-conservazione-e-connessione-marxan" class="section level3 hasAnchor" number="4.3.3">
-<h3><span class="header-section-number">4.3.3</span> Priorità di conservazione e connessione (Marxan)<a href="risultati.html#priorit%C3%A0-di-conservazione-e-connessione-marxan" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>==<span class="math display">\[da completare primo step\]</span>==</p>
-</div>
 </div>
 <div id="risultati-del-sondaggio-del-walkshop-alla-greenway" class="section level2 hasAnchor" number="4.4">
 <h2><span class="header-section-number">4.4</span> Risultati del sondaggio del Walkshop alla Greenway<a href="risultati.html#risultati-del-sondaggio-del-walkshop-alla-greenway" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -1191,9 +1369,9 @@ Il 23% ha indicato di trascorrervi meno di 30 minuti, il 55% tra 45 e 60 minuti 
 Figure 4.21: Informazioni sulle caratteristiche dei partecipanti
 </p>
 </div>
-<p>Per l’analisi delle risposte al questionario, per ogni domanda sono stati calcolati frequenze, media, mediana e quota di risposte con punteggi alti (Tab. <a href="risultati.html#tab:questionario">4.9</a>).</p>
+<p>Per l’analisi delle risposte al questionario, per ogni domanda sono stati calcolati frequenze, media, mediana e quota di risposte con punteggi alti (Tab. <a href="risultati.html#tab:questionario">4.12</a>).</p>
 <table>
-<caption><span id="tab:questionario">Table 4.9: </span> Risultati del questionario in fase di partenza.</caption>
+<caption><span id="tab:questionario">Table 4.12: </span> Risultati del questionario in fase di partenza.</caption>
 <colgroup>
 <col width="7%" />
 <col width="4%" />
@@ -1342,7 +1520,7 @@ Figure 4.21: Informazioni sulle caratteristiche dei partecipanti
 </tr>
 </tbody>
 </table>
-<p>Dalle risposte pervenute emerge che il legame con la natura dei partecipanti (Q1) ha la media più alta (4,6) e il 94% di risposte 4 o 5 (Tab. <a href="risultati.html#tab:questionario">4.9</a>). Tra i giudizi formulati direttamente sulla Greenway, i più alti riguardano la serenità (Q2), la rigenerazione individuale (Q4), la salute fisica (Q3) e il passaparola (Q9): oltre otto persone su dieci sono felici e rilassate, e raccomanderebbero la frequentazione dell’area ad altri. Colpisce che i cittadini coinvolti abbiano riconosciuto meno il valore di quest’area nella socialità (Q5), il suo ruolo di potenziale rifugio climatico (Q6) e l’importanza nella vita quotidiana (Q7). Queste tre funzioni probabilmente sono meno ovvie e dipendono più dall’uso abituale dell’area e pertanto hanno ricevuto valutazioni con le medie più basse, tra 3,1 e 3,4. In particolare, l’importanza nella vita quotidiana è risultata polarizzata: il 26% ha risposto 1 e il 35% 5 (Fig. <a href="risultati.html#fig:likert">4.22</a>).</p>
+<p>Dalle risposte pervenute emerge che il legame con la natura dei partecipanti (Q1) ha la media più alta (4,6) e il 94% di risposte 4 o 5 (Tab. <a href="risultati.html#tab:questionario">4.12</a>). Tra i giudizi formulati direttamente sulla Greenway, i più alti riguardano la serenità (Q2), la rigenerazione individuale (Q4), la salute fisica (Q3) e il passaparola (Q9): oltre otto persone su dieci sono felici e rilassate, e raccomanderebbero la frequentazione dell’area ad altri. Colpisce che i cittadini coinvolti abbiano riconosciuto meno il valore di quest’area nella socialità (Q5), il suo ruolo di potenziale rifugio climatico (Q6) e l’importanza nella vita quotidiana (Q7). Queste tre funzioni probabilmente sono meno ovvie e dipendono più dall’uso abituale dell’area e pertanto hanno ricevuto valutazioni con le medie più basse, tra 3,1 e 3,4. In particolare, l’importanza nella vita quotidiana è risultata polarizzata: il 26% ha risposto 1 e il 35% 5 (Fig. <a href="risultati.html#fig:likert">4.22</a>).</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:likert"></span>
 <img src="figs/walkshop/fig2_likert.png" alt="Sintesi delle risposte: 1 («per nulla») a 5 («moltissimo»)" width="\linewidth" />
 <p class="caption">
@@ -1357,9 +1535,9 @@ Figure 4.22: Sintesi delle risposte: 1 («per nulla») a 5 («moltissimo»)
 Figure 4.23: Punteggio composito (media delle domande 2–9) per gruppi di partecipanti
 </p>
 </div>
-<p>Quando al termine della giornata è stato sottoposto il nuovo questionario sono emerse queste valutazioni (Tab. <a href="risultati.html#tab:questionarioPost">4.10</a>).</p>
+<p>Quando al termine della giornata è stato sottoposto il nuovo questionario sono emerse queste valutazioni (Tab. <a href="risultati.html#tab:questionarioPost">4.13</a>).</p>
 <table>
-<caption><span id="tab:questionarioPost">Table 4.10: </span> Risultati del questionario in fase di rientro dal walkshop.</caption>
+<caption><span id="tab:questionarioPost">Table 4.13: </span> Risultati del questionario in fase di rientro dal walkshop.</caption>
 <colgroup>
 <col width="6%" />
 <col width="60%" />
