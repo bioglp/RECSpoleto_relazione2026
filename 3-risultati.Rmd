@@ -371,15 +371,15 @@ Dal punto di vista strutturale si osserva che le componenti verdi sono organizza
 #### Configurazione spaziale e connettività
 
 L’indice LPI corrispondente al Largest Patch Index raggiunge un valore pari a 91.8 %, indicando che la matrice territoriale dominante, costituita da infrastrutture grigie e da terreni agricoli, occupa gran parte della superficie totale.
-In altre parole, come era atteso, il paesaggio risulta fortemente controllato dalla matrice urbana e dai seminativi che costituiscono lo sfondo all'interno del quale si distribuiscono gli elementi verdi e blu (Fig. \@ref(fig:rasterVerde).
+In altre parole, come era atteso, il paesaggio risulta fortemente controllato dalla matrice urbana e dai seminativi che costituiscono lo sfondo all'interno del quale si distribuiscono gli elementi verdi e blu (Fig. \@ref(fig:rasterVerde)).
 
 ```{r rasterVerde, fig.cap="Carta del verde (pubblico in tonalità brillante e privato in tonalità più scusa) e delle infrastrutture blu nel formato raster.", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/rasterVerde.png')
 ```
 
-La superficie mediana delle patch di verde privato ($400 m^2$) è generalmente superiore a quella del verde pubblico ($50 m^2$), suggerendo una maggiore presenza di nuclei vegetati continui all'interno delle proprietà private (Tab. \@ref(tab:verdePatches)).
-Nel verde pubblico e nei corsi d’acqua più della metà delle patch non supera due celle (circa $50 m^2$), e nel blu lo stesso vale per circa tre quarti delle patch.
-Nel privato la mediana è 15 celle (circa $400 m^2$) e il terzo quartile 44 celle (circa $1100 m^2$).
+La superficie mediana delle patch di verde privato ($400~m^2$) è generalmente superiore a quella del verde pubblico ($50~m^2$), suggerendo una maggiore presenza di nuclei vegetati continui all'interno delle proprietà private (Tab. \@ref(tab:verdePatches)).
+Nel verde pubblico e nei corsi d’acqua più della metà delle patch non supera due celle (circa $50~m^2$), e nel blu lo stesso vale per circa tre quarti delle patch.
+Nel privato la mediana è 15 celle (circa $400~m^2$) e il terzo quartile 44 celle (circa $1100~m^2$).
 La patch tipica del privato è dunque molto più grande di quella pubblica.
 In aggiunta, la superficie pubblica si presenta organizzata in modo molto diverso: si concentrata in pochi patch grandi accompagnati da molti micro-patch (Fig. \@ref(fig:boxplotVerde)).
 

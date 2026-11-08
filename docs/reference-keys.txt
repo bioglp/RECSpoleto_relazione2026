@@ -20,7 +20,11 @@ tab:popValle
 fig:mspaUnitaFunzionaliUrbana
 fig:verdeSpoleto
 tab:verdeBase
+fig:rasterVerde
+tab:verdePatches
+fig:boxplotVerde
 tab:verdeFraz
+tab:metricheFraz
 fig:verdePubblicoSpoleto
 fig:rulebuf300
 fig:rulebuf300NT
