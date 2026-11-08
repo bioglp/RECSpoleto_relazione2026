@@ -2,6 +2,7 @@
 editor_options: 
   markdown: 
     wrap: sentence
+bibliography: references.bib
 ---
 
 # Metodologie
@@ -96,7 +97,7 @@ Per questa sintesi basata sulle Unità Funzionali spoletine, le categorie MSPA s
 4.  Edge: la fascia di transizione e margine esterno che delimita le aree *Core* verso il background o la matrice antropizzata.
 5.  Loop: corridoi o elementi lineari che collegano un'area *Core* a se stessa (corridoi interni o di auto-connessione), incluse le variazioni di margine e perforazione (*Loop in Edge*, *Loop in Perforation*).
 6.  Bridge: elementi lineari e corridoi strutturali che collegano due o più aree *Core* distinte, rappresentando la spina dorsale della connettività ecologica funzionale.
-7.  Branch: corridoi lineari o bracci che dipartono da un'area *Core* ma terminano a fondo cieco, senza connettersi ad altri elementi. [Queste porzione evidenziano connessioni interrotte che se opportunamente riconosciute e valorizzate potrebbero fornire con interventi minimi un grado di connettività molto superiore.]
+7.  Branch: corridoi lineari o bracci che dipartono da un'area *Core* ma terminano a fondo cieco, senza connettersi ad altri elementi. \[Queste porzione evidenziano connessioni interrotte che se opportunamente riconosciute e valorizzate potrebbero fornire con interventi minimi un grado di connettività molto superiore.\]
 
 Per ciascuna Unità Funzionale e per ciascuna delle 7 macro-categorie MSPA sono state calcolate tre metriche chiave:
 
@@ -122,7 +123,8 @@ Attraverso questo studio, finalizzato a descrivere estensione, distribuzione, li
 
 Per approfondire la configurazione, il ruolo funzionale e le caratteristiche generali di tali componenti, è stata eseguita un’analisi di paesaggio basata sugli indicatori del pacchetto landscapemetrics (BIBLIO).
 
-Tale libreria riprende le metriche storicamente implementate in FRAGSTAT [\@mcgarigalFragstatHelp2015] e ne estende le potenzialità per un utilizzo multipiattaforma. Nell’ambito di questa relazione sono state considerate le seguenti metriche, risultate particolarmente efficaci per una descrizione analitica dell’assetto generale dell’area.
+Tale libreria riprende le metriche storicamente implementate in FRAGSTAT \[\@mcgarigalFragstatHelp2015\] e ne estende le potenzialità per un utilizzo multipiattaforma.
+Nell’ambito di questa relazione sono state considerate le seguenti metriche, risultate particolarmente efficaci per una descrizione analitica dell’assetto generale dell’area.
 
 Elenco delle variabili landscapemetrics esaminate:
 
@@ -136,12 +138,32 @@ Elenco delle variabili landscapemetrics esaminate:
 - CORE (Core Area): Misura la superficie situata oltre una determinata distanza dal margine della patch (edge depth). È una metrica fondamentale per valutare la qualità ecologica delle aree verdi, poiché molte specie e funzioni ecosistemiche richiedono habitat interni protetti dalle perturbazioni provenienti dall'esterno.
 - ENN (Euclidean Nearest Neighbor Distance): Misura la distanza lineare tra una patch e la patch più vicina appartenente alla stessa classe. È una delle metriche più utilizzate per valutare la connettività potenziale. Non misura l'effettiva connessione ecologica, ma la vicinanza spaziale tra elementi dello stesso tipo.
 
-==[da integrare: criteri adottati per la verifica preliminare della regola 3–30–300 (aree di verde pubblico di estensione prossima a 1 ha, buffer di 300 m)]==
+==\[da integrare: criteri adottati per la verifica preliminare della regola 3–30–300 (aree di verde pubblico di estensione prossima a 1 ha, buffer di 300 m)\]==
 
 ## Approccio all'analisi del territorio con Marxan
 
-==[prima bozza in fase di completamento]==
+Fra gli strumenti utili per sviluppare una rete ecologica resiliente troviamo Marxan, un software sviluppato di supporto decisionale alla pianificazione spaziale per la conservazione naturalistica.
+La progettazione di una rete ecologica richiede infatti di soddisfare esigenze di tipo ambientale, conservazionistica, economica e sociale; tramite algoritmi, Marxan è in grado di individuare la configurazione spaziale che raggiunge gli obiettivi di conservazione al “minor costo” [@ball2009].
+
+Nei seguenti paragrafi ne viene quindi illustrato il funzionamento, valutando l’applicabilità e le potenzialità nel territorio di Spoleto, in particolare:
+
+- Descrivere il funzionamento di Marxan, illustrandone i principi e le funzionalità;
+- Proporre un esempio applicativo riferito al progetto sul territorio di Spoleto;
+- Individuare i dati, le risorse e le competenze tecniche necessarie per un’applicazione approfondita;
+- Evidenziare i limiti dello strumento, al fine di chiarire la portata dei risultati ottenibili e le condizioni necessarie per il loro corretto utilizzo.
+
+Attraverso un’elaborazione basata su tre criteri: 1) il raggiungimento dei target di conservazione, 2) la minimizzazione dei costi, 3) la costruzione di reti compatte; Marxan consente di identificare le unità territoriali essenziali per soddisfare specifici obiettivi di conservazione, minimizzando costi e frammentazione (Ball et al., 2009).
+Il risultato prodotto non va inteso come una soluzione definitiva ma come un supporto al processo decisionale dei pianificatori, ai quali spetta perfezionarlo e interpretarlo sulla base dei fattori politici, socioeconomici e delle condizioni amministrative e operative del territorio.
+Al fine di aiutare i processi di negoziazione tra le parti interessati vengono inoltre elaborate numerose soluzioni alternative, fornendo diverse configurazioni territoriali possibili (Ardron et al., 2010; Serra et al., 2020).
+L’analisi si basa su un processo rigoroso e ripetibile, favorendo la trasparenza nelle scelte e riducendo il rischio di decisioni basate su valutazioni soggettive.
+Il funzionamento di Marxan provede le seguenti fasi (Serra et al., 2020).
+Come primo passo, si stabiliscono gli elementi di importanza conservazionistica, identificabili come specie, habitat, siti culturali ecc.
+A questi elementi viene applicato un obiettivo di conservazione, detto target: la minima quantità di elemento che deve essere inclusa nella pianificazione finale (es. 30% di ogni habitat).
+Al territorio viene poi sovrapposta una griglia con unità di forma quadrata, esagonale o con poligoni irregolari.
+Le unità formate vengono chiamate unità di pianificazione (UP) e le dimensioni dipendono dalla scala del progetto, dall’obiettivo e dall’uso previsto dei risultati.
+Ad ogni unità viene assegnato un costo, economico o sociale, che riflette l’esborso necessario per includere ciascuna unità nella rete.
+A questo punto, Marxan utilizza degli algoritmi per elaborare la configurazione spaziale che permette di raggiungere tutti gli obiettivi al minimo costo (Cudlín et al., 2020; Daigle et al., 2020), restituendo l’insieme delle unità che costituiranno la base della rete proposta.
 
 ## Attività di divulgazione e CS
 
-==[da redigere: impianto metodologico della campagna di citizen science e del sondaggio]==
+==\[da redigere: impianto metodologico della campagna di citizen science e del sondaggio\]==

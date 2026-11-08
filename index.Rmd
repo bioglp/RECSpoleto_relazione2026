@@ -23,6 +23,7 @@ link-citations: true
 description: "Relazione finale"
 site: bookdown::bookdown_site
 ## bookdown::render_book("index.Rmd")
+## https://bioglp.github.io/RECSpoleto_relazione2026/
 ---
 
 # Premessa

@@ -141,7 +141,7 @@ div.csl-indent {
 <li class="chapter" data-level="4.3.2" data-path="risultati.html"><a href="risultati.html#verifica-regola-330300"><i class="fa fa-check"></i><b>4.3.2</b> Verifica regola 3–30–300</a></li>
 <li class="chapter" data-level="4.3.3" data-path="risultati.html"><a href="risultati.html#priorit%C3%A0-di-conservazione-e-connessione-marxan"><i class="fa fa-check"></i><b>4.3.3</b> Priorità di conservazione e connessione (Marxan)</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="risultati.html"><a href="risultati.html#risultati-del-sondaggio-greenway"><i class="fa fa-check"></i><b>4.4</b> Risultati del sondaggio Greenway</a></li>
+<li class="chapter" data-level="4.4" data-path="risultati.html"><a href="risultati.html#risultati-del-sondaggio-del-walkshop-alla-greenway"><i class="fa fa-check"></i><b>4.4</b> Risultati del sondaggio del Walkshop alla Greenway</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="indirizzi-per-la-gestione-e-la-progettazione.html"><a href="indirizzi-per-la-gestione-e-la-progettazione.html"><i class="fa fa-check"></i><b>5</b> Indirizzi per la gestione e la progettazione</a>
 <ul>
@@ -278,7 +278,7 @@ L’eterogeneità degli habitat costituisce il presupposto fondamentale per gara
 <li>Edge: la fascia di transizione e margine esterno che delimita le aree <em>Core</em> verso il background o la matrice antropizzata.</li>
 <li>Loop: corridoi o elementi lineari che collegano un’area <em>Core</em> a se stessa (corridoi interni o di auto-connessione), incluse le variazioni di margine e perforazione (<em>Loop in Edge</em>, <em>Loop in Perforation</em>).</li>
 <li>Bridge: elementi lineari e corridoi strutturali che collegano due o più aree <em>Core</em> distinte, rappresentando la spina dorsale della connettività ecologica funzionale.</li>
-<li>Branch: corridoi lineari o bracci che dipartono da un’area <em>Core</em> ma terminano a fondo cieco, senza connettersi ad altri elementi. [Queste porzione evidenziano connessioni interrotte che se opportunamente riconosciute e valorizzate potrebbero fornire con interventi minimi un grado di connettività molto superiore.]</li>
+<li>Branch: corridoi lineari o bracci che dipartono da un’area <em>Core</em> ma terminano a fondo cieco, senza connettersi ad altri elementi. <span class="math display">\[Queste porzione evidenziano connessioni interrotte che se opportunamente riconosciute e valorizzate potrebbero fornire con interventi minimi un grado di connettività molto superiore.\]</span></li>
 </ol>
 <p>Per ciascuna Unità Funzionale e per ciascuna delle 7 macro-categorie MSPA sono state calcolate tre metriche chiave:</p>
 <ol style="list-style-type: decimal">
@@ -300,7 +300,8 @@ Al contrario, un valore di <span class="math inline">\(S_{eff}\)</span> molto ba
 <p>L’indagine ha preso in esame la composizione e l’organizzazione spaziale dei sistemi verdi e blu che caratterizzano il territorio comunale di Spoleto, utilizzando come base conoscitiva il tematismo del verde pubblico e privato, comprensivo delle infrastrutture blu.</p>
 <p>Attraverso questo studio, finalizzato a descrivere estensione, distribuzione, livello di continuità e relazioni funzionali e spaziali tra le diverse componenti, vengono definiti gli elementi strutturali necessari per condurre una valutazione preliminare del grado di conformità del contesto urbano rispetto ai parametri della regola 3–30–300.</p>
 <p>Per approfondire la configurazione, il ruolo funzionale e le caratteristiche generali di tali componenti, è stata eseguita un’analisi di paesaggio basata sugli indicatori del pacchetto landscapemetrics (BIBLIO).</p>
-<p>Tale libreria riprende le metriche storicamente implementate in FRAGSTAT [@mcgarigalFragstatHelp2015] e ne estende le potenzialità per un utilizzo multipiattaforma. Nell’ambito di questa relazione sono state considerate le seguenti metriche, risultate particolarmente efficaci per una descrizione analitica dell’assetto generale dell’area.</p>
+<p>Tale libreria riprende le metriche storicamente implementate in FRAGSTAT <span class="math display">\[\@mcgarigalFragstatHelp2015\]</span> e ne estende le potenzialità per un utilizzo multipiattaforma.
+Nell’ambito di questa relazione sono state considerate le seguenti metriche, risultate particolarmente efficaci per una descrizione analitica dell’assetto generale dell’area.</p>
 <p>Elenco delle variabili landscapemetrics esaminate:</p>
 <ul>
 <li>LPI (Largest Patch Index): Misura la percentuale del paesaggio occupata dalla patch più estesa appartenente a una determinata classe. È un indicatore di dominanza e continuità spaziale. Nel caso delle infrastrutture verdi, un LPI elevato suggerisce la presenza di un grande nucleo verde capace di sostenere funzioni ecologiche rilevanti.</li>
@@ -313,20 +314,42 @@ Al contrario, un valore di <span class="math inline">\(S_{eff}\)</span> molto ba
 <li>CORE (Core Area): Misura la superficie situata oltre una determinata distanza dal margine della patch (edge depth). È una metrica fondamentale per valutare la qualità ecologica delle aree verdi, poiché molte specie e funzioni ecosistemiche richiedono habitat interni protetti dalle perturbazioni provenienti dall’esterno.</li>
 <li>ENN (Euclidean Nearest Neighbor Distance): Misura la distanza lineare tra una patch e la patch più vicina appartenente alla stessa classe. È una delle metriche più utilizzate per valutare la connettività potenziale. Non misura l’effettiva connessione ecologica, ma la vicinanza spaziale tra elementi dello stesso tipo.</li>
 </ul>
-<p>==[da integrare: criteri adottati per la verifica preliminare della regola 3–30–300 (aree di verde pubblico di estensione prossima a 1 ha, buffer di 300 m)]==</p>
+<p>==<span class="math display">\[da integrare: criteri adottati per la verifica preliminare della regola 3–30–300 (aree di verde pubblico di estensione prossima a 1 ha, buffer di 300 m)\]</span>==</p>
 </div>
 <div id="approccio-allanalisi-del-territorio-con-marxan" class="section level2 hasAnchor" number="3.5">
 <h2><span class="header-section-number">3.5</span> Approccio all’analisi del territorio con Marxan<a href="metodologie.html#approccio-allanalisi-del-territorio-con-marxan" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>==[prima bozza in fase di completamento]==</p>
+<p>Fra gli strumenti utili per sviluppare una rete ecologica resiliente troviamo Marxan, un software sviluppato di supporto decisionale alla pianificazione spaziale per la conservazione naturalistica.
+La progettazione di una rete ecologica richiede infatti di soddisfare esigenze di tipo ambientale, conservazionistica, economica e sociale; tramite algoritmi, Marxan è in grado di individuare la configurazione spaziale che raggiunge gli obiettivi di conservazione al “minor costo” <span class="citation">(<a href="#ref-ball2009">Ball et al. 2009</a>)</span>.</p>
+<p>Nei seguenti paragrafi ne viene quindi illustrato il funzionamento, valutando l’applicabilità e le potenzialità nel territorio di Spoleto, in particolare:</p>
+<ul>
+<li>Descrivere il funzionamento di Marxan, illustrandone i principi e le funzionalità;</li>
+<li>Proporre un esempio applicativo riferito al progetto sul territorio di Spoleto;</li>
+<li>Individuare i dati, le risorse e le competenze tecniche necessarie per un’applicazione approfondita;</li>
+<li>Evidenziare i limiti dello strumento, al fine di chiarire la portata dei risultati ottenibili e le condizioni necessarie per il loro corretto utilizzo.</li>
+</ul>
+<p>Attraverso un’elaborazione basata su tre criteri: 1) il raggiungimento dei target di conservazione, 2) la minimizzazione dei costi, 3) la costruzione di reti compatte; Marxan consente di identificare le unità territoriali essenziali per soddisfare specifici obiettivi di conservazione, minimizzando costi e frammentazione (Ball et al., 2009).
+Il risultato prodotto non va inteso come una soluzione definitiva ma come un supporto al processo decisionale dei pianificatori, ai quali spetta perfezionarlo e interpretarlo sulla base dei fattori politici, socioeconomici e delle condizioni amministrative e operative del territorio.
+Al fine di aiutare i processi di negoziazione tra le parti interessati vengono inoltre elaborate numerose soluzioni alternative, fornendo diverse configurazioni territoriali possibili (Ardron et al., 2010; Serra et al., 2020).
+L’analisi si basa su un processo rigoroso e ripetibile, favorendo la trasparenza nelle scelte e riducendo il rischio di decisioni basate su valutazioni soggettive.
+Il funzionamento di Marxan provede le seguenti fasi (Serra et al., 2020).
+Come primo passo, si stabiliscono gli elementi di importanza conservazionistica, identificabili come specie, habitat, siti culturali ecc.
+A questi elementi viene applicato un obiettivo di conservazione, detto target: la minima quantità di elemento che deve essere inclusa nella pianificazione finale (es. 30% di ogni habitat).
+Al territorio viene poi sovrapposta una griglia con unità di forma quadrata, esagonale o con poligoni irregolari.
+Le unità formate vengono chiamate unità di pianificazione (UP) e le dimensioni dipendono dalla scala del progetto, dall’obiettivo e dall’uso previsto dei risultati.
+Ad ogni unità viene assegnato un costo, economico o sociale, che riflette l’esborso necessario per includere ciascuna unità nella rete.
+A questo punto, Marxan utilizza degli algoritmi per elaborare la configurazione spaziale che permette di raggiungere tutti gli obiettivi al minimo costo (Cudlín et al., 2020; Daigle et al., 2020), restituendo l’insieme delle unità che costituiranno la base della rete proposta.</p>
 </div>
 <div id="attività-di-divulgazione-e-cs" class="section level2 hasAnchor" number="3.6">
 <h2><span class="header-section-number">3.6</span> Attività di divulgazione e CS<a href="metodologie.html#attivit%C3%A0-di-divulgazione-e-cs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>==[da redigere: impianto metodologico della campagna di citizen science e del sondaggio]==</p>
+<p>==<span class="math display">\[da redigere: impianto metodologico della campagna di citizen science e del sondaggio\]</span>==</p>
 
 </div>
 </div>
 <h3>Riferimenti bibliografici<a href="riferimenti-bibliografici.html#riferimenti-bibliografici" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-ball2009" class="csl-entry">
+Ball, Ian R, Hugh P Possingham, and Matthew E Watts. 2009. <em>Marxan and Relatives: Software for Spatial Conservation Prioritization</em>. Edited by Atte Moilanen, Kerrie A Wilson, and Hugh P Possingham. Oxford University PressOxford. <a href="https://doi.org/10.1093/oso/9780199547760.003.0014">https://doi.org/10.1093/oso/9780199547760.003.0014</a>.
+</div>
 <div id="ref-battisti2004" class="csl-entry">
 Battisti, Corrado. 2004. <em>Frammentazione Ambientale Connettività Reti Ecologiche</em>. Provincia. STILGRAFICA srl.
 </div>

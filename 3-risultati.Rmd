@@ -209,7 +209,7 @@ SPOLETO
 
 ### Elaborati cartografici UF
 
-==[descrizione integrativa]==
+==\[descrizione integrativa\]==
 
 ![Carta 5 - Quote mediane per ciascuna UF.](unitaFunzionali02.jpeg)
 
@@ -219,25 +219,55 @@ SPOLETO
 
 ## Connettività per Unità Funzionali (MSPA)
 
-La valutazione della struttura e della connettività del paesaggio, ottenuta combinando la metodologia MSPA e gli indici di frammentazione [@jaeger2000a], è presentata di seguito con specifico riferimento alle Unità Funzionali. L'approccio disaggregato rende possibile un confronto puntuale tra le condizioni ecologiche dei diversi contesti, ponendosi come base conoscitiva per orientare gli interventi finalizzati all'incremento della permeabilità territoriale e di salvaguardia della biodiversità (Fig. \@ref(fig:mspaUnitaFunzionali)).
+La valutazione della struttura e della connettività del paesaggio, ottenuta combinando la metodologia MSPA e gli indici di frammentazione [@jaeger2000a], è presentata di seguito con specifico riferimento alle Unità Funzionali.
+L'approccio disaggregato rende possibile un confronto puntuale tra le condizioni ecologiche dei diversi contesti, ponendosi come base conoscitiva per orientare gli interventi finalizzati all'incremento della permeabilità territoriale e di salvaguardia della biodiversità (Fig. \@ref(fig:mspaUnitaFunzionali)).
+Per ciascuna unità sono stati considerati anche gli aspetti demografici legati alla popolazione residente e al numero dei nuclei familiari (Fig. \@ref(fig:mapPopolazione)).
 
 ```{r mspaUnitaFunzionali, fig.cap='Riclassificazione del territorio comunale secondo il metodo MSPA e ripartizione in unità funzionali.', out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/mspa_unitaFunzionali.png')
 ```
 
+```{r mapPopolazione, fig.cap='Popolazione residente (gradiente di colore) e numero di nuclei familiari (in numero) per frazione e località.', out.width='\\linewidth', fig.align='center', echo=FALSE}
+knitr::include_graphics('./figs/mapPopolazione.png')
+```
+
 ### Aree Montane e Dorsali Appenniniche (UF Alto collinare montana dell'Appennino e Alto collinare montana dei Monti Martani)
 
-In queste unità come era atteso sono presenti i valori di gran lunga più elevati di Area Totale e Effective Mesh Size per la classe *Core* (Fig. \@ref(fig:mspaUnitaFunzionaliMontana))(Tab x).
+In queste unità come era atteso sono presenti i valori di gran lunga più elevati di Area Totale e Effective Mesh Size per la classe *Core* (Fig. \@ref(fig:mspaUnitaFunzionaliMontana))(Tab. \@ref(tab:tabMSPAMontano)).
+
+```{r echo=F, warnings=F}
+library(tidyverse)
+mspa <- read.csv('input/risultatiMSPA_raggruppati.csv')
+mspa %>%
+  filter(
+    UNITA_FUNZ == "Alto collinare montana dei Monti Martani" |
+      UNITA_FUNZ == "Alto collinare montana dell'Appennino"
+  ) %>%
+  select(-1) %>%
+  knitr::kable(digits = 2)
+```
+
+: (#tab:tabMSPAMontano) Risultati analisi MSPA per le Aree Montane e Dorsali Appenniniche.
+
 Questo evidenzia un paesaggio a matrice prevalentemente naturale, dove l'habitat è continuo e poco frammentato.
 Queste unità presentano i valori di gran lunga più elevati di Area Totale e Effective Mesh Size per la classe *Core*.
 Questo evidenzia un paesaggio a matrice prevalentemente naturale, dove l'habitat è continuo e poco frammentato.
-Inoltre, l’elevato valore di $S_{eff}$ corrispondente a XX nei *Core* conferma che le aree core non sono solo estese, ma strutturate in macro-blocchi compatti, ideali per la conservazione della biodiversità ad ampio raggio.
+Inoltre, l’elevato valore di Mesh size superiore a 400 nei *Core* conferma che le aree core non sono solo estese, ma strutturate in macro-blocchi compatti, ideali per la conservazione della biodiversità ad ampio raggio.
 
 Riguardo le Componenti di Margine e i Corridoi, i valori di *Bridge* ed *Edge* mostrano un'estensione significativa ma un $S_{eff}$ contenuto rispetto ai *Core*, indicando che la matrice boschiva è continua e presenta margini esterni ben definiti senza eccessiva perforazione interna.
 
 ```{r mspaUnitaFunzionaliMontana, fig.cap="Carta geobotanica e analisi MSPA delle unità funzionali Alto collinare montana dell'Appennino e Alto collinare montana dei Monti Martani", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/mspa_unitaFunzionali_montana.png')
 ```
+
+Complessivamente la popolazione che insiste in queste aree rappresenta meno del 5% del totale con una densità molto bassa pari a circa 12 $ab/km^2$ (Tab. \@ref(tab:popMontano)).
+
+| UNITA_FUNZ                               |  POP | Pop% | FAM | Fam% |  Dens |
+|:-----------------------------------------|-----:|-----:|----:|-----:|------:|
+| Alto collinare montana dei Monti Martani |  595 | 1.61 | 283 | 1.65 | 14.29 |
+| Alto collinare montana dell'Appennino    | 1122 | 3.03 | 561 | 3.26 |  8.52 |
+
+: (#tab:popMontano) Popolazione residente, numero di famiglie e densita abitativa.
 
 ### Fasce di Transizione Pedemontane e Collinari (UF Collinare fascia olivata, Collinare dei Monti Martani, Collinare di Meggiano)
 
@@ -254,6 +284,16 @@ knitr::include_graphics('./figs/mspa_unitaFunzionali_olivata.png')
 knitr::include_graphics('./figs/mspa_unitaFunzionali_collinare.png')
 ```
 
+Complessivamente la popolazione che insiste in queste aree ammonta a 5513 unità, pari a 2507 famiglie, con una densità abitativa media di 53 $ab/km^2$ (Tab. \@ref(tab:popCollinare)).
+
+| UNITA_FUNZ                  |  POP | Pop% |  FAM | Fam% |  Dens |
+|:----------------------------|-----:|-----:|-----:|-----:|------:|
+| Collinare - fascia olivata  | 1502 | 4.06 |  712 | 4.14 | 61.47 |
+| Collinare dei Monti Martani | 3561 | 9.62 | 1551 | 9.02 | 81.48 |
+| Collinare di Meggiano       |  450 | 1.22 |  244 | 1.42 | 16.80 |
+
+: (#tab:popCollinare) Popolazione residente, numero di famiglie e densita abitativa.
+
 ### Area di pianura e di valle (UF di pianura e di Valle del T. Marroggia)
 
 In quest'area si osserva una presenza marcata della classe *Islet* (piccole patches isolate) unitamente a significativi valori di *Bridge* rappresentati dai corridoi fluviali e dal reticolo idrografico minore (Fig. \@ref(fig:mspaUnitaFunzionaliValle); Tab.
@@ -265,6 +305,14 @@ Ciò dimostra che la connettività ecologica in fondo valle è affidata a corrid
 knitr::include_graphics('./figs/mspa_unitaFunzionali_valle.png')
 ```
 
+In questa unità la densità abitativa è in linea con la media nazionale, con una frazione percentuale di popolazione pari al 30% (Tab. \@ref(tab:popValle)).
+
+| UNITA_FUNZ                             |   POP |  Pop% |  FAM |  Fam% |   Dens |
+|:---------------------------------------|------:|------:|-----:|------:|-------:|
+| Di pianura e di Valle del T. Marroggia | 11098 | 29.97 | 4847 | 28.18 | 189.47 |
+
+: (#tab:popValle) Popolazione residente, numero di famiglie e densita abitativa.
+
 ### Ambito Urbano / Antropizzato (UF Urbana)
 
 Come atteso, l’area *Core* in questa UF è poco rappresentata.
@@ -275,34 +323,44 @@ L'Effective Mesh Size assume i valori più bassi dell'intero territorio comunale
 knitr::include_graphics('./figs/mspa_unitaFunzionali_urbana.png')
 ```
 
+In questa porzione di territorio si concentra la metà della popolazione residente nel comune, con una densità abitativa di oltre 800 $ab/km^2$.
+
+| UNITA_FUNZ |   POP |  Pop% |  FAM |  Fam% |   Dens |
+|:-----------|------:|------:|-----:|------:|-------:|
+| Urbana     | 18701 | 50.50 | 9000 | 52.33 | 812.01 |
+
 ### Sintesi del confronto tra le Unità Funzionali
 
 In sostanza, il confronto tra le Unità Funzionali evidenzia una qualche forma di polarizzazione del territorio:
 
-1.  Unità Montane: Funzionano da serbatoi di connettività (*Source*) caratterizzati da elevate dimensioni della maglia utile ($S_{eff}$) e grandi blocchi *Core*.
-2.  Unità Collinari e di fondo valle: Funzionano da vettori di transizione e corridoi ecologici (*Stepping stones* e *Bridges*), essenziali per il collegamento comunale e anche di scala regionale, ma soggetti a elevato rischio di frammentazione strutturale e funzionale.
-3.  Ambito Urbano: Rappresenta il contesto a maggior grado di criticità ecologica e isolamento. La rete ecologica residua in ambito urbano si fonda quasi esclusivamente su piccole chiazze isolate (Islet) e bracci ciechi (Branch), evidenziando la necessità prioritario-gestionale di interventi di deframmentazione e re-infrastrutturazione verde (es. corridoi urbani, stepped stepping stones e forestazione urbana) per mantenere un minimo livello di permeabilità ecologica.
+1.  Unità Montane: Funzionano da serbatoi di connettività (*Source*) caratterizzati da elevate dimensioni della maglia utile ($S_{eff}$) e grandi blocchi *Core*, con una pressione insediativa molto bassa.
+2.  Unità Collinari e di fondo valle: Funzionano da vettori di transizione e corridoi ecologici (*Stepping stones* e *Bridges*), essenziali per il collegamento comunale e anche di scala regionale, ma soggetti a elevato rischio di frammentazione strutturale e funzionale, anche in relazione alla popolazione residente.
+3.  Ambito Urbano: Rappresenta il contesto a maggior grado di criticità ecologica e isolamento, con una densità abitativa molto elevata. La rete ecologica residua in ambito urbano si fonda quasi esclusivamente su piccole chiazze isolate (Islet) e bracci ciechi (Branch), evidenziando la necessità prioritario-gestionale di interventi di deframmentazione e re-infrastrutturazione verde (es. corridoi urbani, stepped stepping stones e forestazione urbana) per mantenere un minimo livello di permeabilità ecologica e offrire spazi di rigenerazione per la popolazione.
 
 ## Composizione e struttura del sistema verde e blu
 
 ### Estensione e composizione
 
-Come anticipato nelle premesse metodologiche, lo studio ha previsto una valutazione puntuale delle infrastrutture verdi e blu, tenendo conto sia della componente privata che pubblica. La mappa della loro distribuzione spaziale complessiva è riportata in figura \@ref(fig:verdeSpoleto).
+Come anticipato nelle premesse metodologiche, lo studio ha previsto una valutazione puntuale delle infrastrutture verdi e blu, tenendo conto sia della componente privata che pubblica.
+La mappa della loro distribuzione spaziale complessiva è riportata in figura \@ref(fig:verdeSpoleto).
 
 ```{r verdeSpoleto, fig.cap="Carta del verde (pubblico in tonalità scura e privato in tonalità più chiara) e del reticolo fluviale. Sullo sfondo in sovrapposizione la mappa MSPA sfumata. Il confine dell'unità funzionale urbana è evidenziato in rosso.", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/verdeSpoleto.png')
 ```
 
-Focalizzando l’attenzione alla sola area urbana, definita secondo il modello delle unità funzionali (cfr. capitolo unità funzionali) e per la quale si dispone di una cartografia sufficientemente dettagliata e accurata nella rappresentazione degli elementi del verde, si nota che la composizione degli elementi delle infrastrutture verdi e blu occupano una superficie totale di quasi 200 ha.
-Tale valore corrisponde a circa il 12.5% del territorio in esame.
-Nella ripartizione tra verde pubblico/privato e aree blu la componente privata rappresenta il 61% del totale e il blu solamente il 7% (\@ref(tab:verdeBase)).^[L'analisi condotta mediante rasterizzazione della cartografia vettoriale mette in evidenza una lieve riduzione delle superfici rispetto ai valori originari. Tale differenza è piuttosto contenuta e imputabile alla trasformazione su maglia 5x5 m e alla successiva applicazione del limite dell'area di studio corrispondente all’unità funzionale urbana. Le differenze risultano contenute per il verde privato e per le componenti blu, mentre sono più evidenti per il verde pubblico, caratterizzato da numerosi elementi di piccola dimensione e geometrie articolate.]
+Focalizzando l’attenzione alla sola area urbana, definita secondo il modello delle unità funzionali (cfr. capitolo unità funzionali) e per la quale si dispone di una cartografia sufficientemente dettagliata e accurata nella rappresentazione degli elementi del verde, si nota che la composizione degli elementi delle infrastrutture verdi e blu occupano una superficie totale di quasi 200 ha. Tale valore corrisponde a circa il 8.4% del territorio in esame.
+Nella ripartizione tra verde pubblico/privato e aree blu la componente privata rappresenta il 61% del totale e il blu solamente il 7.5% (\@ref(tab:verdeBase)).[^1]
+
+[^1]: L'analisi condotta mediante rasterizzazione della cartografia vettoriale mette in evidenza una lieve riduzione delle superfici rispetto ai valori originari.
+    Tale differenza è piuttosto contenuta e imputabile alla trasformazione su maglia 5x5 m e alla successiva applicazione del limite dell'area di studio corrispondente all’unità funzionale urbana.
+    Le differenze risultano contenute per il verde privato e per le componenti blu, mentre sono più evidenti per il verde pubblico, caratterizzato da numerosi elementi di piccola dimensione e geometrie articolate.
 
 | componente | proprieta | n_poligoni | area_ha |   PLAND |
-|:-----------|:----------|-----------:|--------:|--------:|
-| blu        | pubblico  |         19 |   14.54 |  0.92 % |
-| verde      | privato   |       1171 |  117.83 |  7.67 % |
-| verde      | pubblico  |        255 |   60.41 |  3.94 % |
-| **Totale** | \-        |       1445 |  192.79 | 12.53 % |
+|:-----------|:----------|-----------:|--------:|--------:| 
+| blu        | pubblico  |         19 |   14.5  |  0.63 % |
+| verde      | privato   |       1171 |  118.0  |  5.12 % |
+| verde      | pubblico  |        255 |   60.4  |  2.62 % |
+| **Totale** | \-        |       1445 |  192.9  |  8.37 % |
 
 : (#tab:verdeBase) Metriche della composizione del verde urbano per tipologia.
 
@@ -312,16 +370,31 @@ Dal punto di vista strutturale si osserva che le componenti verdi sono organizza
 
 #### Configurazione spaziale e connettività
 
-L’indice LPI corrispondente al Largest Patch Index raggiunge un valore pari a 87.3%, indicando che la matrice territoriale dominante, costituita da infrastrutture grigie e da terreni agricoli, occupa gran parte della superficie totale.
-In altre parole, come era atteso, il paesaggio risulta fortemente controllato dalla matrice urbana e dai seminativi che costituiscono lo sfondo all'interno del quale si distribuiscono gli elementi verdi e blu.
+L’indice LPI corrispondente al Largest Patch Index raggiunge un valore pari a 91.8 %, indicando che la matrice territoriale dominante, costituita da infrastrutture grigie e da terreni agricoli, occupa gran parte della superficie totale.
+In altre parole, come era atteso, il paesaggio risulta fortemente controllato dalla matrice urbana e dai seminativi che costituiscono lo sfondo all'interno del quale si distribuiscono gli elementi verdi e blu (Fig. \@ref(fig:rasterVerde).
 
-La superficie mediana delle patch di verde privato (3700 m\^2) è generalmente superiore a quella del verde pubblico (50 m\^2), suggerendo una maggiore presenza di nuclei vegetati continui all'interno delle proprietà private.
-Nel verde pubblico e nei corsi d’acqua più della metà delle patch non supera due celle (circa 50 m\^2), e nel blu lo stesso vale per tre quarti delle patch.
-Nel privato la mediana è 15 celle (circa 375 m\^2) e il terzo quartile 44 celle (circa 1100 m\^2).
+```{r rasterVerde, fig.cap="Carta del verde (pubblico in tonalità brillante e privato in tonalità più scusa) e delle infrastrutture blu nel formato raster.", out.width='\\linewidth', fig.align='center', echo=FALSE}
+knitr::include_graphics('./figs/rasterVerde.png')
+```
+
+La superficie mediana delle patch di verde privato ($400 m^2$) è generalmente superiore a quella del verde pubblico ($50 m^2$), suggerendo una maggiore presenza di nuclei vegetati continui all'interno delle proprietà private (Tab. \@ref(tab:verdePatches)).
+Nel verde pubblico e nei corsi d’acqua più della metà delle patch non supera due celle (circa $50 m^2$), e nel blu lo stesso vale per circa tre quarti delle patch.
+Nel privato la mediana è 15 celle (circa $400 m^2$) e il terzo quartile 44 celle (circa $1100 m^2$).
 La patch tipica del privato è dunque molto più grande di quella pubblica.
-In aggiunta, la superficie pubblica si presenta organizzata in modo molto diverso: si concentrata in pochi patch grandi accompagnati da molti micro-patch (Fig. ).
+In aggiunta, la superficie pubblica si presenta organizzata in modo molto diverso: si concentrata in pochi patch grandi accompagnati da molti micro-patch (Fig. \@ref(fig:boxplotVerde)).
 
-Figura X - patches **show_patches()**
+
+|classe         | n_patch| area_totale_ha| mediana_mq|  q1_mq|   q3_mq| max_ha|
+|:--------------|-------:|--------------:|----------:|------:|-------:|------:|
+|blu_pubblico   |     173|          14.54|      49.99|  24.99|   74.98|   9.00|
+|verde_privato  |     905|         116.17|     399.91| 149.97| 1149.75|   3.62|
+|verde_pubblico |     568|          57.04|      49.99|  24.99|  299.94|   9.34|
+
+: (#tab:verdePatches) Metriche della composizione del verde urbano per tipologia.
+
+```{r boxplotVerde, fig.cap="Boxplot della dimensione delle patch rasterizzate scomposte in verde pubblico, privato e componente blu.", out.width='\\linewidth', fig.align='center', echo=FALSE}
+knitr::include_graphics('./figs/boxplot_area_patch_strati.png')
+```
 
 Nonostante questo assetto lasci prefigurare un elevato livello di frammentazione con una densità di patch di circa 120 ogni 100 ha (PD=119.5), le metriche di contiguità (AI = 95.4), aggregazione (CONTAG = 75.2) e coesione (COHESION = 99.9) mostrano valori elevati, indicando che le diverse componenti mantengono un livello significativo di continuità spaziale (tab paesaggio strati.csv).
 Ciò a testimoniare una distribuzione delle classi organizzata in nuclei spazialmente riconoscibili piuttosto che in elementi completamente dispersi.
@@ -349,26 +422,67 @@ Ne deriva un sistema caratterizzato da una buona coerenza interna dei singoli so
 
 #### Dotazione per frazione e località
 
-Disaggregando le informazioni sulla base della ripartizione dell’unità funzionale Urbana in frazioni e località emergono chiare differenze nella dotazione locale delle infrastrutture verdi e blu.
-Le maggiori coperture si osservano a San Nicolò (21,4%) e Spoleto (20,4%), mentre Crociferro, San Sabino e Collerisana presentano dotazioni di verde sensibilmente inferiori (\<2.5%).
-Indici di copertura intermedi compresi tra il 10-15% si osservano a Cortaccione, Madonna di Lugo e Santo Chiodo.
+Disaggregando le informazioni sulla base della ripartizione dell’unità funzionale Urbana in frazioni e località emergono chiare differenze nella dotazione locale delle infrastrutture verdi e blu (Tab. \@ref(tab:verdeFraz).
+Le maggiori coperture si osservano a San Nicolò (18.3%) e Spoleto (15.6%), mentre Crociferro, San Sabino e Collerisana presentano dotazioni di verde sensibilmente inferiori (\<3%).
+Indici di copertura intermedi compresi tra il 8-13% si osservano a Cortaccione, Madonna di Lugo e Santo Chiodo.
 Differenziando l’analisi per componente pubblica-privata, emerge che in molte zone il verde è quasi esclusivamente privato.
-A Santo Chiodo il verde pubblico è circa il 4.7% della superficie, contro un 10.7% di quello privato.
-Analoga situazione si osserva a San Nicolò (5.9% contro 15.3%).
+A Santo Chiodo il verde pubblico è circa il 3.5% della superficie, contro un 9% di quello privato.
+Analoga situazione si osserva a San Nicolò (4.8% contro 13.1%).
 Il nucleo di Spoleto si distingue invece per l'elevato numero di patch e per il ruolo rilevante del verde pubblico, configurandosi come il sistema più articolato e diversificato.
 I livelli di AI (--) e COHESION (--) evidenziano anche il mantenimento di un certo livello di continuità funzionale all’interno di questa unità, tra i più alti osservati.
 Inoltre è in questa unità che possiamo ritrovare le patch più grandi (LPI=2.53%), a cui si affiancano le località di Cortaccione (3.68%), San Nicolò (2.63%) e Santo Chiodo (2.25%).
 
-==[Tabelle e figure]==
-==[Nota sul Laghetto dei Longobardi]
+| NOME                        |  Blue | Privato | Pubblico |   TOT |  Sup% |
+|:----------------------------|------:|--------:|---------:|------:|------:|
+| FRAZIONE COLLERISANA        |  1.26 |    9.88 |     0.00 | 11.14 |  2.50 |
+| FRAZIONE SAN SABINO         |  0.67 |    4.28 |     0.00 |  4.95 |  2.44 |
+| FRAZIONE SANTO CHIODO       |  0.35 |   18.78 |     7.08 | 26.22 | 12.64 |
+| LOCALITA' COLLE SAN TOMMASO |  0.00 |    7.83 |     0.00 |  7.83 |  8.60 |
+| LOCALITA' CORTACCIONE       |  1.09 |   14.56 |     0.00 | 15.65 | 11.92 |
+| LOCALITA' CROCIFERRO        |  0.56 |    0.10 |     0.00 |  0.66 |  0.76 |
+| LOCALITA' MADONNA DI LUGO   |  2.04 |   20.24 |     0.17 | 22.45 |  8.57 |
+| LOCALITA' SAN NICOLO'       |  0.23 |   10.29 |     3.83 | 14.34 | 18.30 |
+| SPOLETO                     | 15.39 |   42.27 |    36.81 | 94.47 | 15.57 |
+
+: (#tab:verdeFraz) Superfici di verde pubblico e privato (ha) e relativa frazione percentuale.
+
+|plot_id           | PLAND|    CA|  NP| AREA_MN| ENN_MN| COHESION|    AI|  LPI|
+|:-----------------|-----:|-----:|---:|-------:|------:|--------:|-----:|----:|
+|SAN NICOLO'       | 17.79| 14.18|  97|    0.15|  14.49|    93.51| 79.39| 2.31|
+|SPOLETO           | 14.00| 85.91| 878|    0.10|  15.45|    91.33| 80.60| 1.60|
+|SANTO CHIODO      | 12.48| 26.27| 149|    0.18|  19.48|    93.41| 81.26| 1.83|
+|CORTACCIONE       | 10.96| 14.59|  67|    0.22|  22.41|    93.20| 87.15| 2.72|
+|COLLE SAN TOMMASO |  8.72|  8.08|  49|    0.16|  27.56|    93.39| 81.72| 1.92|
+|MADONNA DI LUGO   |  6.66| 17.71| 135|    0.13|  20.81|    90.96| 82.22| 0.43|
+|COLLERISANA       |  1.47|  6.59|  38|    0.17|  67.88|    92.60| 87.14| 0.34|
+|SAN SABINO        |  0.85|  1.76|  11|    0.16|  27.75|    90.16| 85.10| 0.40|
+|CROCIFERRO        |  0.16|  0.14|   2|    0.07|  45.00|    82.18| 89.00| 0.11|
+
+: (#tab:metricheFraz) Indicatori di struttura per frazioni e località.
+
+
+==\[Nota sul Laghetto dei Longobardi\]
 
 ### Verifica regola 3–30–300
 
-Interpretando questi dati analitici in chiave regola 3-30-300 appare chiaro che nel contesto urbano il nucleo cittadino riveste la maggiore importanza ed è quello che offre le maggiori possibilità per il potenziale raggiungimento gli obiettivi della regola.
-Nodali in tal senso sono le aree verdi di: a) complesso areale di Piazza d’Armi e del campo di Atletica leggera, b) Villa Redenta e c) dell’area del Parco di Chico Mendez e della Spoleto Sfera.
+Interpretando questi dati analitici in chiave regola 3-30-300, appare chiaro che, nel contesto urbano, il nucleo cittadino riveste la maggiore importanza per densità di popolazione ed è quello che offre le maggiori possibilità di raggiungere gli obiettivi della regola.
+Dal punto di vista cartografico non è possibile accertare se venga soddisfatta la componente 3 (almeno tre alberi visibili da ogni abitazione), poiché ciò richiederebbe un censimento puntuale di tutte le alberature e il calcolo di tutti i coni di vista.
+Tuttavia, la presenza di un patrimonio verde diffuso e di una buona copertura arborea nel nucleo urbano lascia ipotizzare che questa soglia sia, almeno in buona parte, soddisfatta: la situazione, sotto questo profilo, non appare critica.
+
+Rispetto alla componente 30 (almeno il 30% di copertura arborea per quartiere), appare evidente che tutte le frazioni sono piuttosto lontane dalla soglia.
+Solo Spoleto e San Nicolò superano il 15% (ossia la metà di quanto previsto per ogni quartiere), mentre nei restanti casi, in cui la densità abitativa è decisamente più bassa, andrebbero condotte valutazioni che tengano conto anche degli aspetti vocazionali delle aree, quali la presenza di superfici agricole, boschive o naturali, per le quali l’applicazione rigida della soglia del 30% potrebbe non essere appropriata.
+Nell'ambito del poligono strettamente urbano (Fig. \@ref(fig:verdePubblicoSpoleto)), appaiono cruciali le aree verdi di: a) complesso areale di Piazza d’Armi e del campo di Atletica leggera, b) Villa Redenta e c) dell’area del Parco di Chico Mendez e della Spoleto Sfera (Fig. \@ref(fig:verdePubblicoSpoleto)).
+
+```{r verdePubblicoSpoleto, fig.cap="Carta del verde pubblico e della rete fluviale. In evidenza: 1) il complesso verde di Piazza d'Armi, 2) Villa Redenta e 3) il Parco Chico Mendez e la Spoleto Sfera.", out.width='\\linewidth', fig.align='center', echo=FALSE}
+knitr::include_graphics('./figs/verdePubblicoSpoleto.png')
+```
+
 A queste tre macro aree si aggiunge una porzione a sviluppo lineare adiacente il tracciato ferroviario in prossimità delle vie Primo Maggio e Tre Settembre e il corridoio blu del torrente Tessino.
 In nessuna delle altre unità urbane sono presenti superfici di verde pubblico di dimensione vicina all’ettaro, se non a Santo Chiodo in un’area a sviluppo lineare prossimale alla strada statale 685 delle Tre Valli Umbre.
-Riportando un buffer di 300 m intorno a queste aree si comprende la centralità e la grande grande rilevanza assunta dal corridoio fluviale del Torrente Tessino (Figg. \@ref(fig:rulebuf300); \@ref(fig:rulebuf300NT)). Tale elemento incrementa notevolmente la quota di territorio destinata alla connettività e alla funzionalità ambientale (l'estensione passa da 210 a 400 ha, interessando circa l’85% dell’unità urbana) e si configura come il naturale corridoio di collegamento verso la Greenway Valle Spoletana.
+Riportando un buffer di 300 m intorno a queste aree si comprende la centralità e la grande grande rilevanza assunta dal corridoio fluviale del Torrente Tessino (Figg. \@ref(fig:rulebuf300); \@ref(fig:rulebuf300NT)).
+Tale elemento incrementa notevolmente la quota di territorio destinata alla connettività e alla funzionalità ambientale (l’estensione passa infatti da 260 a 700 ha, interessando circa il 35% dell’unità urbana) e si configura come il naturale corridoio di collegamento della zona urbana verso la Greenway Valle Spoletana.
+Analogamente, un ruolo di rilievo viene assunto anche dalla zona umida nota come “Pozzaccheri” o laghetto dei Longobardi, che è l’unico elemento di questo tipo presente nella località di Madonna di Lugo e rappresenta di fatto l’unica area umidità e con caratteristiche di naturalità per la popolazione residente entro la soglia dei 300 m.
+Al di fuori delle aree così individuate, la quota di popolazione che non dispone di uno spazio verde di dimensioni adeguate a una distanza percorribile a piedi risulta invece consistente, e ciò conferma come la componente 300 della regola sia, allo stato attuale, quella meno soddisfatta nelle frazioni a minore densità e più lontane dal nucleo cittadino.
 
 ```{r rulebuf300, fig.cap="In rosso buffer di 300 m intorno alle aree verdi urbane di natura pubblica.", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/rule_buf300_1ha.png')
@@ -380,8 +494,120 @@ knitr::include_graphics('./figs/rule_buf300_1ha_noTess.png')
 
 ### Priorità di conservazione e connessione (Marxan)
 
-==[da completare primo step]==
+==\[da completare primo step\]==
 
-## Risultati del sondaggio Greenway
+## Risultati del sondaggio del Walkshop alla Greenway
 
-==[da elaborare]==
+Il 3 ottobre 2026 lungo la Greenway della Valle Spoletana in attuazione del presente studio si è tenuto un evento organizzato dal Comune di Spoleto insieme al Dipartimento di Chimica, Biologia e Biotecnologie dell'Università degli Studi di Perugia intitolato "Walkshop lungo il Tessino e la Marroggia".
+
+L'evento è iniziato la mattina e subito dopo l'accoglienza è stata richiesta la prima compilazione del form “Vivere la Natura a Spoleto”.
+Lungo il percorso del Tessino e del Marroggia, i partecipanti sono stati coinvolti in un'attività di osservazione e conoscenza condivisa, fornendo un contributo attivo che è proseguito con la seconda fase di rilevazione dati.
+In entrambi i casi le domande hanno toccato le stesse nove tematiche, ma con formulazioni e scale diverse.
+Il questionario “pre” è stato utilizzato per raccogliere alcune informazioni sul partecipante (età, genere, occupazione, località di residenza, frequenza d'uso dell'area e tempo che vi trascorre) e proporre nove domande con risposta con punteggio da 1 («per nulla») a 5 («moltissimo»).
+
+Elenco domande della prima compilazione (pre):
+
+1.  Quanto si sente legato alla natura e vicino alle tematiche ambientali?
+
+2.  Quanto si sente felice e/o sereno quando trascorre del tempo qui?
+
+3.  Quanto contribuisce alla sua salute fisica frequentare la Greenway?
+
+4.  Quanto quest’area naturale la aiuta a rigenerarsi, concentrarsi e rilassarsi?
+
+5.  Quanto questo spazio rappresenta per lei un punto di ritrovo, socializzazione e incontro?
+
+6.  Quest’area naturale può essere un “rifugio climatico” (luogo per ripararsi e trovare sollievo durante le ondate di calore intenso)?
+
+7.  Quanto è importante la Greenway nella sua vita quotidiana?
+
+8.  Quanto ritiene questa area importante per l'identità e lo sviluppo degli spoletini?
+
+9.  Consiglierebbe ad altri, suoi parenti-amici-conoscenti e non, di frequentare la Greenway?
+
+Le domande servivano per descrivere la situazione abituale e la percezione che i partecipanti avevano prima dell’incontro. Successivamente, il questionario post ha proposto domande finalizzate a rilevare il cambiamento percepito, attraverso risposte di tipo sì/no: per esempio se, dopo il walkshop, il partecipante si sentisse più sereno o se ritenesse possibile l’utilizzo della Greenway come rifugio climatico.
+
+Hanno risposto al questionario pre 47 persone e al post 41. La fascia di età più numerosa è stata quella da 46–65 anni (38%), seguita da 26–45 e oltre 65 (23% ciascuna) e da sotto i 25 anni (15%).
+Le donne hanno rappresentato il 55% del campione. Considerando l’aspetto lavorativo i dipendenti pubblici (34%) sono stati i più numerosi, seguiti dagli studenti (21%) e i pensionati (19%) (Fig. \@ref(fig:campione) ).
+Il 26% degli intervistati è residente a Spoleto e il 70% in altre località, tra frazioni e comuni vicini, ma anche più lontani (tra cui Perugia, Foligno e Roma). Il 36% ha dichiarato di frequentare l'area raramente o per la prima volta, il 32% una volta al mese, il 17% ogni settimana e il 15% ogni giorno.
+Il 23% ha indicato di trascorrervi meno di 30 minuti, il 55% tra 45 e 60 minuti e il 17% oltre un'ora (Fig. \@ref(fig:campione)).
+
+```{r campione, fig.cap="Informazioni sulle caratteristiche dei partecipanti", out.width='\\linewidth', fig.align='center', echo=FALSE}
+knitr::include_graphics('./figs/walkshop/fig1_campione.png')
+```
+
+Per l’analisi delle risposte al questionario, per ogni domanda sono stati calcolati frequenze, media, mediana e quota di risposte con punteggi alti (Tab. \@ref(tab:questionario)).
+
+|item |  n| media|   ds| mediana|   q1| q3| pct_1_2| pct_3| pct_4_5| pct_5|
+|:----|--:|-----:|----:|-------:|----:|--:|-------:|-----:|-------:|-----:|
+|Q1   | 47|  4.57| 0.68|     5.0| 4.00|  5|    2.13|  4.26|   93.62| 65.96|
+|Q2   | 47|  4.23| 1.11|     5.0| 4.00|  5|    8.51|  6.38|   85.11| 53.19|
+|Q3   | 47|  3.98| 1.22|     4.0| 4.00|  5|   12.77| 10.64|   76.60| 42.55|
+|Q4   | 46|  4.20| 1.15|     5.0| 4.00|  5|   13.04|  4.35|   82.61| 54.35|
+|Q5   | 46|  3.13| 1.31|     3.0| 2.00|  4|   30.43| 34.78|   34.78| 21.74|
+|Q6   | 47|  3.36| 1.47|     4.0| 2.00|  5|   29.79| 17.02|   53.19| 29.79|
+|Q7   | 46|  3.11| 1.62|     3.0| 1.25|  5|   36.96| 23.91|   39.13| 34.78|
+|Q8   | 46|  3.74| 1.32|     4.0| 3.00|  5|   17.39| 23.91|   58.70| 41.30|
+|Q9   | 46|  4.22| 0.94|     4.5| 4.00|  5|    6.52| 15.22|   78.26| 50.00|
+
+: (#tab:questionario) Risultati del questionario in fase di partenza.
+
+
+Dalle risposte pervenute emerge che il legame con la natura dei partecipanti (Q1) ha la media più alta (4,6) e il 94% di risposte 4 o 5 (Tab. \@ref(tab:questionario)). Tra i giudizi formulati direttamente sulla Greenway, i più alti riguardano la serenità (Q2), la rigenerazione individuale (Q4), la salute fisica (Q3) e il passaparola (Q9): oltre otto persone su dieci sono felici e rilassate, e raccomanderebbero la frequentazione dell’area ad altri. Colpisce che i cittadini coinvolti abbiano riconosciuto meno il valore di quest’area nella socialità (Q5), il suo ruolo di potenziale rifugio climatico (Q6) e l'importanza nella vita quotidiana (Q7). Queste tre funzioni probabilmente sono meno ovvie e dipendono più dall'uso abituale dell'area e pertanto hanno ricevuto valutazioni con le medie più basse, tra 3,1 e 3,4. In particolare, l’importanza nella vita quotidiana è risultata polarizzata: il 26% ha risposto 1 e il 35% 5 (Fig. \@ref(fig:likert)).
+
+```{r likert, fig.cap="Sintesi delle risposte: 1 («per nulla») a 5 («moltissimo»)", out.width='\\linewidth', fig.align='center', echo=FALSE}
+knitr::include_graphics('./figs/walkshop/fig2_likert.png')
+```
+
+Per sintetizzare in un solo valore i giudizi dei partecipanti sulla Greenway è stato calcolato, per ogni persona, un punteggio composito: la media delle risposte alle domande da 2 a 9. Il punteggio va da 1 (giudizio minimo) a 5 (massimo) ed è calcolato per chi ha risposto ad almeno sei domande su otto. La domanda 1, sul legame personale con la natura, è esclusa perché descrive il soggetto partecipante e non un giudizio sull’area (Fig. \@ref(fig:composito)).
+
+Dal quadro d’insieme emerge che in genere le valutazioni crescono con l'età: sotto i 45 anni il punteggio mediano è circa 3,3 su 5, sopra i 45 supera 4,1. Chi si ferma meno di 30 minuti ha un punteggio mediano di 3,3, contro 4,1–4,3 degli altri, e chi viene raramente o per la prima volta come era da attendersi ha valutazioni più basse (mediana 3,4, contro 4,1–4,3). Questi due effetti sono in parte sovrapposti e in parte dovuti alla poca familiarità con l'area: le domande su salute, vita quotidiana e identità presuppongono infatti un'esperienza ripetuta nel tempo.
+
+```{r composito, fig.cap="Punteggio composito (media delle domande 2–9) per gruppi di partecipanti", out.width='\\linewidth', fig.align='center', echo=FALSE}
+knitr::include_graphics('./figs/walkshop/fig4_composito_gruppi.png')
+```
+
+Quando al termine della giornata è stato sottoposto il nuovo questionario sono emerse queste valutazioni (Tab. \@ref(tab:questionarioPost)). 
+
+|Post |etichetta                                         | si| no|  n| pct_si| ic_lo| ic_hi|
+|:----|:-------------------------------------------------|--:|--:|--:|------:|-----:|-----:|
+|P1   |Più legato alla natura                            | 37|  4| 41|   90.2|  76.9|  97.3|
+|P2   |Più felice / sereno                               | 40|  1| 41|   97.6|  87.1|  99.9|
+|P3   |Meglio fisicamente                                | 38|  3| 41|   92.7|  80.1|  98.5|
+|P4   |Più rigenerato / rilassato                        | 38|  3| 41|   92.7|  80.1|  98.5|
+|P5   |Può usarla per ritrovo e socialità                | 36|  5| 41|   87.8|  73.8|  95.9|
+|P6   |Può usarla come rifugio climatico                 | 30| 11| 41|   73.2|  57.1|  85.8|
+|P7   |Può diventare parte della propria vita quotidiana | 34|  7| 41|   82.9|  67.9|  92.8|
+|P8   |Può diventare parte della vita degli spoletini    | 39|  2| 41|   95.1|  83.5|  99.4|
+|P9   |La consiglierebbe ad altri                        | 40|  1| 41|   97.6|  87.1|  99.9|
+
+: (#tab:questionarioPost) Risultati del questionario in fase di rientro dal walkshop.
+
+Il questionario post, compilato da 41 persone al termine della camminata, mostra una prevalenza di risposte affermative (Fig. \@ref(fig:Qpost)). Quasi tutti dichiarano di sentirsi più sereni e consiglierebbero la Greenway ad altri (98%, 40 su 41); superano il 90% anche i «sì» su benessere fisico, rigenerazione e legame con la natura. Più bassi sono i valori sull’uso dell’area: l’88% la userebbe come luogo di ritrovo e l’83% la vede entrare nella propria vita quotidiana. Il valore minimo riguarda il rifugio climatico (73%, 30 su 41).
+
+```{r Qpost, fig.cap="Quota di risposte affermative con intervallo di confidenza al 95%", out.width='\\linewidth', fig.align='center', echo=FALSE}
+knitr::include_graphics('./figs/walkshop/fig6_post_si.png')
+```
+
+Infine, se esaminiamo le risposte aperte, i contributi vanno soprattutto nella direzione di preservare la vegetazione e potenziare le aree con più ombra e soprattutto i servizi di sosta nell’area (Fig. \@ref(fig:Qaperte)).
+
+```{r Qaperte, fig.cap="Riepilogo del contenuto delle risposte aperte.", out.width='\\linewidth', fig.align='center', echo=FALSE}
+knitr::include_graphics('./figs/walkshop/fig7_aperte_temi.png')
+```
+In dettaglio, appare chiaro che nella voce “**Da Mantenere**” la vegetazione è il tema più frequente (13 risposte su 31: «verde», «alberi», «piante spontanee», «specie autoctone»), seguita dal percorso così com'è, pulito e accessibile, dall'ecosistema, la biodiversità e i collegamenti tra ambienti, e dalla naturalità.
+
+Tra le cose “**Da cambiare**”, la richiesta più frequente è avere più alberi e più ombra (12 su 28). Seguono il contrasto alle specie invasive a favore di quelle autoctone (6 risposte, di cui tre citano espressamente l'ailanto), servizi e arredi come panchine e fontanelle e pulizia con secchi per i rifiuti.
+
+Nell’ottica di una prospezione “**Per il futuro**”, quasi la metà (13 su 28) chiede servizi e aree di sosta: panchine, aree picnic, fontanelle, ristoro, spazi per i bambini, attrezzature per l'attività fisica.
+In misura minore sono state formulate anche altre richieste relativamente al potenziamento della comunicazione e promozione dell'area, attraverso l’installazione di cartellonistica specifica e pannelli didattici su piante e fauna.
+
+Per concludere, appare evidente che i partecipanti al walkshop ritengono che la Greenway sia soprattutto un luogo di serenità, rigenerazione e contatto con la natura: oltre l'80% lo riconosce prima della camminata e il 93–98% dichiara di sentirsi meglio al termine dell'evento.
+Meno riconosciuto è il suo ruolo sociale e quotidiano, e le valutazioni sono più basse tra gli under 45 e i visitatori occasionali, che conoscono meno l'area e che quindi non hanno ancora familiriazzato con il luogo.
+Le risposte aperte indicano priorità concrete e convergenti: 
+
+1. Più alberi e ombra lungo il percorso, e contrasto all'ailanto con piante autoctone.
+2. Panchine, fontanelle, secchi per i rifiuti e aree di sosta, anche per bambini e picnic.
+3. Cartellonistica e pannelli didattici su piante e fauna.
+4. Più comunicazione sull'esistenza della Greenway e iniziative periodiche come questo walkshop.
+
+In sintesi, i partecipanti vogliono preservare il carattere naturale della Greenway, fatto di vegetazione, percorso e connessioni ecologiche, e chiedono allo stesso tempo di renderla più accogliente e più comprensibile, con più ombra e servizi di sosta per chi la frequenta e una maggiore informazione sul suo valore naturalistico.

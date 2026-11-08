@@ -1894,6 +1894,53 @@
             "title-short": "Landscape division, splitting index, and effective mesh size",
             "type": "article-journal",
             "volume": "15"
+        },
+        {
+            "DOI": "10.1093/oso/9780199547760.003.0014",
+            "URL": "https://academic.oup.com/book/53408/chapter/422090427",
+            "author": [
+                {
+                    "family": "Ball",
+                    "given": "Ian R"
+                },
+                {
+                    "family": "Possingham",
+                    "given": "Hugh P"
+                },
+                {
+                    "family": "Watts",
+                    "given": "Matthew E"
+                }
+            ],
+            "editor": [
+                {
+                    "family": "Moilanen",
+                    "given": "Atte"
+                },
+                {
+                    "family": "Wilson",
+                    "given": "Kerrie A"
+                },
+                {
+                    "family": "Possingham",
+                    "given": "Hugh P"
+                }
+            ],
+            "id": "ball2009",
+            "issued": {
+                "date-parts": [
+                    [
+                        2009,
+                        5
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "185195",
+            "publisher": "Oxford University PressOxford",
+            "title": "Marxan and relatives: Software for spatial conservation prioritization",
+            "title-short": "Marxan and relatives",
+            "type": "chapter"
         }
     ],
     "project_biblios": [

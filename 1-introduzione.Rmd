@@ -8,9 +8,10 @@ editor_options:
 
 ## La rete ecologica
 
-==[breve nota con alcuni elementi da riprendere dalla relazione precedente e con un aggiornamento alla situazione attuale]==
+==\[breve nota con alcuni elementi da riprendere dalla relazione precedente e con un aggiornamento alla situazione attuale\]==
 
-==[definizione ambiti prioritari]
+==\[definizione ambiti prioritari\]
+
 
 ## Il verde urbano
 
@@ -36,8 +37,8 @@ Ovviamente questa regola è una linea guida “volontaria”, da applicare con a
 
 ## Agenda urbana e progetto lifeIMAGINE
 
-==[da concordare quali parti inserire]==
+==\[da concordare quali parti inserire\]==
 
 ## Obiettivi dello studio
 
-==[altre voci da inserire?]==
+==\[altre voci da inserire?\]==

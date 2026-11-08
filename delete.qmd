@@ -1,0 +1,14 @@
+---
+title: "Questo è il mio titolo"
+format: html
+---
+
+# capitolo
+
+## sottocapitolo
+
+### Sezione
+
+Questo è il testo con il riferimento alla figura ...
+
+![questa è l'etichetta cambiata con qeusto nuovo testo](figs/paceMspaPlot2k.png){fig-align="center"}

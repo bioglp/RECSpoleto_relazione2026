@@ -1,0 +1,50 @@
+"","UNITA_FUNZ","Macro_Classe","Area_Totale","Num_Patches","Effective_Mesh_Size"
+"1","Alto collinare montana dei Monti Martani","Core",2709.42651559539,158,470.614665473892
+"2","Alto collinare montana dei Monti Martani","Islet",10.2392654778375,155,0.000662423145222338
+"3","Alto collinare montana dei Monti Martani","Perforation",45.9229611579926,74,0.017973860978541
+"4","Alto collinare montana dei Monti Martani","Edge",260.994729541386,669,0.0966655871387903
+"5","Alto collinare montana dei Monti Martani","Loop",79.8559111154269,255,0.0364034663335321
+"6","Alto collinare montana dei Monti Martani","Bridge",235.168802336305,766,0.0747361131469953
+"7","Alto collinare montana dei Monti Martani","Branch",75.8560284466502,689,0.0114154130402744
+"8","Alto collinare montana dell'Appennino","Core",10690.4202735424,175,423.867698607515
+"9","Alto collinare montana dell'Appennino","Islet",13.9203236929163,207,0.000382962985746218
+"10","Alto collinare montana dell'Appennino","Perforation",379.958274126903,843,0.0502154280951989
+"11","Alto collinare montana dell'Appennino","Edge",353.812131030603,851,0.0409517366746113
+"12","Alto collinare montana dell'Appennino","Loop",337.946452790282,1203,0.0332331337473446
+"13","Alto collinare montana dell'Appennino","Bridge",282.671138527903,933,0.0225116429474459
+"14","Alto collinare montana dell'Appennino","Branch",77.8582623444738,1064,0.0018800810655315
+"15","Collinare - fascia olivata","Core",1197.05271913322,88,117.109007277506
+"16","Collinare - fascia olivata","Islet",20.5867765425535,255,0.00601391418391856
+"17","Collinare - fascia olivata","Perforation",27.3778709041853,53,0.0169003691383078
+"18","Collinare - fascia olivata","Edge",146.883958967017,404,0.122221394532419
+"19","Collinare - fascia olivata","Loop",47.9786566824551,244,0.0180910626263005
+"20","Collinare - fascia olivata","Bridge",136.324983393917,432,0.128011655576171
+"21","Collinare - fascia olivata","Branch",37.4277039705909,486,0.00740598063175892
+"22","Collinare dei Monti Martani","Core",1156.61899490045,241,57.3869820027896
+"23","Collinare dei Monti Martani","Islet",82.4054191469746,1030,0.0184869951345361
+"24","Collinare dei Monti Martani","Perforation",28.5520382104141,28,0.0259439662984923
+"25","Collinare dei Monti Martani","Edge",417.908182051041,694,0.375584369619247
+"26","Collinare dei Monti Martani","Loop",74.6770271103494,349,0.020684105517114
+"27","Collinare dei Monti Martani","Bridge",261.780943047476,1007,0.0917770049177797
+"28","Collinare dei Monti Martani","Branch",149.167482705178,1553,0.0305476320427426
+"29","Collinare di Meggiano","Core",1941.80783201857,62,166.804080608143
+"30","Collinare di Meggiano","Islet",2.09067751262813,53,7.96037895968065e-05
+"31","Collinare di Meggiano","Perforation",120.544544555237,309,0.0544270230486916
+"32","Collinare di Meggiano","Edge",111.065725174372,271,0.0651939889345608
+"33","Collinare di Meggiano","Loop",101.15699698618,383,0.0369546150819369
+"34","Collinare di Meggiano","Bridge",102.912028792061,327,0.0485164145424746
+"35","Collinare di Meggiano","Branch",22.170196002755,333,0.00187648098777029
+"36","Di pianura e di Valle del T.  Marroggia","Core",1033.42778107879,185,138.062034242025
+"37","Di pianura e di Valle del T.  Marroggia","Islet",176.327807387615,2385,0.0366657378253615
+"38","Di pianura e di Valle del T.  Marroggia","Perforation",14.6714337898745,32,0.00692296825777592
+"39","Di pianura e di Valle del T.  Marroggia","Edge",259.503217889777,525,0.220150753593262
+"40","Di pianura e di Valle del T.  Marroggia","Loop",63.6373850188858,325,0.0182045082742053
+"41","Di pianura e di Valle del T.  Marroggia","Bridge",200.8871890503,827,0.136480084197912
+"42","Di pianura e di Valle del T.  Marroggia","Branch",119.254397589219,1334,0.0273855145594872
+"43","Urbana","Core",315.620853958022,106,21.2766950015184
+"44","Urbana","Islet",98.4706891369626,1256,0.0548020654855407
+"45","Urbana","Perforation",11.7029381988308,30,0.0122200770194857
+"46","Urbana","Edge",113.743578338956,336,0.167300412961508
+"47","Urbana","Loop",58.4561222730066,270,0.0444370136965742
+"48","Urbana","Bridge",182.681456998139,695,0.586261448731241
+"49","Urbana","Branch",69.0185106748795,869,0.0262913117768245
