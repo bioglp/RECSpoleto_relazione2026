@@ -207,15 +207,6 @@ LOCALITA' TESTACCIO
 SPOLETO
 ```
 
-### Elaborati cartografici UF
-
-==\[descrizione integrativa\]==
-
-![Carta 5 - Quote mediane per ciascuna UF.](unitaFunzionali02.jpeg)
-
-![Carta 5 - Sovrapposizione carta CORINE Land Cover e UF.](unitaFunzionali03.jpeg)
-
-![Carta 6 - Caratterizzazione percentuale delle principali categorie geobotaniche presenti nelle diverse UF.](unitaFunzionali04.jpeg)
 
 ## Connettività per Unità Funzionali (MSPA)
 
@@ -249,7 +240,6 @@ mspa %>%
 
 : (#tab:tabMSPAMontano) Risultati analisi MSPA per le Aree Montane e Dorsali Appenniniche.
 
-Questo evidenzia un paesaggio a matrice prevalentemente naturale, dove l'habitat è continuo e poco frammentato.
 Queste unità presentano i valori di gran lunga più elevati di Area Totale e Effective Mesh Size per la classe *Core*.
 Questo evidenzia un paesaggio a matrice prevalentemente naturale, dove l'habitat è continuo e poco frammentato.
 Inoltre, l’elevato valore di Mesh size superiore a 400 nei *Core* conferma che le aree core non sono solo estese, ma strutturate in macro-blocchi compatti, ideali per la conservazione della biodiversità ad ampio raggio.
@@ -260,7 +250,7 @@ Riguardo le Componenti di Margine e i Corridoi, i valori di *Bridge* ed *Edge* m
 knitr::include_graphics('./figs/mspa_unitaFunzionali_montana.png')
 ```
 
-Complessivamente la popolazione che insiste in queste aree rappresenta meno del 5% del totale con una densità molto bassa pari a circa 12 $ab/km^2$ (Tab. \@ref(tab:popMontano)).
+Complessivamente la popolazione che insiste in queste aree rappresenta meno del 5% del totale con una densità molto bassa pari a circa 10 $ab/km^2$ (Tab. \@ref(tab:popMontano)).
 
 | UNITA_FUNZ                               |  POP | Pop% | FAM | Fam% |  Dens |
 |:-----------------------------------------|-----:|-----:|----:|-----:|------:|
@@ -284,7 +274,7 @@ knitr::include_graphics('./figs/mspa_unitaFunzionali_olivata.png')
 knitr::include_graphics('./figs/mspa_unitaFunzionali_collinare.png')
 ```
 
-Complessivamente la popolazione che insiste in queste aree ammonta a 5513 unità, pari a 2507 famiglie, con una densità abitativa media di 53 $ab/km^2$ (Tab. \@ref(tab:popCollinare)).
+Complessivamente la popolazione che insiste in queste aree ammonta a 5513 unità, pari a 2507 famiglie, con una densità abitativa media di 58 $ab/km^2$ (Tab. \@ref(tab:popCollinare)).
 
 | UNITA_FUNZ                  |  POP | Pop% |  FAM | Fam% |  Dens |
 |:----------------------------|-----:|-----:|-----:|-----:|------:|
@@ -362,24 +352,24 @@ Nella ripartizione tra verde pubblico/privato e aree blu la componente privata r
 | verde      | pubblico  |        255 |   60.4  |  2.62 % |
 | **Totale** | \-        |       1445 |  192.9  |  8.37 % |
 
-: (#tab:verdeBase) Metriche della composizione del verde urbano per tipologia.
+: (#tab:verdeBase) Metriche della composizione del verde urbano e strutture blu per tipologia.
 
-Complessivamente la mosaicatura di queste infrastrutture si compone di 1445 poligoni, la maggior parte dei quali assimilabili al verde privato (79%).
+Complessivamente la mosaicatura di queste infrastrutture si compone di 1445 poligoni, la maggior parte dei quali assimilabili al verde privato (81%).
 
-Dal punto di vista strutturale si osserva che le componenti verdi sono organizzate in un elevato numero di patch di piccole dimensioni, distribuite all'interno della matrice urbana, e caratterizzate da una superficie media di 0.84 ha.
+Dal punto di vista strutturale si osserva che le componenti verdi sono organizzate in un elevato numero di patch di piccole dimensioni, distribuite all'interno della matrice urbana, e caratterizzate da una superficie media di 0.13 ha.
 
 #### Configurazione spaziale e connettività
 
 L’indice LPI corrispondente al Largest Patch Index raggiunge un valore pari a 91.8 %, indicando che la matrice territoriale dominante, costituita da infrastrutture grigie e da terreni agricoli, occupa gran parte della superficie totale.
 In altre parole, come era atteso, il paesaggio risulta fortemente controllato dalla matrice urbana e dai seminativi che costituiscono lo sfondo all'interno del quale si distribuiscono gli elementi verdi e blu (Fig. \@ref(fig:rasterVerde)).
 
-```{r rasterVerde, fig.cap="Carta del verde (pubblico in tonalità brillante e privato in tonalità più scusa) e delle infrastrutture blu nel formato raster.", out.width='\\linewidth', fig.align='center', echo=FALSE}
+```{r rasterVerde, fig.cap="Carta del verde (pubblico in tonalità brillante e privato in tonalità più scura) e delle infrastrutture blu nel formato raster.", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/rasterVerde.png')
 ```
 
 La superficie mediana delle patch di verde privato ($400~m^2$) è generalmente superiore a quella del verde pubblico ($50~m^2$), suggerendo una maggiore presenza di nuclei vegetati continui all'interno delle proprietà private (Tab. \@ref(tab:verdePatches)).
-Nel verde pubblico e nei corsi d’acqua più della metà delle patch non supera due celle (circa $50~m^2$), e nel blu lo stesso vale per circa tre quarti delle patch.
-Nel privato la mediana è 15 celle (circa $400~m^2$) e il terzo quartile 44 celle (circa $1100~m^2$).
+Nel verde pubblico e nei corsi d’acqua più della metà delle patch non supera tre celle (circa $50~m^2$), e nel blu lo stesso vale per circa tre quarti delle patch.
+Nel privato la mediana è 16 celle (circa $400~m^2$) e il terzo quartile 46 celle (circa $1100~m^2$).
 La patch tipica del privato è dunque molto più grande di quella pubblica.
 In aggiunta, la superficie pubblica si presenta organizzata in modo molto diverso: si concentrata in pochi patch grandi accompagnati da molti micro-patch (Fig. \@ref(fig:boxplotVerde)).
 
@@ -401,18 +391,12 @@ Nonostante questo assetto lasci prefigurare un elevato livello di frammentazione
 |metric   |   value|
 |:--------|-------:|
 |AI       |   96.86|
-|area_mn  |    1.32|
+|AREA_MN  |    1.32|
 |COHESION |   99.90|
 |CONTAG   |   82.15|
-|ed       |  120.50|
-|iji      |   48.57|
-|lpi      |   91.79|
-|np       | 1756.00|
+|LPI      |   91.79|
+|NP       | 1756.00|
 |PD       |   75.85|
-|shdi     |    0.35|
-|shei     |    0.25|
-|sidi     |    0.15|
-|ta       | 2315.15|
 
 : (#tab:paesaggio) Metriche della struttura del paesaggio complessivo.
 
@@ -518,9 +502,9 @@ knitr::include_graphics('./figs/verdePubblicoSpoleto.png')
 
 A queste tre macro aree si aggiunge una porzione a sviluppo lineare adiacente il tracciato ferroviario in prossimità delle vie Primo Maggio e Tre Settembre e il corridoio blu del torrente Tessino.
 In nessuna delle altre unità urbane sono presenti superfici di verde pubblico di dimensione vicina all’ettaro, se non a Santo Chiodo in un’area a sviluppo lineare prossimale alla strada statale 685 delle Tre Valli Umbre.
-Riportando un buffer di 300 m intorno a queste aree si comprende la centralità e la grande grande rilevanza assunta dal corridoio fluviale del Torrente Tessino (Figg. \@ref(fig:rulebuf300); \@ref(fig:rulebuf300NT)).
-Tale elemento incrementa notevolmente la quota di territorio destinata alla connettività e alla funzionalità ambientale (l’estensione passa infatti da 260 a 700 ha, interessando circa il 35% dell’unità urbana) e si configura come il naturale corridoio di collegamento della zona urbana verso la Greenway Valle Spoletana.
-Analogamente, un ruolo di rilievo viene assunto anche dalla zona umida nota come “Pozzaccheri” o laghetto dei Longobardi, che è l’unico elemento di questo tipo presente nella località di Madonna di Lugo e rappresenta di fatto l’unica area umidità e con caratteristiche di naturalità per la popolazione residente entro la soglia dei 300 m.
+Riportando un buffer di 300 m intorno a queste aree si comprende la centralità e la grande rilevanza assunta dal corridoio fluviale del Torrente Tessino (Figg. \@ref(fig:rulebuf300); \@ref(fig:rulebuf300NT)).
+Tale elemento incrementa notevolmente la quota di territorio destinata alla connettività e alla funzionalità ambientale (l’estensione passa infatti da 260 a 700 ha, interessando circa il 30% dell’unità urbana) e si configura come il naturale corridoio di collegamento della zona urbana verso la Greenway Valle Spoletana.
+Analogamente, un ruolo di rilievo viene assunto anche dalla zona umida nota come “Pozzaccheri” o laghetto dei Longobardi, che è l’unico elemento di questo tipo presente nella località di Madonna di Lugo e rappresenta di fatto l’unica area umida e con caratteristiche di naturalità per la popolazione residente entro la soglia dei 300 m.
 Al di fuori delle aree così individuate, la quota di popolazione che non dispone di uno spazio verde di dimensioni adeguate a una distanza percorribile a piedi risulta invece consistente, e ciò conferma come la componente 300 della regola sia, allo stato attuale, quella meno soddisfatta nelle frazioni a minore densità e più lontane dal nucleo cittadino.
 
 ```{r rulebuf300, fig.cap="In rosso buffer di 300 m intorno alle aree verdi urbane di natura pubblica.", out.width='\\linewidth', fig.align='center', echo=FALSE}
@@ -588,7 +572,7 @@ Per l’analisi delle risposte al questionario, per ogni domanda sono stati calc
 : (#tab:questionario) Risultati del questionario in fase di partenza.
 
 
-Dalle risposte pervenute emerge che il legame con la natura dei partecipanti (Q1) ha la media più alta (4,6) e il 94% di risposte 4 o 5 (Tab. \@ref(tab:questionario)). Tra i giudizi formulati direttamente sulla Greenway, i più alti riguardano la serenità (Q2), la rigenerazione individuale (Q4), la salute fisica (Q3) e il passaparola (Q9): oltre otto persone su dieci sono felici e rilassate, e raccomanderebbero la frequentazione dell’area ad altri. Colpisce che i cittadini coinvolti abbiano riconosciuto meno il valore di quest’area nella socialità (Q5), il suo ruolo di potenziale rifugio climatico (Q6) e l'importanza nella vita quotidiana (Q7). Queste tre funzioni probabilmente sono meno ovvie e dipendono più dall'uso abituale dell'area e pertanto hanno ricevuto valutazioni con le medie più basse, tra 3,1 e 3,4. In particolare, l’importanza nella vita quotidiana è risultata polarizzata: il 26% ha risposto 1 e il 35% 5 (Fig. \@ref(fig:likert)).
+Dalle risposte pervenute emerge che il legame con la natura dei partecipanti (Q1) ha la media più alta (4,6) e il 94% di risposte 4 o 5 (Tab. \@ref(tab:questionario)). Tra i giudizi formulati direttamente sulla Greenway, i più alti riguardano la serenità (Q2), la rigenerazione individuale (Q4), la salute fisica (Q3) e il passaparola (Q9): quasi otto persone su dieci sono felici e rilassate, e raccomanderebbero la frequentazione dell’area ad altri. Colpisce che i cittadini coinvolti abbiano riconosciuto meno il valore di quest’area nella socialità (Q5), il suo ruolo di potenziale rifugio climatico (Q6) e l'importanza nella vita quotidiana (Q7). Queste tre funzioni probabilmente sono meno ovvie e dipendono più dall'uso abituale dell'area e pertanto hanno ricevuto valutazioni con le medie più basse, tra 3,1 e 3,4. In particolare, l’importanza nella vita quotidiana è risultata polarizzata: il 26% ha risposto 1 e il 35% 5 (Fig. \@ref(fig:likert)).
 
 ```{r likert, fig.cap="Sintesi delle risposte: 1 («per nulla») a 5 («moltissimo»)", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/walkshop/fig2_likert.png')
