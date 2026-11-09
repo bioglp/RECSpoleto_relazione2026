@@ -17,7 +17,7 @@ knitr::include_graphics('./figs/RECSpoleto_map03.png')
 
 In particolare, in continuità con quanto già impostato in precedenza, sono stati sviluppati nuovi elaborati e approfondimenti analitici orientati all'analisi della struttura e connettività ecologica del paesaggio mediante l'applicazione congiunta della Morphological Spatial Pattern Analysis (MSPA) e delle metriche di frammentazione spaziale.
 Questa nuova interpretazione tiene conto del passaggio delle precedenti Unità di Paesaggio (UdP) alle nuove Unità Funzionali (UF).
-Inoltre, è stata sviluppata una valutazione delle infrastrutture verdi e blu dell'unità urbana, ponendo come base per la verifica preliminare dei criteri di vivibilità e sostenibilità del territorio la regola 3–30–300.
+Inoltre, è stata sviluppata una valutazione delle infrastrutture verdi e blu dell'unità urbana, ponendo come base per la verifica preliminare dei criteri di vivibilità e sostenibilità del territorio la regola 3–30–300 [@konijnendijk2023].
 
 ## Suddivisione del territorio in unità funzionali {#sec-UF}
 
@@ -97,7 +97,7 @@ Per questa sintesi basata sulle Unità Funzionali spoletine, le categorie MSPA s
 4.  Edge: la fascia di transizione e margine esterno che delimita le aree *Core* verso il background o la matrice antropizzata.
 5.  Loop: corridoi o elementi lineari che collegano un'area *Core* a se stessa (corridoi interni o di auto-connessione), incluse le variazioni di margine e perforazione (*Loop in Edge*, *Loop in Perforation*).
 6.  Bridge: elementi lineari e corridoi strutturali che collegano due o più aree *Core* distinte, rappresentando la spina dorsale della connettività ecologica funzionale.
-7.  Branch: corridoi lineari o bracci che dipartono da un'area *Core* ma terminano a fondo cieco, senza connettersi ad altri elementi. \[Queste porzione evidenziano connessioni interrotte che se opportunamente riconosciute e valorizzate potrebbero fornire con interventi minimi un grado di connettività molto superiore.\]
+7.  Branch: corridoi lineari o bracci che dipartono da un'area *Core* ma terminano a fondo cieco, senza connettersi ad altri elementi. Queste porzioni evidenziano di fatto connessioni interrotte che se opportunamente riconosciute e valorizzate potrebbero fornire con interventi minimi un grado di connettività molto superiore.
 
 Per ciascuna Unità Funzionale e per ciascuna delle 7 macro-categorie MSPA sono state calcolate tre metriche chiave:
 
@@ -121,9 +121,9 @@ L'indagine ha preso in esame la composizione e l'organizzazione spaziale dei sis
 
 Attraverso questo studio, finalizzato a descrivere estensione, distribuzione, livello di continuità e relazioni funzionali e spaziali tra le diverse componenti, vengono definiti gli elementi strutturali necessari per condurre una valutazione preliminare del grado di conformità del contesto urbano rispetto ai parametri della regola 3–30–300.
 
-Per approfondire la configurazione, il ruolo funzionale e le caratteristiche generali di tali componenti, è stata eseguita un’analisi di paesaggio basata sugli indicatori del pacchetto landscapemetrics (BIBLIO).
+Per approfondire la configurazione, il ruolo funzionale e le caratteristiche generali di tali componenti, è stata eseguita un’analisi di paesaggio basata sugli indicatori del pacchetto landscapemetrics [@hesselbarth2019].
 
-Tale libreria riprende le metriche storicamente implementate in FRAGSTAT \[\@mcgarigalFragstatHelp2015\] e ne estende le potenzialità per un utilizzo multipiattaforma.
+Tale libreria riprende le metriche storicamente implementate in FRAGSTAT [@mcgarigalFragstatHelp2015] e ne estende le potenzialità per un utilizzo multipiattaforma.
 Nell’ambito di questa relazione sono state considerate le seguenti metriche, risultate particolarmente efficaci per una descrizione analitica dell’assetto generale dell’area.
 
 Elenco delle variabili landscapemetrics esaminate:
@@ -140,32 +140,57 @@ Elenco delle variabili landscapemetrics esaminate:
 
 ### Verifica preliminare della regola 3-30-300
 
-La regola 3-30-300 propone tre soglie per valutare la dotazione di verde urbano: almeno tre alberi visibili da ogni abitazione, il 30% di copertura arborea per quartiere e uno spazio verde pubblico raggiungibile entro 300 m [@konijnendijk2023]. In questo studio la regola è stata applicata come verifica preliminare e non come accertamento puntuale di conformità. La base informativa disponibile, costituita dalla cartografia del verde e dalla sua rasterizzazione su maglia 5×5 m, consente infatti di valutare le tre componenti con livelli di affidabilità molto diversi. Il criterio guida è stato quindi stabilire, per ciascuna soglia, che cosa i dati permettessero di verificare e che cosa potesse essere solo ipotizzato, evitando di attribuire alla cartografia una precisione che non possiede.
+La regola 3-30-300 propone tre soglie per valutare la dotazione di verde urbano: almeno tre alberi visibili da ogni abitazione, il 30% di copertura arborea per quartiere e uno spazio verde pubblico raggiungibile entro 300 m [@konijnendijk2023].
+In questo studio la regola è stata applicata come verifica preliminare e non come accertamento puntuale di conformità.
+La base informativa disponibile, costituita dalla cartografia del verde e dalla sua rasterizzazione su maglia 5×5 m, consente infatti di valutare le tre componenti con livelli di affidabilità molto diversi.
+Il criterio guida è stato quindi stabilire, per ciascuna soglia, che cosa i dati permettessero di verificare e che cosa potesse essere solo ipotizzato, evitando di attribuire alla cartografia una precisione che non possiede.
 
-La componente 3 presuppone una verifica alla scala della singola abitazione, con il censimento delle alberature e il calcolo dei coni di vista. La cartografia utilizzata rappresenta il verde per poligoni e non individua i singoli alberi, che sono stati solo parzialmente censiti, per cui la soglia non è stata verificata in senso stretto. Si è adottato un criterio indiretto e qualitativo: la presenza di un patrimonio verde diffuso e di una buona copertura arborea nel nucleo urbano è stata considerata indicativa di una probabile conformità, da confermare eventualmente con rilievi dedicati che potranno essere programmati per il futuro.
+La componente 3 presuppone una verifica alla scala della singola abitazione, con il censimento delle alberature e il calcolo dei coni di vista.
+La cartografia utilizzata rappresenta il verde per poligoni e non individua i singoli alberi, che sono stati solo parzialmente censiti, per cui la soglia non è stata verificata in senso stretto.
+Si è adottato un criterio indiretto e qualitativo: la presenza di un patrimonio verde diffuso e di una buona copertura arborea nel nucleo urbano è stata considerata indicativa di una probabile conformità, da confermare eventualmente con rilievi dedicati che potranno essere programmati per il futuro.
 
-Per la componente 30 l'unità di analisi è la ripartizione dell'unità funzionale urbana in frazioni e località, e l'indicatore è la percentuale di superficie occupata da infrastrutture verdi e blu. Si tratta di un indicatore approssimato per eccesso, perché include anche verde non arboreo e componenti blu e quindi tende a sovrastimare la copertura arborea effettiva. I valori sono stati perciò letti in modo graduato rispetto alla soglia, per esempio considerando il superamento del 15% come metà del valore atteso, e non in modo dicotomico. Nelle frazioni a bassa densità abitativa il confronto è stato inoltre contestualizzato, poiché la presenza di superfici agricole, boschive o naturali rende poco appropriata un'applicazione rigida del 30%.
+Per la componente 30 l'unità di analisi è la ripartizione dell'unità funzionale urbana in frazioni e località, e l'indicatore è la percentuale di superficie occupata da infrastrutture verdi e blu.
+Si tratta di un indicatore approssimato per eccesso, perché include anche verde non arboreo e componenti blu e quindi tende a sovrastimare la copertura arborea effettiva.
+I valori sono stati perciò letti in modo graduato rispetto alla soglia, per esempio considerando il superamento del 15% come metà del valore atteso, e non in modo dicotomico.
+Nelle frazioni a bassa densità abitativa il confronto è stato inoltre contestualizzato, poiché la presenza di superfici agricole, boschive o naturali rende poco appropriata un'applicazione rigida del 30%.
 
-La componente 300 è quella verificabile con maggiore robustezza, perché dipende dalla localizzazione e dall'estensione delle aree verdi. Il procedimento si articola in tre passaggi:
+La componente 300 è quella verificabile con maggiore robustezza, perché dipende dalla localizzazione e dall'estensione delle aree verdi.
+Il procedimento si articola in tre passaggi:
 
-1. sono state selezionate le superfici di verde pubblico di dimensione prossima o superiore all'ettaro, ritenute adeguate a un uso ricreativo e a una funzione ecologica minima;
-2. intorno a ciascuna è stato tracciato un buffer di 300 m, assunto come distanza percorribile a piedi;
-3. è stata quantificata l'estensione del territorio compreso nei buffer, con e senza il corridoio fluviale del Torrente Tessino e di altri aree blue, per valutarne il contributo.
+1.  sono state selezionate le superfici di verde pubblico di dimensione prossima o superiore all'ettaro, ritenute adeguate a un uso ricreativo e a una funzione ecologica minima;
+2.  intorno a ciascuna è stato tracciato un buffer di 300 m, assunto come distanza percorribile a piedi;
+3.  è stata quantificata l'estensione del territorio compreso nei buffer, con e senza il corridoio fluviale del Torrente Tessino e di altri aree blue, per valutarne il contributo.
 
-Le porzioni esterne ai buffer sono state interpretate come aree in cui la popolazione residente non dispone di uno spazio verde adeguato a "distanza pedonale". Elementi di naturalità di piccola scala, come la zona umida di Madonna di Lugo, sono stati considerati separatamente, in ragione del loro ruolo locale.
+Le porzioni esterne ai buffer sono state interpretate come aree in cui la popolazione residente non dispone di uno spazio verde adeguato a "distanza pedonale".
+Elementi di naturalità di piccola scala, come la zona umida di Madonna di Lugo, sono stati considerati separatamente, in ragione del loro ruolo locale.
 
-Nel complesso, l'approccio privilegia la trasparenza sui limiti dei dati rispetto alla completezza formale della verifica. L'esito va inteso come un quadro di orientamento per individuare le aree prioritarie di approfondimento, e non come una certificazione del rispetto della regola.
+Nel complesso, l'approccio privilegia la trasparenza sui limiti dei dati rispetto alla completezza formale della verifica.
+L'esito va inteso come un quadro di orientamento per individuare le aree prioritarie di approfondimento, e non come una certificazione del rispetto della regola.
 
 ## Attività di divulgazione e CS
 
 ## Comunicazione e partecipazione della cittadinanza: il walkshop lungo la Greenway
 
-La componente di coinvolgimento della cittadinanza è stata concepita non come un'appendice divulgativa del lavoro scientifico, ma come parte integrante del disegno metodologico. L'efficacia delle campagne di citizen science dipende infatti dalla qualità della relazione tra chi è impegnato nella produzione di elementi conoscitivi con metodo scientifico e chi vive il territorio oggetto di studio. I cittadini che comprendono perché un'infrastruttura verde viene analizzata, e che riconoscono in essa un luogo di cui hanno esperienza diretta, sono più disposti a contribuire con osservazioni, a mantenere nel tempo la partecipazione e a interpretare i risultati come qualcosa che li riguarda e da cui possono trarre vantaggio e gratificazione. Per questo l'attività è stata impostata secondo un modello dialogico, e non secondo l'approccio unidirezionale in cui l'esperto trasferisce informazioni a un pubblico ritenuto privo di conoscenze.
+La componente di coinvolgimento della cittadinanza è stata concepita non come un'appendice divulgativa del lavoro scientifico, ma come parte integrante del disegno metodologico.
+L'efficacia delle campagne di citizen science dipende infatti dalla qualità della relazione tra chi è impegnato nella produzione di elementi conoscitivi con metodo scientifico e chi vive il territorio oggetto di studio.
+I cittadini che comprendono perché un'infrastruttura verde viene analizzata, e che riconoscono in essa un luogo di cui hanno esperienza diretta, sono più disposti a contribuire con osservazioni, a mantenere nel tempo la partecipazione e a interpretare i risultati come qualcosa che li riguarda e da cui possono trarre vantaggio e gratificazione.
+Per questo l'attività è stata impostata secondo un modello dialogico, e non secondo l'approccio unidirezionale in cui l'esperto trasferisce informazioni a un pubblico ritenuto privo di conoscenze.
 
-Lo strumento scelto è stato il *walkshop*, un incontro in cui la discussione avviene camminando lungo il sito di interesse. Percorrere la Greenway insieme ai partecipanti ha permesso di ancorare i temi ambientali a ciò che si vede, si sente e si attraversa, collocando le questioni ecologiche e urbanistiche nel contesto reale in cui assumono significato. Questa scelta si basa sul riconoscimento del valore del sapere esperienziale dei residenti o di coloro che frequentano le aree, che magari conoscono usi, criticità e le trasformazioni che sono avvenute nel corso del tempo meglio di quanto possa emergere da un'analisi spaziale prodotta con dati a volte troppo asettici, inevitabilmenti incompleti della memoria delle piccole cose. Il camminare in gruppo favorisce inoltre uno scambio informale e orizzontale, in cui domande e osservazioni dei partecipanti orientano la discussione quanto i contenuti proposti dai ricercatori/divulgatori.
+Lo strumento scelto è stato il *walkshop*, un incontro in cui la discussione avviene camminando lungo il sito di interesse.
+Percorrere la Greenway insieme ai partecipanti ha permesso di ancorare i temi ambientali a ciò che si vede, si sente e si attraversa, collocando le questioni ecologiche e urbanistiche nel contesto reale in cui assumono significato.
+Questa scelta si basa sul riconoscimento del valore del sapere esperienziale dei residenti o di coloro che frequentano le aree, che magari conoscono usi, criticità e le trasformazioni che sono avvenute nel corso del tempo meglio di quanto possa emergere da un'analisi spaziale prodotta con dati a volte troppo asettici, inevitabilmenti incompleti della memoria delle piccole cose.
+Il camminare in gruppo favorisce inoltre uno scambio informale e orizzontale, in cui domande e osservazioni dei partecipanti orientano la discussione quanto i contenuti proposti dai ricercatori/divulgatori.
 
-Il questionario è inoltre un ulteriore supporto conoscitivo partecipativo che accompagna l'attività con una funzione duplice. Da un lato rileva percezioni, conoscenze e atteggiamenti rispetto a nove tematiche legate all'area, somministrate prima dell'incontro con una scala di intensità 1-5 e riproposte al termine in forma più semplice sì/no. Dall'altro costituisce esso stesso un momento di riflessione, perché invita i partecipanti a riflettere, esplicitare e rivedere le proprie opinioni. Il confronto tra le due rilevazioni va inteso come indicazione di orientamento, non come misura rigorosa dell'effetto dell'iniziativa. Occorre tenere conto anche del fatto che il campione è, per sua natura, autoselezionato: partecipa chi è già incline a interessarsi al tema. Il disegno privilegia quindi la comprensione qualitativa dei cambiamenti di prospettiva rispetto all'inferenza statistica, e l'analisi quantitativa è mantenuta volutamente descrittiva.
+Il questionario costituisce un ulteriore strumento conoscitivo di tipo partecipativo e svolge una duplice funzione.
+Da un lato rileva percezioni, conoscenze e atteggiamenti rispetto a nove tematiche legate all'area.
+Le domande sono state somministrate prima dell'incontro, con una scala di intensità da 1 a 5, e riproposte al termine dell'evento in forma semplificata, con risposta sì/no.
+Dall'altro rappresenta di per sé un momento di riflessione, perché invita i partecipanti a esplicitare e rivedere le proprie opinioni.
+Il confronto tra le due rilevazioni va quindi inteso come indicazione di un possibile cambiamento di prospettiva, e non come misura dell'effetto dell'iniziativa.
+Occorre tenere conto anche del fatto che il campione è, per sua natura, autoselezionato: partecipa chi è già incline a interessarsi al tema.
+Il disegno privilegia quindi la comprensione qualitativa dei cambiamenti di prospettiva rispetto all'inferenza statistica, e l'analisi quantitativa è mantenuta volutamente descrittiva.
 
-Un ruolo altrettanto rilevante è affidato alle domande aperte, in cui i partecipanti indicano che cosa manterrebbero, che cosa cambierebbero e che cosa renderebbe la Greenway più utile. Questi contributi forniscono a coloro che si occupano di pianificazione e gestione informazioni sulle priorità locali e restituiscono ai cittadini il segno di essere stati ascoltati. Tale reciprocità è una condizione necessaria perché il coinvolgimento non resti episodico e si traduca in collaborazione duratura.
+Un ruolo altrettanto rilevante è affidato alle domande aperte, in cui i partecipanti indicano che cosa manterrebbero, che cosa cambierebbero e che cosa renderebbe la Greenway più utile.
+Questi contributi forniscono a coloro che si occupano di pianificazione e gestione informazioni sulle priorità locali e restituiscono ai cittadini il segno di essere stati ascoltati.
+Tale reciprocità è una condizione necessaria perché il coinvolgimento non resti episodico e si traduca in collaborazione duratura.
 
 Nel complesso, l'attività è stata pensata come un primo passo di un processo più ampio di costruzione di fiducia e di competenze condivise, in cui la comunicazione scientifica prepara il terreno a una partecipazione attiva alla raccolta dei dati.

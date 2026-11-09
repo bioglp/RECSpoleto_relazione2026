@@ -41,11 +41,11 @@ Le classi della *Morphological Spatial Pattern Analysis* ne forniscono una contr
 Nell'ambito urbano, dove i nodi sono pochi, il ruolo di *stepping stones* è affidato a elementi del verde pubblico e privato come giardini, siepi e aiuole.
 
 L'analisi strutturale va integrata con indicatori ambientali e biologici.
-A livello di habitat si possono valutare il valore ecologico, che esprime la qualità di un biotopo, e la fragilità ambientale, legata alla vulnerabilità e al disturbo delle attività umane \[ @angelini2009\].
+A livello di habitat si possono valutare il valore ecologico, che esprime la qualità di un biotopo, e la fragilità ambientale, legata alla vulnerabilità e al disturbo delle attività umane [@angelini2009].
 A livello di comunità la biodiversità si descrive con la ricchezza specifica e l'*evenness*, da cui derivano gli indici di diversità e dominanza come Shannon e Simpson [@magurran2004].
 Sono gli strumenti con cui potranno essere letti i dati del monitoraggio entomologico alla Spoletosfera, una volta completate le determinazioni.
 
-Non esistono reti universali né scale uniche.
+Non esistono reti uniche e già delineate che siano funzionali per soddisfare l'intera pluralità di esigenze che insistono su un'area.
 Ogni strategia di conservazione deve definire obiettivi di riferimento che ne orientino struttura, scala e priorità, adattandole al contesto ambientale, sociale ed economico.
 La progettazione deve inoltre considerare la posizione degli elementi di naturalità rispetto alle trasformazioni previste, perché il paesaggio è dinamico: cambia per l'espansione urbana, per l'evoluzione delle colture e l'abbandono delle aree collinari e montane, e per le scelte della pianificazione.
 
@@ -77,6 +77,3 @@ knitr::include_graphics('./figs/schemaUNECE.png')
 Queste soglie non sono arbitrarie, ma si fondano su evidenze empiriche consolidate nella letteratura scientifica.
 Ad esempio, il valore del 30% di verde per ogni quartiere trova riscontro negli studi di Astell-Burt e Feng, che associano a tale soglia maggiori benefici per salute, sonno e salute mentale [@feng2017], mentre i 300 m coincidono con la raccomandazione dell’Ufficio regionale europeo dell’OMS per uno spazio verde di estensione almeno pari a un ettaro [@worldhealthorganization2017].
 Ovviamente questa regola è una linea guida “volontaria”, da applicare con attenzione al contesto locale: tessuti urbani densi o con caratteri storici, congiuntamente a ulteriori fattori culturali, possono rendere difficile e inadeguata l’applicazione letterale delle soglie; la regola tuttavia resta un valido orientamento per una proiezione sostenibile dello sviluppo del tessuto urbano e periurbano.
-
-\<!-
-- \## Agenda urbana e progetto lifeIMAGINE
