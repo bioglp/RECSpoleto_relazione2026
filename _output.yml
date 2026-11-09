@@ -6,7 +6,8 @@ bookdown::gitbook:
       before: |
         <li><a href="./">Rete Ecologica Comunale Spoleto</a></li>
       after: |
-        <li><a href="bioglp.github.io/RECSpoleto/" target="blank">Relazione 2026</a></li>
+        <li><a href="https://bioglp.github.io/RECSpoleto/index.html" target="blank">Relazione 2025</a></li>
+        <li><a href="https://bioglp.github.io/RECSpoleto_relazione2026/index.html" target="blank">Relazione 2026</a></li>
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   pandoc_args: [

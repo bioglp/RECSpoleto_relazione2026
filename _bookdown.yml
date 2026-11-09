@@ -9,6 +9,7 @@ rmd_files:
   - 3-risultati.Rmd
   - 4-gestione.Rmd
   - 6-conclusioni.Rmd
+  - 8-AllegatoI.Rmd
   - 9-references.Rmd
 
 output_dir: "docs"

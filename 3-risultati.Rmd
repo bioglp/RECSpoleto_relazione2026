@@ -207,7 +207,6 @@ LOCALITA' TESTACCIO
 SPOLETO
 ```
 
-
 ## Connettività per Unità Funzionali (MSPA)
 
 La valutazione della struttura e della connettività del paesaggio, ottenuta combinando la metodologia MSPA e gli indici di frammentazione [@jaeger2000a], è presentata di seguito con specifico riferimento alle Unità Funzionali.
@@ -218,7 +217,7 @@ Per ciascuna unità sono stati considerati anche gli aspetti demografici legati 
 knitr::include_graphics('./figs/mspa_unitaFunzionali.png')
 ```
 
-```{r mapPopolazione, fig.cap='Popolazione residente (gradiente di colore) e numero di nuclei familiari (in numero) per frazione e località.', out.width='\\linewidth', fig.align='center', echo=FALSE}
+```{r mapPopolazione, fig.cap='Popolazione residente (gradiente di colore) e numero di nuclei familiari (in numero) per frazione e località.', out.width='65%', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/mapPopolazione.png')
 ```
 
@@ -338,19 +337,20 @@ La mappa della loro distribuzione spaziale complessiva è riportata in figura \@
 knitr::include_graphics('./figs/verdeSpoleto.png')
 ```
 
-Focalizzando l’attenzione alla sola area urbana, definita secondo il modello delle unità funzionali (cfr. capitolo unità funzionali) e per la quale si dispone di una cartografia sufficientemente dettagliata e accurata nella rappresentazione degli elementi del verde, si nota che la composizione degli elementi delle infrastrutture verdi e blu occupano una superficie totale di quasi 200 ha. Tale valore corrisponde a circa il 8.4% del territorio in esame.
+Focalizzando l’attenzione alla sola area urbana, definita secondo il modello delle unità funzionali (cfr. capitolo unità funzionali) e per la quale si dispone di una cartografia sufficientemente dettagliata e accurata nella rappresentazione degli elementi del verde, si nota che la composizione degli elementi delle infrastrutture verdi e blu occupano una superficie totale di quasi 200 ha.
+Tale valore corrisponde a circa il 8.4% del territorio in esame.
 Nella ripartizione tra verde pubblico/privato e aree blu la componente privata rappresenta il 61% del totale e il blu solamente il 7.5% (\@ref(tab:verdeBase)).[^1]
 
 [^1]: L'analisi condotta mediante rasterizzazione della cartografia vettoriale mette in evidenza una lieve riduzione delle superfici rispetto ai valori originari.
     Tale differenza è piuttosto contenuta e imputabile alla trasformazione su maglia 5x5 m e alla successiva applicazione del limite dell'area di studio corrispondente all’unità funzionale urbana.
     Le differenze risultano contenute per il verde privato e per le componenti blu, mentre sono più evidenti per il verde pubblico, caratterizzato da numerosi elementi di piccola dimensione e geometrie articolate.
 
-| componente | proprieta | n_poligoni | area_ha |   PLAND |
-|:-----------|:----------|-----------:|--------:|--------:| 
-| blu        | pubblico  |         19 |   14.5  |  0.63 % |
-| verde      | privato   |       1171 |  118.0  |  5.12 % |
-| verde      | pubblico  |        255 |   60.4  |  2.62 % |
-| **Totale** | \-        |       1445 |  192.9  |  8.37 % |
+| componente | proprieta | n_poligoni | area_ha |  PLAND |
+|:-----------|:----------|-----------:|--------:|-------:|
+| blu        | pubblico  |         19 |    14.5 | 0.63 % |
+| verde      | privato   |       1171 |   118.0 | 5.12 % |
+| verde      | pubblico  |        255 |    60.4 | 2.62 % |
+| **Totale** | \-        |       1445 |   192.9 | 8.37 % |
 
 : (#tab:verdeBase) Metriche della composizione del verde urbano e strutture blu per tipologia.
 
@@ -373,12 +373,11 @@ Nel privato la mediana è 16 celle (circa $400~m^2$) e il terzo quartile 46 cell
 La patch tipica del privato è dunque molto più grande di quella pubblica.
 In aggiunta, la superficie pubblica si presenta organizzata in modo molto diverso: si concentrata in pochi patch grandi accompagnati da molti micro-patch (Fig. \@ref(fig:boxplotVerde)).
 
-
-|classe         | n_patch| area_totale_ha| mediana_mq|  q1_mq|   q3_mq| max_ha|
-|:--------------|-------:|--------------:|----------:|------:|-------:|------:|
-|blu_pubblico   |     173|          14.54|      49.99|  24.99|   74.98|   9.00|
-|verde_privato  |     905|         116.17|     399.91| 149.97| 1149.75|   3.62|
-|verde_pubblico |     568|          57.04|      49.99|  24.99|  299.94|   9.34|
+| classe         | n_patch | area_totale_ha | mediana_mq |  q1_mq |   q3_mq | max_ha |
+|:---------------|--------:|---------------:|-----------:|-------:|--------:|-------:|
+| blu_pubblico   |     173 |          14.54 |      49.99 |  24.99 |   74.98 |   9.00 |
+| verde_privato  |     905 |         116.17 |     399.91 | 149.97 | 1149.75 |   3.62 |
+| verde_pubblico |     568 |          57.04 |      49.99 |  24.99 |  299.94 |   9.34 |
 
 : (#tab:verdePatches) Metriche della composizione del verde urbano per tipologia.
 
@@ -388,15 +387,15 @@ knitr::include_graphics('./figs/boxplot_area_patch_strati.png')
 
 Nonostante questo assetto lasci prefigurare un elevato livello di frammentazione con una densità di patch di circa 76 ogni 100 ha (PD=75.85), le metriche di contiguità (AI = 97), aggregazione (CONTAG = 82) e coesione (COHESION = 99.9) mostrano valori elevati, indicando che le diverse componenti mantengono un livello significativo di continuità spaziale (Tab. \@ref(tab:paesaggio)).
 
-|metric   |   value|
-|:--------|-------:|
-|AI       |   96.86|
-|AREA_MN  |    1.32|
-|COHESION |   99.90|
-|CONTAG   |   82.15|
-|LPI      |   91.79|
-|NP       | 1756.00|
-|PD       |   75.85|
+| metric   |   value |
+|:---------|--------:|
+| AI       |   96.86 |
+| AREA_MN  |    1.32 |
+| COHESION |   99.90 |
+| CONTAG   |   82.15 |
+| LPI      |   91.79 |
+| NP       | 1756.00 |
+| PD       |   75.85 |
 
 : (#tab:paesaggio) Metriche della struttura del paesaggio complessivo.
 
@@ -408,13 +407,13 @@ Conseguentemente, il numero di patch raster non rappresenta il numero di element
 
 Come anticipato il verde privato rappresenta la componente più estesa e diffusa (CA), caratterizzata da un elevato numero di patch di dimensioni medio-piccole, con la presenza di alcuni nuclei di superficie rilevante che contribuiscono in modo significativo alla dotazione complessiva di copertura vegetale (Tab. \@ref(tab:strati).
 
-|strato           |    AI|     CA| CLUMPY| COHESION| ENN   | MESH| CPLAND|
-|:----------------|-----:|------:|------:|--------:|------:|----:|------:|
-|verde_privato    | 80.17| 117.76|   0.79|    90.92|  21.41| 0.04|   0.49|
-|verde_pubblico   | 83.72|  57.21|   0.83|    92.95|  18.15| 0.07|   0.63|
-|blu_pubblico     | 84.77|  14.54|   0.85|    96.82|  21.20| 0.04|   0.06|
-|verde_totale     | 81.47| 174.18|   0.80|    92.12|  17.56| 0.11|   1.14|
-|verde_blu_totale | 82.04| 187.75|   0.80|    93.65|  17.05| 0.19|   1.22|
+| strato           |    AI |     CA | CLUMPY | COHESION |   ENN | MESH | CPLAND |
+|:-----------------|------:|-------:|-------:|---------:|------:|-----:|-------:|
+| verde_privato    | 80.17 | 117.76 |   0.79 |    90.92 | 21.41 | 0.04 |   0.49 |
+| verde_pubblico   | 83.72 |  57.21 |   0.83 |    92.95 | 18.15 | 0.07 |   0.63 |
+| blu_pubblico     | 84.77 |  14.54 |   0.85 |    96.82 | 21.20 | 0.04 |   0.06 |
+| verde_totale     | 81.47 | 174.18 |   0.80 |    92.12 | 17.56 | 0.11 |   1.14 |
+| verde_blu_totale | 82.04 | 187.75 |   0.80 |    93.65 | 17.05 | 0.19 |   1.22 |
 
 : (#tab:strati) Metriche della struttura del paesaggio per strati.
 
@@ -429,12 +428,12 @@ Resta invece limitata la disponibilità di aree centrali effettivamente schermat
 
 Sebbene le metriche di aggregazione e coesione evidenzino una buona continuità all'interno delle singole componenti, l'analisi dei contatti mostra che le diverse tipologie di infrastruttura verde e blu interagiscono poco tra loro (Tab. \@ref(tab:contatti)).
 
-|strato da/a    | matrice| blu_pubblico| verde_privato| verde_pubblico|
-|:--------------|-------:|------------:|-------------:|--------------:|
-|matrice        |   98.39|         0.09|          1.09|           0.43|
-|blu_pubblico   |   13.55|        83.66|          2.25|           0.55|
-|verde_privato  |   19.86|         0.28|         79.65|           0.20|
-|verde_pubblico |   16.11|         0.14|          0.41|          83.34|
+| strato da/a    | matrice | blu_pubblico | verde_privato | verde_pubblico |
+|:---------------|--------:|-------------:|--------------:|---------------:|
+| matrice        |   98.39 |         0.09 |          1.09 |           0.43 |
+| blu_pubblico   |   13.55 |        83.66 |          2.25 |           0.55 |
+| verde_privato  |   19.86 |         0.28 |         79.65 |           0.20 |
+| verde_pubblico |   16.11 |         0.14 |          0.41 |          83.34 |
 
 : (#tab:contatti) Matrice dei contatti tra strati.
 
@@ -452,7 +451,7 @@ Differenziando l’analisi per componente pubblica-privata, emerge che in molte 
 A Santo Chiodo il verde pubblico è circa il 3.4% della superficie, contro un 9.1% di quello privato.
 Analoga situazione si osserva a San Nicolò (4.9% contro 13.1%).
 Il nucleo di Spoleto si distingue invece per l'elevato numero di patch (NP=878) e per il ruolo rilevante del verde pubblico, configurandosi come il sistema più articolato e diversificato (Tab. \@ref(tab:metricheFraz)).
-I livelli di AI (80.6%) e COHESION (91.3) risultano tra i più bassi osservati (solo San Nicolò presenta un AI inferiore), coerentemente con l’elevata frammentazione, pur indicando il mantenimento di un buon livello di continuità funzionale all’interno di questa unità (COHESION > 90).
+I livelli di AI (80.6%) e COHESION (91.3) risultano tra i più bassi osservati (solo San Nicolò presenta un AI inferiore), coerentemente con l’elevata frammentazione, pur indicando il mantenimento di un buon livello di continuità funzionale all’interno di questa unità (COHESION \> 90).
 Le patch più grandi si ritrovano invece a Cortaccione (LPI=2.72%) e San Nicolò (2.31%), seguite da Colle San Tommaso (1.92%), Santo Chiodo (1.83%) e Spoleto (1.60%).
 
 | NOME                        |  Blue | Privato | Pubblico |   TOT |  Sup% |
@@ -469,20 +468,19 @@ Le patch più grandi si ritrovano invece a Cortaccione (LPI=2.72%) e San Nicolò
 
 : (#tab:verdeFraz) Superfici di verde pubblico e privato (ha) e relativa frazione percentuale.
 
-|plot_id           | PLAND|    CA|  NP| AREA_MN| ENN   | COHESION|    AI|  LPI|
-|:-----------------|-----:|-----:|---:|-------:|------:|--------:|-----:|----:|
-|SAN NICOLO'       | 17.79| 14.18|  97|    0.15|  14.49|    93.51| 79.39| 2.31|
-|SPOLETO           | 14.00| 85.91| 878|    0.10|  15.45|    91.33| 80.60| 1.60|
-|SANTO CHIODO      | 12.48| 26.27| 149|    0.18|  19.48|    93.41| 81.26| 1.83|
-|CORTACCIONE       | 10.96| 14.59|  67|    0.22|  22.41|    93.20| 87.15| 2.72|
-|COLLE SAN TOMMASO |  8.72|  8.08|  49|    0.16|  27.56|    93.39| 81.72| 1.92|
-|MADONNA DI LUGO   |  6.66| 17.71| 135|    0.13|  20.81|    90.96| 82.22| 0.43|
-|COLLERISANA       |  1.47|  6.59|  38|    0.17|  67.88|    92.60| 87.14| 0.34|
-|SAN SABINO        |  0.85|  1.76|  11|    0.16|  27.75|    90.16| 85.10| 0.40|
-|CROCIFERRO        |  0.16|  0.14|   2|    0.07|  45.00|    82.18| 89.00| 0.11|
+| plot_id           | PLAND |    CA |  NP | AREA_MN |   ENN | COHESION |    AI |  LPI |
+|:------------------|------:|------:|----:|--------:|------:|---------:|------:|-----:|
+| SAN NICOLO'       | 17.79 | 14.18 |  97 |    0.15 | 14.49 |    93.51 | 79.39 | 2.31 |
+| SPOLETO           | 14.00 | 85.91 | 878 |    0.10 | 15.45 |    91.33 | 80.60 | 1.60 |
+| SANTO CHIODO      | 12.48 | 26.27 | 149 |    0.18 | 19.48 |    93.41 | 81.26 | 1.83 |
+| CORTACCIONE       | 10.96 | 14.59 |  67 |    0.22 | 22.41 |    93.20 | 87.15 | 2.72 |
+| COLLE SAN TOMMASO |  8.72 |  8.08 |  49 |    0.16 | 27.56 |    93.39 | 81.72 | 1.92 |
+| MADONNA DI LUGO   |  6.66 | 17.71 | 135 |    0.13 | 20.81 |    90.96 | 82.22 | 0.43 |
+| COLLERISANA       |  1.47 |  6.59 |  38 |    0.17 | 67.88 |    92.60 | 87.14 | 0.34 |
+| SAN SABINO        |  0.85 |  1.76 |  11 |    0.16 | 27.75 |    90.16 | 85.10 | 0.40 |
+| CROCIFERRO        |  0.16 |  0.14 |   2 |    0.07 | 45.00 |    82.18 | 89.00 | 0.11 |
 
 : (#tab:metricheFraz) Indicatori di struttura per frazioni e località.
-
 
 ==\[Nota sul Laghetto dei Longobardi\]
 
@@ -544,11 +542,14 @@ Elenco domande della prima compilazione (pre):
 
 9.  Consiglierebbe ad altri, suoi parenti-amici-conoscenti e non, di frequentare la Greenway?
 
-Le domande servivano per descrivere la situazione abituale e la percezione che i partecipanti avevano prima dell’incontro. Successivamente, il questionario post ha proposto domande finalizzate a rilevare il cambiamento percepito, attraverso risposte di tipo sì/no: per esempio se, dopo il walkshop, il partecipante si sentisse più sereno o se ritenesse possibile l’utilizzo della Greenway come rifugio climatico.
+Le domande servivano per descrivere la situazione abituale e la percezione che i partecipanti avevano prima dell’incontro.
+Successivamente, il questionario post ha proposto domande finalizzate a rilevare il cambiamento percepito, attraverso risposte di tipo sì/no: per esempio se, dopo il walkshop, il partecipante si sentisse più sereno o se ritenesse possibile l’utilizzo della Greenway come rifugio climatico.
 
 Hanno risposto al questionario pre 47 persone e al post 41. La fascia di età più numerosa è stata quella da 46–65 anni (38%), seguita da 26–45 e oltre 65 (23% ciascuna) e da sotto i 25 anni (15%).
-Le donne hanno rappresentato il 55% del campione. Considerando l’aspetto lavorativo i dipendenti pubblici (34%) sono stati i più numerosi, seguiti dagli studenti (21%) e i pensionati (19%) (Fig. \@ref(fig:campione) ).
-Il 26% degli intervistati è residente a Spoleto e il 70% in altre località, tra frazioni e comuni vicini, ma anche più lontani (tra cui Perugia, Foligno e Roma). Il 36% ha dichiarato di frequentare l'area raramente o per la prima volta, il 32% una volta al mese, il 17% ogni settimana e il 15% ogni giorno.
+Le donne hanno rappresentato il 55% del campione.
+Considerando l’aspetto lavorativo i dipendenti pubblici (34%) sono stati i più numerosi, seguiti dagli studenti (21%) e i pensionati (19%) (Fig. \@ref(fig:campione) ).
+Il 26% degli intervistati è residente a Spoleto e il 70% in altre località, tra frazioni e comuni vicini, ma anche più lontani (tra cui Perugia, Foligno e Roma).
+Il 36% ha dichiarato di frequentare l'area raramente o per la prima volta, il 32% una volta al mese, il 17% ogni settimana e il 15% ogni giorno.
 Il 23% ha indicato di trascorrervi meno di 30 minuti, il 55% tra 45 e 60 minuti e il 17% oltre un'ora (Fig. \@ref(fig:campione)).
 
 ```{r campione, fig.cap="Informazioni sulle caratteristiche dei partecipanti", out.width='\\linewidth', fig.align='center', echo=FALSE}
@@ -557,52 +558,61 @@ knitr::include_graphics('./figs/walkshop/fig1_campione.png')
 
 Per l’analisi delle risposte al questionario, per ogni domanda sono stati calcolati frequenze, media, mediana e quota di risposte con punteggi alti (Tab. \@ref(tab:questionario)).
 
-|item |  n| media|   ds| mediana|   q1| q3| pct_1_2| pct_3| pct_4_5| pct_5|
-|:----|--:|-----:|----:|-------:|----:|--:|-------:|-----:|-------:|-----:|
-|Q1   | 47|  4.57| 0.68|     5.0| 4.00|  5|    2.13|  4.26|   93.62| 65.96|
-|Q2   | 47|  4.23| 1.11|     5.0| 4.00|  5|    8.51|  6.38|   85.11| 53.19|
-|Q3   | 47|  3.98| 1.22|     4.0| 4.00|  5|   12.77| 10.64|   76.60| 42.55|
-|Q4   | 46|  4.20| 1.15|     5.0| 4.00|  5|   13.04|  4.35|   82.61| 54.35|
-|Q5   | 46|  3.13| 1.31|     3.0| 2.00|  4|   30.43| 34.78|   34.78| 21.74|
-|Q6   | 47|  3.36| 1.47|     4.0| 2.00|  5|   29.79| 17.02|   53.19| 29.79|
-|Q7   | 46|  3.11| 1.62|     3.0| 1.25|  5|   36.96| 23.91|   39.13| 34.78|
-|Q8   | 46|  3.74| 1.32|     4.0| 3.00|  5|   17.39| 23.91|   58.70| 41.30|
-|Q9   | 46|  4.22| 0.94|     4.5| 4.00|  5|    6.52| 15.22|   78.26| 50.00|
+| item |   n | media |   ds | mediana |   q1 |  q3 | pct_1_2 | pct_3 | pct_4_5 | pct_5 |
+|:-----|----:|------:|-----:|--------:|-----:|----:|--------:|------:|--------:|------:|
+| Q1   |  47 |  4.57 | 0.68 |     5.0 | 4.00 |   5 |    2.13 |  4.26 |   93.62 | 65.96 |
+| Q2   |  47 |  4.23 | 1.11 |     5.0 | 4.00 |   5 |    8.51 |  6.38 |   85.11 | 53.19 |
+| Q3   |  47 |  3.98 | 1.22 |     4.0 | 4.00 |   5 |   12.77 | 10.64 |   76.60 | 42.55 |
+| Q4   |  46 |  4.20 | 1.15 |     5.0 | 4.00 |   5 |   13.04 |  4.35 |   82.61 | 54.35 |
+| Q5   |  46 |  3.13 | 1.31 |     3.0 | 2.00 |   4 |   30.43 | 34.78 |   34.78 | 21.74 |
+| Q6   |  47 |  3.36 | 1.47 |     4.0 | 2.00 |   5 |   29.79 | 17.02 |   53.19 | 29.79 |
+| Q7   |  46 |  3.11 | 1.62 |     3.0 | 1.25 |   5 |   36.96 | 23.91 |   39.13 | 34.78 |
+| Q8   |  46 |  3.74 | 1.32 |     4.0 | 3.00 |   5 |   17.39 | 23.91 |   58.70 | 41.30 |
+| Q9   |  46 |  4.22 | 0.94 |     4.5 | 4.00 |   5 |    6.52 | 15.22 |   78.26 | 50.00 |
 
 : (#tab:questionario) Risultati del questionario in fase di partenza.
 
-
-Dalle risposte pervenute emerge che il legame con la natura dei partecipanti (Q1) ha la media più alta (4,6) e il 94% di risposte 4 o 5 (Tab. \@ref(tab:questionario)). Tra i giudizi formulati direttamente sulla Greenway, i più alti riguardano la serenità (Q2), la rigenerazione individuale (Q4), la salute fisica (Q3) e il passaparola (Q9): quasi otto persone su dieci sono felici e rilassate, e raccomanderebbero la frequentazione dell’area ad altri. Colpisce che i cittadini coinvolti abbiano riconosciuto meno il valore di quest’area nella socialità (Q5), il suo ruolo di potenziale rifugio climatico (Q6) e l'importanza nella vita quotidiana (Q7). Queste tre funzioni probabilmente sono meno ovvie e dipendono più dall'uso abituale dell'area e pertanto hanno ricevuto valutazioni con le medie più basse, tra 3,1 e 3,4. In particolare, l’importanza nella vita quotidiana è risultata polarizzata: il 26% ha risposto 1 e il 35% 5 (Fig. \@ref(fig:likert)).
+Dalle risposte pervenute emerge che il legame con la natura dei partecipanti (Q1) ha la media più alta (4,6) e il 94% di risposte 4 o 5 (Tab. \@ref(tab:questionario)).
+Tra i giudizi formulati direttamente sulla Greenway, i più alti riguardano la serenità (Q2), la rigenerazione individuale (Q4), la salute fisica (Q3) e il passaparola (Q9): quasi otto persone su dieci sono felici e rilassate, e raccomanderebbero la frequentazione dell’area ad altri.
+Colpisce che i cittadini coinvolti abbiano riconosciuto meno il valore di quest’area nella socialità (Q5), il suo ruolo di potenziale rifugio climatico (Q6) e l'importanza nella vita quotidiana (Q7).
+Queste tre funzioni probabilmente sono meno ovvie e dipendono più dall'uso abituale dell'area e pertanto hanno ricevuto valutazioni con le medie più basse, tra 3,1 e 3,4.
+In particolare, l’importanza nella vita quotidiana è risultata polarizzata: il 26% ha risposto 1 e il 35% 5 (Fig. \@ref(fig:likert)).
 
 ```{r likert, fig.cap="Sintesi delle risposte: 1 («per nulla») a 5 («moltissimo»)", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/walkshop/fig2_likert.png')
 ```
 
-Per sintetizzare in un solo valore i giudizi dei partecipanti sulla Greenway è stato calcolato, per ogni persona, un punteggio composito: la media delle risposte alle domande da 2 a 9. Il punteggio va da 1 (giudizio minimo) a 5 (massimo) ed è calcolato per chi ha risposto ad almeno sei domande su otto. La domanda 1, sul legame personale con la natura, è esclusa perché descrive il soggetto partecipante e non un giudizio sull’area (Fig. \@ref(fig:composito)).
+Per sintetizzare in un solo valore i giudizi dei partecipanti sulla Greenway è stato calcolato, per ogni persona, un punteggio composito: la media delle risposte alle domande da 2 a 9. Il punteggio va da 1 (giudizio minimo) a 5 (massimo) ed è calcolato per chi ha risposto ad almeno sei domande su otto.
+La domanda 1, sul legame personale con la natura, è esclusa perché descrive il soggetto partecipante e non un giudizio sull’area (Fig. \@ref(fig:composito)).
 
-Dal quadro d’insieme emerge che in genere le valutazioni crescono con l'età: sotto i 45 anni il punteggio mediano è circa 3,3 su 5, sopra i 45 supera 4,1. Chi si ferma meno di 30 minuti ha un punteggio mediano di 3,3, contro 4,1–4,3 degli altri, e chi viene raramente o per la prima volta come era da attendersi ha valutazioni più basse (mediana 3,4, contro 4,1–4,3). Questi due effetti sono in parte sovrapposti e in parte dovuti alla poca familiarità con l'area: le domande su salute, vita quotidiana e identità presuppongono infatti un'esperienza ripetuta nel tempo.
+Dal quadro d’insieme emerge che in genere le valutazioni crescono con l'età: sotto i 45 anni il punteggio mediano è circa 3,3 su 5, sopra i 45 supera 4,1.
+Chi si ferma meno di 30 minuti ha un punteggio mediano di 3,3, contro 4,1–4,3 degli altri, e chi viene raramente o per la prima volta come era da attendersi ha valutazioni più basse (mediana 3,4, contro 4,1–4,3).
+Questi due effetti sono in parte sovrapposti e in parte dovuti alla poca familiarità con l'area: le domande su salute, vita quotidiana e identità presuppongono infatti un'esperienza ripetuta nel tempo.
 
 ```{r composito, fig.cap="Punteggio composito (media delle domande 2–9) per gruppi di partecipanti", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/walkshop/fig4_composito_gruppi.png')
 ```
 
-Quando al termine della giornata è stato sottoposto il nuovo questionario sono emerse queste valutazioni (Tab. \@ref(tab:questionarioPost)). 
+Quando al termine della giornata è stato sottoposto il nuovo questionario sono emerse queste valutazioni (Tab. \@ref(tab:questionarioPost)).
 
-|Post |etichetta                                         | si| no|  n| pct_si| ic_lo| ic_hi|
-|:----|:-------------------------------------------------|--:|--:|--:|------:|-----:|-----:|
-|P1   |Più legato alla natura                            | 37|  4| 41|   90.2|  76.9|  97.3|
-|P2   |Più felice / sereno                               | 40|  1| 41|   97.6|  87.1|  99.9|
-|P3   |Meglio fisicamente                                | 38|  3| 41|   92.7|  80.1|  98.5|
-|P4   |Più rigenerato / rilassato                        | 38|  3| 41|   92.7|  80.1|  98.5|
-|P5   |Può usarla per ritrovo e socialità                | 36|  5| 41|   87.8|  73.8|  95.9|
-|P6   |Può usarla come rifugio climatico                 | 30| 11| 41|   73.2|  57.1|  85.8|
-|P7   |Può diventare parte della propria vita quotidiana | 34|  7| 41|   82.9|  67.9|  92.8|
-|P8   |Può diventare parte della vita degli spoletini    | 39|  2| 41|   95.1|  83.5|  99.4|
-|P9   |La consiglierebbe ad altri                        | 40|  1| 41|   97.6|  87.1|  99.9|
+| Post | etichetta | si | no | n | pct_si | ic_lo | ic_hi |
+|:--------|:--------|--------:|--------:|--------:|--------:|--------:|--------:|
+| P1 | Più legato alla natura | 37 | 4 | 41 | 90.2 | 76.9 | 97.3 |
+| P2 | Più felice / sereno | 40 | 1 | 41 | 97.6 | 87.1 | 99.9 |
+| P3 | Meglio fisicamente | 38 | 3 | 41 | 92.7 | 80.1 | 98.5 |
+| P4 | Più rigenerato / rilassato | 38 | 3 | 41 | 92.7 | 80.1 | 98.5 |
+| P5 | Può usarla per ritrovo e socialità | 36 | 5 | 41 | 87.8 | 73.8 | 95.9 |
+| P6 | Può usarla come rifugio climatico | 30 | 11 | 41 | 73.2 | 57.1 | 85.8 |
+| P7 | Può diventare parte della propria vita quotidiana | 34 | 7 | 41 | 82.9 | 67.9 | 92.8 |
+| P8 | Può diventare parte della vita degli spoletini | 39 | 2 | 41 | 95.1 | 83.5 | 99.4 |
+| P9 | La consiglierebbe ad altri | 40 | 1 | 41 | 97.6 | 87.1 | 99.9 |
 
 : (#tab:questionarioPost) Risultati del questionario in fase di rientro dal walkshop.
 
-Il questionario post, compilato da 41 persone al termine della camminata, mostra una prevalenza di risposte affermative (Fig. \@ref(fig:Qpost)). Quasi tutti dichiarano di sentirsi più sereni e consiglierebbero la Greenway ad altri (98%, 40 su 41); superano il 90% anche i «sì» su benessere fisico, rigenerazione e legame con la natura. Più bassi sono i valori sull’uso dell’area: l’88% la userebbe come luogo di ritrovo e l’83% la vede entrare nella propria vita quotidiana. Il valore minimo riguarda il rifugio climatico (73%, 30 su 41).
+Il questionario post, compilato da 41 persone al termine della camminata, mostra una prevalenza di risposte affermative (Fig. \@ref(fig:Qpost)).
+Quasi tutti dichiarano di sentirsi più sereni e consiglierebbero la Greenway ad altri (98%, 40 su 41); superano il 90% anche i «sì» su benessere fisico, rigenerazione e legame con la natura.
+Più bassi sono i valori sull’uso dell’area: l’88% la userebbe come luogo di ritrovo e l’83% la vede entrare nella propria vita quotidiana.
+Il valore minimo riguarda il rifugio climatico (73%, 30 su 41).
 
 ```{r Qpost, fig.cap="Quota di risposte affermative con intervallo di confidenza al 95%", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/walkshop/fig6_post_si.png')
@@ -613,20 +623,32 @@ Infine, se esaminiamo le risposte aperte, i contributi vanno soprattutto nella d
 ```{r Qaperte, fig.cap="Riepilogo del contenuto delle risposte aperte.", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/walkshop/fig7_aperte_temi.png')
 ```
+
 In dettaglio, appare chiaro che nella voce “**Da Mantenere**” la vegetazione è il tema più frequente (13 risposte su 31: «verde», «alberi», «piante spontanee», «specie autoctone»), seguita dal percorso così com'è, pulito e accessibile, dall'ecosistema, la biodiversità e i collegamenti tra ambienti, e dalla naturalità.
 
-Tra le cose “**Da cambiare**”, la richiesta più frequente è avere più alberi e più ombra (12 su 28). Seguono il contrasto alle specie invasive a favore di quelle autoctone (6 risposte, di cui tre citano espressamente l'ailanto), servizi e arredi come panchine e fontanelle e pulizia con secchi per i rifiuti.
+Tra le cose “**Da cambiare**”, la richiesta più frequente è avere più alberi e più ombra (12 su 28).
+Seguono il contrasto alle specie invasive a favore di quelle autoctone (6 risposte, di cui tre citano espressamente l'ailanto), servizi e arredi come panchine e fontanelle e pulizia con secchi per i rifiuti.
 
 Nell’ottica di una prospezione “**Per il futuro**”, quasi la metà (13 su 28) chiede servizi e aree di sosta: panchine, aree picnic, fontanelle, ristoro, spazi per i bambini, attrezzature per l'attività fisica.
 In misura minore sono state formulate anche altre richieste relativamente al potenziamento della comunicazione e promozione dell'area, attraverso l’installazione di cartellonistica specifica e pannelli didattici su piante e fauna.
 
+A tal rigardo è interessante notare che durante il walkshop i partecipanti hanno inoltre caricato proprie osservazioni sulla piattaforma [observation.org](https://observation.org/bioblitz/24170/bioblitz-greenwayspoleto/), contribuendo attivamente alla raccolta di dati di biodiversità lungo il percorso. Al link possono essere visionati i risultati (Fig. \@ref(fig:observation)).
+
+```{r observation, fig.cap="Schermata di sintesi della campagna di raccolta dati su piattaforma Observation.org.", out.width='\\linewidth', fig.align='center', echo=FALSE}
+knitr::include_graphics('./figs/observationWalkshop2026.png')
+```
+
+Il risultato è stato particolarmente interessante: gran parte delle specie segnalate, pur essendo comuni nel panorama nazionale, non figuravano nella checklist degli invertebrati noti per il comune.
+Le osservazioni hanno quindi colmato, almeno in parte, lacune conoscitive sulla fauna locale, dimostrando come un'attività di comunicazione scientifica possa generare anche dati utili alla ricerca.
+L'esperienza conferma il potenziale della citizen science come strumento di coinvolgimento e di conoscenza del territorio.
+
 Per concludere, appare evidente che i partecipanti al walkshop ritengono che la Greenway sia soprattutto un luogo di serenità, rigenerazione e contatto con la natura: oltre l'80% lo riconosce prima della camminata e il 93–98% dichiara di sentirsi meglio al termine dell'evento.
 Meno riconosciuto è il suo ruolo sociale e quotidiano, e le valutazioni sono più basse tra gli under 45 e i visitatori occasionali, che conoscono meno l'area e che quindi non hanno ancora familiriazzato con il luogo.
-Le risposte aperte indicano priorità concrete e convergenti: 
+Le risposte aperte indicano priorità concrete e convergenti:
 
-1. Più alberi e ombra lungo il percorso, e contrasto all'ailanto con piante autoctone.
-2. Panchine, fontanelle, secchi per i rifiuti e aree di sosta, anche per bambini e picnic.
-3. Cartellonistica e pannelli didattici su piante e fauna.
-4. Più comunicazione sull'esistenza della Greenway e iniziative periodiche come questo walkshop.
+1.  Più alberi e ombra lungo il percorso, e contrasto all'ailanto con piante autoctone.
+2.  Panchine, fontanelle, secchi per i rifiuti e aree di sosta, anche per bambini e picnic.
+3.  Cartellonistica e pannelli didattici su piante e fauna.
+4.  Più comunicazione sull'esistenza della Greenway e iniziative periodiche come questo walkshop.
 
 In sintesi, i partecipanti vogliono preservare il carattere naturale della Greenway, fatto di vegetazione, percorso e connessioni ecologiche, e chiedono allo stesso tempo di renderla più accogliente e più comprensibile, con più ombra e servizi di sosta per chi la frequenta e una maggiore informazione sul suo valore naturalistico.

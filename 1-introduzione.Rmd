@@ -28,26 +28,26 @@ Molte delle indicazioni hanno carattere preliminare o programmatico e vanno inte
 L'obiettivo primario di una rete ecologica è consentire la mobilità delle specie e lo scambio di individui e geni tra popolazioni che occupano aree di habitat spazialmente distinte [@battisti2004].
 Anche a scala comunale la rete può essere schematizzata in quattro elementi: nodi (*core areas*), zone cuscinetto, *stepping stones* e corridoi.
 
-I nodi sono aree sufficientemente estese da sostenere nel lungo periodo una popolazione, in genere con elevata ricchezza di specie e presenza di specie rare.
+I nodi sono aree sufficientemente estese da sostenere nel lungo periodo una popolazione, in genere con elevata ricchezza di specie e presenza di specie più o meno rare.
 Ne sono esempio i siti Natura 2000, ma anche un bosco o un'area umida ben conservati.
 Le zone cuscinetto circondano i nodi e li proteggono dalle pressioni esterne con un'azione di filtro, e spesso coincidono con fasce ecotonali ricche di specie.
 Le *stepping stones* sono frammenti di habitat troppo piccoli per ospitare popolazioni stabili, ma importanti come punti intermedi: riducono i rischi dello spostamento in una matrice frammentata e offrono risorse e rifugio.
 Possono essere boschetti isolati o stagni, ma anche elementi semi-naturali o artificiali, come giardini urbani e aiuole fiorite.
 I corridoi, infine, sono elementi lineari come corsi d'acqua, fasce boscate, siepi e filari, che favoriscono la biopermeabilità del territorio e riducono la frammentazione.
-Differiscono per ampiezza, geometria, struttura verticale e composizione floristica della vegetazione, gradualità degli ecotoni e interazione con gli ecosistemi circostanti, e da queste caratteristiche dipende la loro efficacia.
+Differiscono per ampiezza, geometria, struttura verticale e composizione floristica, gradualità degli ecotoni e modalità di interazione con gli ecosistemi circostanti, e da queste caratteristiche dipende la loro efficacia.
 
 Questo schema è alla base della lettura del territorio proposta nel rapporto.
 Le classi della *Morphological Spatial Pattern Analysis* ne forniscono una controparte operativa: le aree *Core* corrispondono ai nodi, l'*Edge* alle fasce di transizione, le *Islet* alle *stepping stones* e i *Bridge*, i *Loop* e i *Branch* ai diversi tipi di corridoio.
-Nell'ambito urbano, dove i nodi sono pochi, il ruolo di *stepping stones* è affidato a elementi del verde pubblico e privato come giardini, siepi e aiuole.
+Nell'ambito urbano, dove i nodi sono relativamente pochi, il ruolo di *stepping stones* è affidato a elementi del verde pubblico e privato come giardini, siepi e aiuole.
 
 L'analisi strutturale va integrata con indicatori ambientali e biologici.
 A livello di habitat si possono valutare il valore ecologico, che esprime la qualità di un biotopo, e la fragilità ambientale, legata alla vulnerabilità e al disturbo delle attività umane [@angelini2009].
 A livello di comunità la biodiversità si descrive con la ricchezza specifica e l'*evenness*, da cui derivano gli indici di diversità e dominanza come Shannon e Simpson [@magurran2004].
-Sono gli strumenti con cui potranno essere letti i dati del monitoraggio entomologico alla Spoletosfera, una volta completate le determinazioni.
+Sono gli strumenti con cui potranno essere letti i dati del monitoraggio entomologico alla Spoletosfera, una volta completate le determinazioni sistematiche e in tutte le altre aree in cui verranno condotte ricerche, ma anche osservazioni opportunistiche, finalizzate alla caratterizzazione della biodiversità locale.
 
-Non esistono reti uniche e già delineate che siano funzionali per soddisfare l'intera pluralità di esigenze che insistono su un'area.
+Non esistono reti uniche e già delineate che siano funzionali per soddisfare l'intera pluralità di esigenze che insistono su un certo territorio.
 Ogni strategia di conservazione deve definire obiettivi di riferimento che ne orientino struttura, scala e priorità, adattandole al contesto ambientale, sociale ed economico.
-La progettazione deve inoltre considerare la posizione degli elementi di naturalità rispetto alle trasformazioni previste, perché il paesaggio è dinamico: cambia per l'espansione urbana, per l'evoluzione delle colture e l'abbandono delle aree collinari e montane, e per le scelte della pianificazione.
+La progettazione deve inoltre considerare la posizione degli elementi di naturalità rispetto alle trasformazioni previste, perché sappiamo che il paesaggio è per sua natura dinamico: cambia per l'espansione urbana, per l'evoluzione delle colture e l'abbandono delle aree collinari e montane e per le scelte della pianificazione.
 
 Nell'ambito comunale gli obiettivi della rete ecologica possono essere riassunti in:
 
@@ -76,4 +76,4 @@ knitr::include_graphics('./figs/schemaUNECE.png')
 È interessante notare che queste tre soglie corrispondono a tre modalità distinte di esposizione alla natura: i) vedere la natura, ii) vivere in mezzo al verde e iii) usufruirne a scopo ricreativo e rigenerativo.
 Queste soglie non sono arbitrarie, ma si fondano su evidenze empiriche consolidate nella letteratura scientifica.
 Ad esempio, il valore del 30% di verde per ogni quartiere trova riscontro negli studi di Astell-Burt e Feng, che associano a tale soglia maggiori benefici per salute, sonno e salute mentale [@feng2017], mentre i 300 m coincidono con la raccomandazione dell’Ufficio regionale europeo dell’OMS per uno spazio verde di estensione almeno pari a un ettaro [@worldhealthorganization2017].
-Ovviamente questa regola è una linea guida “volontaria”, da applicare con attenzione al contesto locale: tessuti urbani densi o con caratteri storici, congiuntamente a ulteriori fattori culturali, possono rendere difficile e inadeguata l’applicazione letterale delle soglie; la regola tuttavia resta un valido orientamento per una proiezione sostenibile dello sviluppo del tessuto urbano e periurbano.
+Ovviamente questa regola è una linea guida “volontaria”, da applicare con attenzione al contesto locale: tessuti urbani densi o con caratteri storici, congiuntamente a ulteriori fattori culturali, possono rendere difficile e inadeguata l’applicazione rigorosa e letterale delle soglie; la regola tuttavia resta un valido orientamento per una proiezione sostenibile dello sviluppo del tessuto urbano e periurbano.
