@@ -73,7 +73,7 @@ Per l'assegnazione di ciascuna località a un'unità funzionale è stato adottat
 Infine, per garantire una maggiore coerenza funzionale, sono state considerate anche le macroaree urbane.
 Nella collocazione delle località all'interno delle UF si è tenuto conto di questo aspetto, privilegiando l'aggregazione delle porzioni urbanizzate al fine di concentrare in poche unità omogenee i sistemi insediativi più consolidati.
 
-## Analisi della struttura e della connettività del paesaggio (MSPA ed Effective Mesh Size)
+## Analisi della struttura e della connettività del paesaggio
 
 L'indagine sulla struttura e sulla connettività del paesaggio è stata condotta integrando i principi della Morphological Spatial Pattern Analysis (MSPA)[@vogt2025] con le metriche di frammentazione spaziale elaborate da [@jaeger2000].
 L'analisi è stata eseguita disaggregando le porzioni territoriali in base alle Unità Funzionali del territorio spoletino.

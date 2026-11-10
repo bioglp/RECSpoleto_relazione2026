@@ -1,4 +1,35 @@
-.Rproj.user
+# File di output di Bookdown / R Markdown
+/_book/
+/docs/
+*.html
+*.pdf
+*.pages
+
+# Cache e file temporanei di knitr
+/_bookdown_files/
+/cache/
+*.rds
+*_cache/
+*_files/
+
+# File temporanei di LaTeX (generati durante la compilazione del PDF)
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+
+# File di configurazione locale o di sistema
+.Rproj.user/
 .Rhistory
 .RData
-.Ruserdata
+.DS_Store
+Thumbs.db

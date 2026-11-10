@@ -1,8 +1,8 @@
 # Allegato I {#annexI}
 
-## Presentazioni eventi Comune di Spoleto - progetto LifeIMAGINE
+## Slide presentazioni eventi 
 
-### Diapositive della presentazione mostrata durante l'evento del 28/03/2026
+### Diapositive della presentazione del 28/03/2026
 
 ![](images/RECSpoletoBiodivLaPorta20260328.001.jpeg)
 ![](images/RECSpoletoBiodivLaPorta20260328.002.jpeg)
@@ -34,5 +34,6 @@
 ![](images/lifeIMAGINEC20_20261002.009.jpeg)
 ![](images/lifeIMAGINEC20_20261002.010.jpeg)
 
-Alcune immagini durante l'evento
+#### Alcune immagini del Walkshop 2026
+
 ![](images/walkshop2026.jpg)

@@ -2,6 +2,7 @@
 title: Studio della Rete Ecologica applicato al potenziamento della Connettività del Territorio Spoletino attraverso esperienze pilota di gestione e interventi Infrastrutturali
 author: "Gianandrea La Porta, Viola Gai, Manuela Rebora"
 date: "11-11-2026"
+version: "1.0"
 output:
   bookdown::word_document2:
     toc: true
@@ -23,6 +24,7 @@ link-citations: true
 description: "Relazione finale"
 site: bookdown::bookdown_site
 ## bookdown::render_book("index.Rmd")
+## bookdown::render_book("index.Rmd", "bookdown::pdf_book")
 ## https://bioglp.github.io/RECSpoleto_relazione2026/
 ---
 
@@ -45,8 +47,8 @@ Il rapporto intende quindi fornire un supporto conoscitivo e operativo per l'int
 ## Ringraziamenti
 
 Il presente rapporto è il frutto di un impegno condiviso, costruito nel triennio grazie al contributo di numerose persone.
-Un ringraziamento particolare va all'Assessore Agnese Protasi, al personale del Comune di Spoleto e al Sindaco della città, per il sostegno e la fiducia accordati al lavoro.
+Un ringraziamento particolare va all'Assessore Agnese Protasi, al personale del Comune di Spoleto e al Sindaco della città, per il sostegno e la fiducia accordati in ogni fase dello svolgimento dello studio.
 
-Si ringraziano inoltre i volontari del servizio civile e gli studenti che hanno partecipato alle campagne di monitoraggio e aggiornamento dati, nonché i ricercatori e i dottorandi dell'Università degli Studi di Perugia che hanno contribuito alla riuscita della giornata del walkshop 2026.
+Si ringraziano inoltre i volontari del servizio civile e gli studenti che hanno partecipato alle campagne di monitoraggio e di aggiornamento dati, nonché i ricercatori e i dottorandi dell'Università degli Studi di Perugia che hanno contribuito alla riuscita della giornata del walkshop 2026.
 
-Infine, un grazie speciale alla dott.ssa Federica Andreini per il confronto costante, che ha accompagnato ogni fase del lavoro e ne ha reso possibile la conclusione.
+Infine, un grazie speciale alla dott.ssa Federica Andreini per il confronto costante e le preziose conversazioni condivise durante lo sviluppo del progetto.

@@ -85,7 +85,7 @@ Al contempo, l'area assume una funzione chiave come rifugio climatico, contribue
 knitr::include_graphics('./figs/parcoPace_idea.png')
 ```
 
-## Prati urbani
+## Prati urbani {#sec-prati}
 
 I prati urbani (nella letteratura scientifica *urban lawns*) rappresentano una delle componenti più diffuse delle infrastrutture verdi urbane a livello globale, arrivando a coprire fino al 70% delle aree verdi cittadine all'interno di parchi pubblici, giardini privati, campus, aree sportive e margini stradali [@dushkova2025; @ignatieva2018].
 Storicamente sono stati concepiti per scopi estetici, ricreativi e culturali, ma allo stesso tempo i prati urbani forniscono importanti servizi ecosistemici, tra cui il mitigamento dell'isola di calore, il sequestro del carbonio, la filtrazione dell'acqua, la creazione di spazi di habitat per la biodiversità e di aggregazione per i cittadini [@strohbach2012; @dushkova2020].
@@ -111,7 +111,7 @@ In un caso studio canadese il passaggio da 15 a 10 sfalci annui nelle aree molto
 Lo stesso lavoro riporta che la gestione intensiva favorisce infestanti e parassiti dei prati, e che un’infestante allergenica come l’ambrosia (*Ambrosia artemisiifolia*) può essere contenuta riducendo la frequenza di sfalcio [@watson2020].
 
 La riuscita di queste strategie dipende in larga misura dall'accettazione da parte dei cittadini.
-Per evitare che un prato a sfalcio ridotto venga percepito come un'area abbandonata o degradata, è fondamentale applicare i «segnali di cura» (*cues to care*, introdotti da Nassauer nel 1995), ovvero elementi di disegno e manutenzione perimetrale (come fasce sfalciate lungo i bordi) che rendano esplicita l'intenzionalità gestionale.
+Per evitare che un prato a sfalcio ridotto venga percepito come un'area abbandonata o degradata, è fondamentale applicare i «segnali di cura» (*cues to care*, introdotti da Nassauer nel 1995 [@nassauer1995]), ovvero elementi di disegno e manutenzione perimetrale (come fasce sfalciate lungo i bordi) che rendano esplicita l'intenzionalità gestionale.
 Le evidenze di gradimento sono incoraggianti: in un parco inglese le strisce non sfalciate hanno avuto circa tre volte più fiori e cinque volte più insetti visitatori di fiori rispetto alle strisce sfalciate regolarmente, e il 97% dei visitatori intervistati si è detto favorevole a favorire insetti e fiori spontanei [@garbuzov2015].
 Riscontri analoghi emergono dai lavori di @norton2019, che evidenziano una maggiore soddisfazione dei residenti in presenza di coperture vegetali diversificate.
 
@@ -165,7 +165,7 @@ knitr::include_graphics('./figs/prato_studenti2026.jpeg')
 ### Villa Redenta
 
 Un’esperienza di monitoraggio analoga a quella della Spoletosfera è stata condotta anche nel giardino di Villa Redenta nel mese di agosto 2026. L’attività era finalizzata alla redazione di una checklist preliminare delle specie più facilmente contattabili e visibili a tutti i frequentatori dell’area.
-A partire da questo elenco sono stati realizzati due pannelli didattico-informativi di esempio, dedicati rispettivamente alle farfalle diurne e ai ditteri e imenotteri presenti nel giardino.
+A partire da questo elenco sono stati realizzati due pannelli didattico-informativi di esempio, dedicati rispettivamente alle farfalle diurne e ai ditteri e imenotteri presenti nel giardino (Figg. \@ref(fig:schedaInv1); \@ref(fig:schedaInv2)).
 I pannelli hanno la finalità di far conoscere ai visitatori la biodiversità del luogo e il ruolo ecologico di questi insetti, ma anche di sottolineare l’importanza di creare spazi con un’offerta di habitat per queste specie: un prato sfalciato di frequente offre infatti risorse limitate, mentre un’offerta più ricca di fioriture e rifugi porterebbe un beneficio condiviso, per la biodiversità e per chi frequenta il giardino.
 
 ```{r schedaInv1, fig.cap="Esempio di pannello informativo per i lepidotteri.", out.width='\\linewidth', fig.align='center', echo=FALSE}
@@ -322,14 +322,22 @@ Il funzionamento di Marxan prevede le seguenti fasi [@serra-sogas2020].
 Come primo passo si individuano gli elementi di interesse conservazionistico, quali specie, habitat o siti culturali, a ciascuno dei quali viene assegnato un obiettivo di conservazione (*target*), ossia la quantità minima che deve essere inclusa nella pianificazione finale (ad esempio il 30% di ogni habitat).
 Il territorio viene poi suddiviso mediante una griglia di unità quadrate, esagonali o a poligoni irregolari, denominate unità di pianificazione (UP), le cui dimensioni dipendono dalla scala del progetto, dall'obiettivo e dall'uso previsto dei risultati.
 A ciascuna UP viene quindi attribuito un costo, economico o sociale, che esprime l'onere necessario per includerla nella rete.
-Infine, gli algoritmi di Marxan elaborano la configurazione spaziale che permette di raggiungere tutti gli obiettivi al costo minimo \[ @cudlín2020; @daigle2020\], restituendo l'insieme delle UP che costituiscono la base della rete proposta.
+Infine, gli algoritmi di Marxan elaborano la configurazione spaziale che permette di raggiungere tutti gli obiettivi al costo minimo [@cudlín2020; @daigle2020], restituendo l'insieme delle UP che costituiscono la base della rete proposta.
 
 ### Logica dell'algoritmo
 
 L'algoritmo ha l'obiettivo di minimizzare un punteggio costituito da tre componenti (Fig. \@ref(fig:marxanEquazione)) [@watts2009].
 In forma semplificata:
 
-$$\text{Punteggio} = \text{Costo delle UP selezionate} + BLM \times \text{Lunghezza del confine} + \text{Penalità per i target non raggiunti}$$
+$$
+P = C_{\text{UP}} + BLM \cdot L_{\text{conf}} + P_{\text{target}}
+$$
+
+Dove:
+* $P$ = Punteggio totale
+* $C_{\text{UP}}$ = Costo delle UP selezionate
+* $L_{\text{conf}}$ = Lunghezza del confine
+* $P_{\text{target}}$ = Penalità per i target non raggiunti
 
 ```{r marxanEquazione, fig.cap="Funzione obiettivo di Marxan.", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/marxan_equazione.png')
@@ -341,11 +349,17 @@ knitr::include_graphics('./figs/marxan_equazione.png')
 
 ### File di input e output
 
-Marxan lavora su tabelle di testo, sia in ingresso sia in uscita (Fig. \@ref(fig:marxanFile)).
+Marxan lavora su tabelle di testo, sia in ingresso sia in uscita (Fig. \@ref(tab:marxanFile)).
 
-```{r marxanFile, fig.cap="Struttura dei file di input e di output di Marxan.", out.width='\\linewidth', fig.align='center', echo=FALSE}
-knitr::include_graphics('./figs/marxan_file.png')
-```
+| File input | Contenuto | Parte del punteggio |
+| :--- | :--- | :--- |
+| **Pu.dat** | Unità di pianificazione e costi | Costo |
+| **Spec.dat** | Target e penalità di ogni elemento di conservazione | Target e penalità |
+| **Puvspr.dat** | Quantità di ogni elemento di conservazione per unità di pianificazione | Target |
+| **Bound.dat** | Confini tra unità vicine | Compattezza |
+| **Input.dat** | Parametri: numero di run, iterazioni, cartelle ecc | Impostazioni |
+
+: (#tab:marxanFile) Struttura dei file di input e di output di Marxan.
 
 Una volta caricati gli input, il software esplora l'enorme numero di combinazioni possibili.
 Il processo viene ripetuto più volte (si raccomandano almeno 100 ripetizioni, così da leggere la frequenza di selezione come percentuale) e restituisce numerosi output.
@@ -420,9 +434,9 @@ Un'analisi approfondita e realistica del territorio spoletino richiederebbe, olt
 
 ### Limiti
 
-- Marxan non garantisce una soluzione ottimale in senso assoluto: produce un insieme di soluzioni quasi ottimali, tra le quali i decisori possono negoziare [@game2013a].
+- Marxan non garantisce una soluzione ottimale in senso assoluto: produce un insieme di soluzioni quasi ottimali, tra le quali i decisori possono negoziare [@game2013].
 - I dati di ingresso sono spesso imprecisi: in particolare quelli sugli invertebrati sono certamente incompleti, a causa della difficoltà di condurre monitoraggi sistematici ed estensivi [@ardron2010].
-- Target e costi sono scelti in modo discrezionale e non sono grandezze misurate: al loro variare cambia la soluzione, e per questo si lavora per scenari [@daigle2020; @game2013a].
+- Target e costi sono scelti in modo discrezionale e non sono grandezze misurate: al loro variare cambia la soluzione, e per questo si lavora per scenari [@daigle2020; @game2013].
 - Marxan indica dove agire ma non quale tipo di intervento realizzare, che va definito con altri strumenti.
 
 I limiti richiamati non ne sminuiscono il valore, ma ne definiscono le condizioni d'uso.

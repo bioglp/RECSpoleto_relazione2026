@@ -209,7 +209,7 @@ SPOLETO
 
 ## Connettività per Unità Funzionali (MSPA)
 
-La valutazione della struttura e della connettività del paesaggio, ottenuta combinando la metodologia MSPA e gli indici di frammentazione [@jaeger2000a], è presentata di seguito con specifico riferimento alle Unità Funzionali.
+La valutazione della struttura e della connettività del paesaggio, ottenuta combinando la metodologia MSPA e gli indici di frammentazione [@jaeger2000], è presentata di seguito con specifico riferimento alle Unità Funzionali.
 L'approccio disaggregato rende possibile un confronto puntuale tra le condizioni ecologiche dei diversi contesti, ponendosi come base conoscitiva per orientare gli interventi finalizzati all'incremento della permeabilità territoriale e di salvaguardia della biodiversità (Fig. \@ref(fig:mspaUnitaFunzionali)).
 Per ciascuna unità sono stati considerati anche gli aspetti demografici legati alla popolazione residente e al numero dei nuclei familiari (Fig. \@ref(fig:mapPopolazione)).
 
@@ -225,17 +225,22 @@ knitr::include_graphics('./figs/mapPopolazione.png')
 
 In queste unità come era atteso sono presenti i valori di gran lunga più elevati di Area Totale e Effective Mesh Size per la classe *Core* (Fig. \@ref(fig:mspaUnitaFunzionaliMontana))(Tab. \@ref(tab:tabMSPAMontano)).
 
-```{r echo=F, warnings=F}
-library(tidyverse)
-mspa <- read.csv('input/risultatiMSPA_raggruppati.csv')
-mspa %>%
-  filter(
-    UNITA_FUNZ == "Alto collinare montana dei Monti Martani" |
-      UNITA_FUNZ == "Alto collinare montana dell'Appennino"
-  ) %>%
-  select(-1) %>%
-  knitr::kable(digits = 2)
-```
+|UNITA_FUNZ                               |Macro_Classe | Area_Totale| Num_Patches| Effective_Mesh_Size|
+|:----------------------------------------|:------------|-----------:|-----------:|-------------------:|
+|Monti Martani |Core         |     2709.43|         158|              470.61|
+|Monti Martani |Islet        |       10.24|         155|                0.00|
+|Monti Martani |Perforation  |       45.92|          74|                0.02|
+|Monti Martani |Edge         |      260.99|         669|                0.10|
+|Monti Martani |Loop         |       79.86|         255|                0.04|
+|Monti Martani |Bridge       |      235.17|         766|                0.07|
+|Monti Martani |Branch       |       75.86|         689|                0.01|
+|Appennino    |Core         |    10690.42|         175|              423.87|
+|Appennino    |Islet        |       13.92|         207|                0.00|
+|Appennino    |Perforation  |      379.96|         843|                0.05|
+|Appennino    |Edge         |      353.81|         851|                0.04|
+|Appennino    |Loop         |      337.95|        1203|                0.03|
+|Appennino    |Bridge       |      282.67|         933|                0.02|
+|Appennino    |Branch       |       77.86|        1064|                0.00|
 
 : (#tab:tabMSPAMontano) Risultati analisi MSPA per le Aree Montane e Dorsali Appenniniche.
 
@@ -312,11 +317,13 @@ L'Effective Mesh Size assume i valori più bassi dell'intero territorio comunale
 knitr::include_graphics('./figs/mspa_unitaFunzionali_urbana.png')
 ```
 
-In questa porzione di territorio si concentra la metà della popolazione residente nel comune, con una densità abitativa di oltre 800 $ab/km^2$.
+In questa porzione di territorio si concentra la metà della popolazione residente nel comune, con una densità abitativa di oltre 800 $ab/km^2$ (Tab. \@ref(tab:popUrbana).
 
 | UNITA_FUNZ |   POP |  Pop% |  FAM |  Fam% |   Dens |
 |:-----------|------:|------:|-----:|------:|-------:|
 | Urbana     | 18701 | 50.50 | 9000 | 52.33 | 812.01 |
+
+: (#tab:popUrbana) Popolazione residente, numero di famiglie e densita abitativa.
 
 ### Sintesi del confronto tra le Unità Funzionali
 
@@ -482,8 +489,6 @@ Le patch più grandi si ritrovano invece a Cortaccione (LPI=2.72%) e San Nicolò
 
 : (#tab:metricheFraz) Indicatori di struttura per frazioni e località.
 
-==\[Nota sul Laghetto dei Longobardi\]
-
 ### Verifica regola 3–30–300
 
 Interpretando questi dati analitici in chiave regola 3-30-300, appare chiaro che, nel contesto urbano, il nucleo cittadino riveste la maggiore importanza per densità di popolazione ed è quello che offre le maggiori possibilità di raggiungere gli obiettivi della regola.
@@ -542,6 +547,22 @@ Elenco domande della prima compilazione (pre):
 
 9.  Consiglierebbe ad altri, suoi parenti-amici-conoscenti e non, di frequentare la Greenway?
 
+
+| Domanda |   n | media |   ds | mediana |   q1 |  q3 | %1-2 | %3 | %4-5 | %5 |
+|:-----|----:|------:|-----:|--------:|-----:|----:|--------:|------:|--------:|------:|
+| Q1   |  47 |  4.57 | 0.68 |     5.0 | 4.00 |   5 |    2.13 |  4.26 |   93.62 | 65.96 |
+| Q2   |  47 |  4.23 | 1.11 |     5.0 | 4.00 |   5 |    8.51 |  6.38 |   85.11 | 53.19 |
+| Q3   |  47 |  3.98 | 1.22 |     4.0 | 4.00 |   5 |   12.77 | 10.64 |   76.60 | 42.55 |
+| Q4   |  46 |  4.20 | 1.15 |     5.0 | 4.00 |   5 |   13.04 |  4.35 |   82.61 | 54.35 |
+| Q5   |  46 |  3.13 | 1.31 |     3.0 | 2.00 |   4 |   30.43 | 34.78 |   34.78 | 21.74 |
+| Q6   |  47 |  3.36 | 1.47 |     4.0 | 2.00 |   5 |   29.79 | 17.02 |   53.19 | 29.79 |
+| Q7   |  46 |  3.11 | 1.62 |     3.0 | 1.25 |   5 |   36.96 | 23.91 |   39.13 | 34.78 |
+| Q8   |  46 |  3.74 | 1.32 |     4.0 | 3.00 |   5 |   17.39 | 23.91 |   58.70 | 41.30 |
+| Q9   |  46 |  4.22 | 0.94 |     4.5 | 4.00 |   5 |    6.52 | 15.22 |   78.26 | 50.00 |
+
+: (#tab:questionario) Risultati del questionario in fase di partenza.
+
+
 Le domande servivano per descrivere la situazione abituale e la percezione che i partecipanti avevano prima dell’incontro.
 Successivamente, il questionario post ha proposto domande finalizzate a rilevare il cambiamento percepito, attraverso risposte di tipo sì/no: per esempio se, dopo il walkshop, il partecipante si sentisse più sereno o se ritenesse possibile l’utilizzo della Greenway come rifugio climatico.
 
@@ -558,54 +579,41 @@ knitr::include_graphics('./figs/walkshop/fig1_campione.png')
 
 Per l’analisi delle risposte al questionario, per ogni domanda sono stati calcolati frequenze, media, mediana e quota di risposte con punteggi alti (Tab. \@ref(tab:questionario)).
 
-| item |   n | media |   ds | mediana |   q1 |  q3 | pct_1_2 | pct_3 | pct_4_5 | pct_5 |
-|:-----|----:|------:|-----:|--------:|-----:|----:|--------:|------:|--------:|------:|
-| Q1   |  47 |  4.57 | 0.68 |     5.0 | 4.00 |   5 |    2.13 |  4.26 |   93.62 | 65.96 |
-| Q2   |  47 |  4.23 | 1.11 |     5.0 | 4.00 |   5 |    8.51 |  6.38 |   85.11 | 53.19 |
-| Q3   |  47 |  3.98 | 1.22 |     4.0 | 4.00 |   5 |   12.77 | 10.64 |   76.60 | 42.55 |
-| Q4   |  46 |  4.20 | 1.15 |     5.0 | 4.00 |   5 |   13.04 |  4.35 |   82.61 | 54.35 |
-| Q5   |  46 |  3.13 | 1.31 |     3.0 | 2.00 |   4 |   30.43 | 34.78 |   34.78 | 21.74 |
-| Q6   |  47 |  3.36 | 1.47 |     4.0 | 2.00 |   5 |   29.79 | 17.02 |   53.19 | 29.79 |
-| Q7   |  46 |  3.11 | 1.62 |     3.0 | 1.25 |   5 |   36.96 | 23.91 |   39.13 | 34.78 |
-| Q8   |  46 |  3.74 | 1.32 |     4.0 | 3.00 |   5 |   17.39 | 23.91 |   58.70 | 41.30 |
-| Q9   |  46 |  4.22 | 0.94 |     4.5 | 4.00 |   5 |    6.52 | 15.22 |   78.26 | 50.00 |
-
-: (#tab:questionario) Risultati del questionario in fase di partenza.
-
 Dalle risposte pervenute emerge che il legame con la natura dei partecipanti (Q1) ha la media più alta (4,6) e il 94% di risposte 4 o 5 (Tab. \@ref(tab:questionario)).
+
 Tra i giudizi formulati direttamente sulla Greenway, i più alti riguardano la serenità (Q2), la rigenerazione individuale (Q4), la salute fisica (Q3) e il passaparola (Q9): quasi otto persone su dieci sono felici e rilassate, e raccomanderebbero la frequentazione dell’area ad altri.
 Colpisce che i cittadini coinvolti abbiano riconosciuto meno il valore di quest’area nella socialità (Q5), il suo ruolo di potenziale rifugio climatico (Q6) e l'importanza nella vita quotidiana (Q7).
 Queste tre funzioni probabilmente sono meno ovvie e dipendono più dall'uso abituale dell'area e pertanto hanno ricevuto valutazioni con le medie più basse, tra 3,1 e 3,4.
-In particolare, l’importanza nella vita quotidiana è risultata polarizzata: il 26% ha risposto 1 e il 35% 5 (Fig. \@ref(fig:likert)).
+In particolare, l’importanza nella vita quotidiana è risultata polarizzata: il 26% ha risposto 1 e il 35% 5 (Fig. \@ref(fig:risposte)).
 
-```{r likert, fig.cap="Sintesi delle risposte: 1 («per nulla») a 5 («moltissimo»)", out.width='\\linewidth', fig.align='center', echo=FALSE}
+```{r risposte, fig.cap="Sintesi delle risposte: 1 (per nulla) a 5 (moltissimo)", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/walkshop/fig2_likert.png')
 ```
 
 Per sintetizzare in un solo valore i giudizi dei partecipanti sulla Greenway è stato calcolato, per ogni persona, un punteggio composito: la media delle risposte alle domande da 2 a 9. Il punteggio va da 1 (giudizio minimo) a 5 (massimo) ed è calcolato per chi ha risposto ad almeno sei domande su otto.
 La domanda 1, sul legame personale con la natura, è esclusa perché descrive il soggetto partecipante e non un giudizio sull’area (Fig. \@ref(fig:composito)).
 
-Dal quadro d’insieme emerge che in genere le valutazioni crescono con l'età: sotto i 45 anni il punteggio mediano è circa 3,3 su 5, sopra i 45 supera 4,1.
-Chi si ferma meno di 30 minuti ha un punteggio mediano di 3,3, contro 4,1–4,3 degli altri, e chi viene raramente o per la prima volta come era da attendersi ha valutazioni più basse (mediana 3,4, contro 4,1–4,3).
-Questi due effetti sono in parte sovrapposti e in parte dovuti alla poca familiarità con l'area: le domande su salute, vita quotidiana e identità presuppongono infatti un'esperienza ripetuta nel tempo.
-
 ```{r composito, fig.cap="Punteggio composito (media delle domande 2–9) per gruppi di partecipanti", out.width='\\linewidth', fig.align='center', echo=FALSE}
 knitr::include_graphics('./figs/walkshop/fig4_composito_gruppi.png')
 ```
 
+Dal quadro d’insieme emerge che in genere le valutazioni crescono con l'età: sotto i 45 anni il punteggio mediano è circa 3,3 su 5, sopra i 45 supera 4,1.
+Chi si ferma meno di 30 minuti ha un punteggio mediano di 3,3, contro 4,1–4,3 degli altri, e chi viene raramente o per la prima volta come era da attendersi ha valutazioni più basse (mediana 3,4, contro 4,1–4,3).
+Questi due effetti sono in parte sovrapposti e in parte dovuti alla poca familiarità con l'area: le domande su salute, vita quotidiana e identità presuppongono infatti un'esperienza ripetuta nel tempo.
+
 Quando al termine della giornata è stato sottoposto il nuovo questionario sono emerse queste valutazioni (Tab. \@ref(tab:questionarioPost)).
 
-| Post | etichetta | si | no | n | pct_si | ic_lo | ic_hi |
-|:--------|:--------|--------:|--------:|--------:|--------:|--------:|--------:|
-| P1 | Più legato alla natura | 37 | 4 | 41 | 90.2 | 76.9 | 97.3 |
-| P2 | Più felice / sereno | 40 | 1 | 41 | 97.6 | 87.1 | 99.9 |
-| P3 | Meglio fisicamente | 38 | 3 | 41 | 92.7 | 80.1 | 98.5 |
-| P4 | Più rigenerato / rilassato | 38 | 3 | 41 | 92.7 | 80.1 | 98.5 |
-| P5 | Può usarla per ritrovo e socialità | 36 | 5 | 41 | 87.8 | 73.8 | 95.9 |
-| P6 | Può usarla come rifugio climatico | 30 | 11 | 41 | 73.2 | 57.1 | 85.8 |
-| P7 | Può diventare parte della propria vita quotidiana | 34 | 7 | 41 | 82.9 | 67.9 | 92.8 |
-| P8 | Può diventare parte della vita degli spoletini | 39 | 2 | 41 | 95.1 | 83.5 | 99.4 |
-| P9 | La consiglierebbe ad altri | 40 | 1 | 41 | 97.6 | 87.1 | 99.9 |
+| Post | etichetta | si | no | pct_si | ic_lo | ic_hi |
+|:--------|:--------|--------:|--------:|--------:|--------:|--------:|
+| P1 | Più legato alla natura | 37 | 4 | 90.2 | 76.9 | 97.3 |
+| P2 | Più felice / sereno | 40 | 1 | 97.6 | 87.1 | 99.9 |
+| P3 | Meglio fisicamente | 38 | 3 | 92.7 | 80.1 | 98.5 |
+| P4 | Più rigenerato / rilassato | 38 | 3 | 92.7 | 80.1 | 98.5 |
+| P5 | Può usarla per ritrovo e socialità | 36 | 5 | 87.8 | 73.8 | 95.9 |
+| P6 | Può usarla come rifugio climatico | 30 | 11 | 73.2 | 57.1 | 85.8 |
+| P7 | Può diventare parte della propria vita quotidiana | 34 | 7 | 82.9 | 67.9 | 92.8 |
+| P8 | Può diventare parte della vita degli spoletini | 39 | 2 | 95.1 | 83.5 | 99.4 |
+| P9 | La consiglierebbe ad altri | 40 | 1 | 97.6 | 87.1 | 99.9 |
 
 : (#tab:questionarioPost) Risultati del questionario in fase di rientro dal walkshop.
 
@@ -651,4 +659,4 @@ Le risposte aperte indicano priorità concrete e convergenti:
 3.  Cartellonistica e pannelli didattici su piante e fauna.
 4.  Più comunicazione sull'esistenza della Greenway e iniziative periodiche come questo walkshop.
 
-In sintesi, i partecipanti vogliono preservare il carattere naturale della Greenway, fatto di vegetazione, percorso e connessioni ecologiche, e chiedono allo stesso tempo di renderla più accogliente e più comprensibile, con più ombra e servizi di sosta per chi la frequenta e una maggiore informazione sul suo valore naturalistico.
+In sintesi, i partecipanti vogliono preservare il carattere naturale della Greenway, fatto di vegetazione, specie animali, percorso e connessioni ecologiche, e chiedono allo stesso tempo di renderla più accogliente e più comprensibile, con più ombra e servizi di sosta per chi la frequenta e una maggiore informazione sul suo valore naturalistico.
