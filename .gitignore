@@ -1,6 +1,5 @@
 # File di output di Bookdown / R Markdown
 /_book/
-/docs/
 *.html
 *.pdf
 *.pages
